@@ -1,2 +1,2 @@
-# frontend-guide
-Guidelines and examples useful for front-end development at KB
+# Frontend-guide
+Riktlinjer och exempel för användning vid gränssnittsutveckling hos KB.
