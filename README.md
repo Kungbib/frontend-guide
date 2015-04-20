@@ -8,7 +8,7 @@ Riktlinjer och exempel för användning vid gränssnittsutveckling hos KB.
 
 Ladda ner och installera [node.js](https://nodejs.org/download/).
 
-Installera grunt
+Installera grunt-cli
 
     npm install -g grunt-cli
 
