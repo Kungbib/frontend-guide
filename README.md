@@ -20,6 +20,9 @@ Bootstrap-mallen bor i mappen _styles_. Navigera dit och installera node-paketen
 ### Anpassning
 
 I mappen _custom_ skapar du egna regler utöver bootstraps egna. Öppna variables.less och testa att ändra på något.
+För att lägga till en fil i genereringen öppnar du filen _customs.less_ och lägger till
+
+    @import 'filename.less';
 
 För att bygga dina less-filer till css behöver du gå till styles-mappen och köra
 
