@@ -30,6 +30,27 @@ För att bygga dina less-filer till css behöver du gå till styles-mappen och k
 
 I mappen _preview_ finns en HTML-fil där du kan se hur dina ändringar påverkar stilmallen.
 
+#### Kod-riktlinjer
+
+Om du lägger till en regel som inte redan finns reglerad i _variables.less_ så bör du ange den som en less-variabel och lägga till motsvarande variabel i _variables.less_. Detta gör att anpassningsbarheten i projektet bibehålls och att strukturen hålls ren.
+
+Exempel:
+Jag vill redigera navbar-klassens border-width. Jag kollar i _variables.less_ om där redan finns en variabel att redigera. Eftersom det inte finns det så skapar jag en fil i custom-mappen som heter _navbar.less_, inkluderar den i _custom.less_
+
+    @import 'navbar.less';
+    
+I _navbar.less_ anger jag
+
+    .navbar {
+        border-width: @navbar-border-width;
+    }
+I _variables.less_ letar jag upp om det finns andra ställen där navbar-klassen regleras och lägger till
+
+    @navbar-border-width: 1px;
+>Om klassen inte har några andra variabler över huvud taget bör du skapa en ny sektion längst ner i filen där du kommenterar vilken klass det handlar om och lägger in variabeln.
+
+Du har nu gjort din anpassning och samtidigt sett till att variabeln finns tillgänglig för framtida anpassning.
+
 ### Användning
 
 Den byggda css-filen _custom.css_ hamnar i mappen _build_. Detta är filen du inkluderar i din tjänst.
