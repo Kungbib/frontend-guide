@@ -27,8 +27,10 @@ För att lägga till en fil i genereringen öppnar du filen _custom.less_ och l�
 För att bygga dina less-filer till css behöver du gå till styles-mappen och köra
 
     grunt
+    
+Detta startar även en _grunt watch_ som lyssnar efter ändringar i koden och bygger CSS-filen automatiskt.
 
-I mappen _preview_ finns en HTML-fil där du kan se hur dina ändringar påverkar stilmallen.
+I mappen _preview_ finns _preview.html_ där du kan se hur dina ändringar påverkar stilmallen. Om du har en _grunt watch_ igång så uppdateras sidan automatiskt när du sparar ändringar i koden.
 
 #### Kod-riktlinjer
 
