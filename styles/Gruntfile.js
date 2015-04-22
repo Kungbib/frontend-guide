@@ -7,7 +7,8 @@ module.exports = function(grunt) {
         files: ["custom/*.less"],
         tasks: ['less'],
         options: {
-          nospawn: true
+          nospawn: true,
+          livereload: 35790
         }
       }
     },
