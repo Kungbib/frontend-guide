@@ -27,9 +27,11 @@ För att bygga dina less-filer till css behöver du gå till styles-mappen och k
 
     grunt
     
-Detta startar även en _grunt watch_ som lyssnar efter ändringar i koden och bygger CSS-filen automatiskt.
+Vill du bygga automatiskt vid varje ändring kan du köra
 
-I mappen _preview_ finns _preview.html_ där du kan se hur dina ändringar påverkar stilmallen. Om du har en _grunt watch_ igång så uppdateras sidan automatiskt när du sparar ändringar i koden.
+    grunt watch
+
+~~I mappen _preview_ finns _preview.html_ där du kan se hur dina ändringar påverkar stilmallen. Om du har en _grunt watch_ igång så uppdateras sidan automatiskt när du sparar ändringar i koden.~~
 
 ### Kod-riktlinjer
 
