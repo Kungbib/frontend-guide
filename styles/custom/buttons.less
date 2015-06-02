@@ -1,6 +1,27 @@
 // Buttons
 //
-// Different types of buttons.
+// Styleguide 3.
+
+.btn {
+	text-transform: @btn-text-transform;
+	font-family: @btn-font-family;
+	text-shadow: @btn-text-shadow;
+}
+
+// Sizes
+//
+// .btn-lg    - Large
+// .btn-sm    - Small
+// .btn-mini    - Mini
+// .btn-block    - Block
+//
+// Markup:
+// <button class="btn btn-primary {{modifier_class}}">Button</button>
+// <button class="btn btn-inverse {{modifier_class}}">Button</button>
+//
+// Styleguide 3.1
+
+// Skins
 //
 // .btn-default    - Default
 // .btn-primary    - Primary
@@ -12,14 +33,12 @@
 // .btn-link			 - Link
 //
 // Markup:
-// <button class="button btn {{modifier_class}}">Button Element</button>
-// <button class="button btn disabled {{modifier_class}}">Disabled</button>
+// <button class="btn {{modifier_class}}">Button Element</button>
+// <button class="btn disabled {{modifier_class}}">Disabled</button>
 //
-// Styleguide 3.
+// Styleguide 3.2
 
-
-.btn {
-	text-transform: @btn-text-transform;
-	font-family: @btn-font-family;
-	text-shadow: @btn-text-shadow;
+// Inverse appears as black
+.btn-inverse {
+  .button-variant(@btn-inverse-color; @btn-inverse-bg; @btn-inverse-border);
 }
