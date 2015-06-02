@@ -7,6 +7,18 @@ body {
  * @author Craig Campbell
  * @version 1.0.4
  */
+
+/* Fix for broken close-tags (conflict with Bootstrap) */
+.rainbow .close {
+    float: none;
+    font-size: 13px;
+    font-weight: normal;
+    text-shadow: none;
+    opacity: 1;
+    pointer-events: none;
+}
+/* end fix */
+
 pre .comment {
   color: #998;
 }

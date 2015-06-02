@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     watch: {
       styles: {
-        files: ["custom/*", "template/*"],
+        files: ["custom/**/*", "template/**/*"],
         tasks: ['complete'],
         options: {
           nospawn: true,
