@@ -3,10 +3,12 @@
 
 body {
   margin: 0;
+  padding-bottom: 250px;
 }
 
 // Import rainbow.js highlighter.
 @import "rainbow-github";
+// @import "solarized-dark";
 
 #kss-node {
 
@@ -288,7 +290,7 @@ body {
 
   // Section
   .kss-section {
-    margin: -40px 0 60px;   // Adjust the target offset.
+    margin: -20px 0 0px;   // Adjust the target offset.
     padding-top: 40px;
   }
 
@@ -389,13 +391,16 @@ body {
   }
 
   // Other sections
-  .kss-depth-2,
+  .kss-depth-2 {
+    .kss-title { font-size: 28px; }
+  }
   .kss-depth-3,
   .kss-depth-4,
   .kss-depth-5,
   .kss-depth-6 {
     .kss-title {
-      font-size: 28px;
+      font-size: 22px;
+
     }
   }
 
@@ -421,3 +426,15 @@ body {
     }
   }
 }
+
+
+/* Fix for broken close-tags (conflict with Bootstrap) */
+.rainbow .close {
+    float: none;
+    font-size: 13px;
+    font-weight: normal;
+    text-shadow: none;
+    opacity: 1;
+    pointer-events: none;
+}
+/* end fix */

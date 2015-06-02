@@ -34,15 +34,31 @@ module.exports = function(grunt) {
             'styleguide': ['custom']
           }
       }
+    },
+    replace: {
+      dist: {
+        options: {
+          patterns: [
+            {
+              match: 'timestamp',
+              replacement: '<%= grunt.template.today("yyyy-mm-dd - HH:MM:ss") %>'
+            }
+          ]
+        },
+        files: [
+          {expand: true, flatten: true, src: ['template/tmphtml/index.html'], dest: 'template/'}
+        ]
+      }
     }
   });
 
+  grunt.loadNpmTasks('grunt-replace');
   grunt.loadNpmTasks('grunt-kss');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['less', 'kss']);
 
-  grunt.registerTask('complete', ['less', 'kss']);
+  grunt.registerTask('complete', ['less', 'replace', 'kss']);
+  grunt.registerTask('default', ['complete']);
 
 };
