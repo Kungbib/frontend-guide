@@ -4,8 +4,8 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     watch: {
       styles: {
-        files: ["custom/*.less"],
-        tasks: ['less'],
+        files: ["custom/*", "template/*"],
+        tasks: ['complete'],
         options: {
           nospawn: true,
           livereload: 35790
@@ -20,15 +20,29 @@ module.exports = function(grunt) {
           optimization: 2
         },
         files: {
-          "build/custom.css": "custom/custom.less"
+          "build/kb-style.css": "custom/custom.less"
         }
+      }
+    },
+    kss: {
+      options: {
+        css: '/build/kb-style.css',
+        template: 'template'
+      },
+      dist: {
+          files: {
+            'styleguide': ['custom']
+          }
       }
     }
   });
-  
+
+  grunt.loadNpmTasks('grunt-kss');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['less', 'watch']);
+  grunt.registerTask('default', ['less', 'kss']);
+
+  grunt.registerTask('complete', ['less', 'kss']);
 
 };
