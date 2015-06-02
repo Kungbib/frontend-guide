@@ -3,7 +3,7 @@ Riktlinjer och exempel för användning vid gränssnittsutveckling hos KB.
 
 ## Innehåll
 
-Repot innehåller setup för anpassning av Twitter Bootstrap samt generering av en stilguide enligt [KSS](https://github.com/kneath/kss) genom [KSS-node](https://github.com/kss-node/kss-node).
+Repot innehåller setup för anpassning av [Twitter Bootstrap](https://github.com/twbs/bootstrap) samt generering av en stilguide enligt [KSS](https://github.com/kneath/kss) genom [KSS-node](https://github.com/kss-node/kss-node).
 
 ## Installation
 
