@@ -71,10 +71,12 @@ Detta kommer att generera en vy likt denna:
 
 #### LESS-variabler
 
-LESS-variabler av mer global karaktär läggs med fördel till i _variables.less_ (såvida den inte redan finns representerad).
-Detta gör att anpassningsbarheten i projektet bibehålls och att strukturen hålls ren.
+LESS-variabler av mer global karaktär läggs med fördel till i _variables.less_ (såvida den inte redan finns representerad). Är variabeln specifik för en komponent bör den läggas högst upp i samma fil som komponentens övriga regler.
 
 ##### Exempel
+
+__Detta exempelavsnitt är inte aktuellt och bör uppdateras.__
+
 Jag vill redigera navbar-klassens border-width. Jag kollar i _variables.less_ om där redan finns en variabel att redigera. Eftersom det inte finns det så skapar jag en fil i custom-mappen som heter _navbar.less_, inkluderar den i _custom.less_
 
     @import 'navbar.less';
