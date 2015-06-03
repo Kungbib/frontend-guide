@@ -4,30 +4,56 @@
 
 // Basic card
 //
+// .col-md-6 - Example of grid use (6/12 cols)
+// .col-md-3 - Example of grid use (3/12 cols)
+//
 // Markup:
-// <div class="card">
-//  <h1>Card</h1>
-//  <p>Description</p>
+// <div class="row">
+//  <div class="card {{modifier_class}}">
+//   <div class="container">
+//    <h1>Card</h1>
+//    <p>Description</p>
+//   </div>
+//  </div>
+//  <div class="card {{modifier_class}}">
+//   <div class="container">
+//    <h1>Card</h1>
+//    <p>Description</p>
+//   </div>
+//  </div>
+//  <div class="card {{modifier_class}}">
+//   <div class="container">
+//    <h1>Card</h1>
+//    <p>Description</p>
+//   </div>
+//  </div>
+//  <div class="card {{modifier_class}}">
+//   <div class="container">
+//    <h1>Card</h1>
+//    <p>Description</p>
+//   </div>
+//  </div>
 // </div>
 //
 // Styleguide 6.1.1
 
 .card {
-  width: 100%;
-  padding: 15px;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  // box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
-  h1 { font-size: 24px; }
-  h2 { font-size: 22px; }
-  h3 { font-size: 20px; }
-  h4 { font-size: 18px; }
-  h5 { font-size: 16px; }
-  h1, h2, h3, h4, h5 {
-    margin: 5px 0px 5px 0px;
-  }
-  p {
-    margin: 5px 0px 5px 0px;
+  .container {
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    // box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+    h1 { font-size: 24px; }
+    h2 { font-size: 22px; }
+    h3 { font-size: 20px; }
+    h4 { font-size: 18px; }
+    h5 { font-size: 16px; }
+    h1, h2, h3, h4, h5 {
+      margin: 5px 0px 5px 0px;
+    }
+    p {
+      margin: 5px 0px 5px 0px;
+    }
   }
 }
 
@@ -41,30 +67,32 @@
 //
 // Markup:
 // <div class="card {{modifier_class}}">
-//  <h1>Card</h1>
-//  <p>Description</p>
+//  <div class="container">
+//   <h1>Card</h1>
+//   <p>Description</p>
+//  </div>
 // </div>
 //
 // Styleguide 6.1.2
 
 .card {
-  &.card-danger {
+  &.card-danger .container {
     background-color: lighten(@brand-danger,15%);
     color: darken(@brand-danger,35%);
   }
-  &.card-success {
+  &.card-success .container {
     background-color: lighten(@brand-success,25%);
     color: darken(@brand-success,25%);
   }
-  &.card-primary {
+  &.card-primary .container {
     background-color: lighten(@brand-primary,25%);
     color: darken(@brand-primary,25%);
   }
-  &.card-info {
+  &.card-info .container {
     background-color: lighten(@brand-info,25%);
     color: darken(@brand-info,25%);
   }
-  &.card-warning {
+  &.card-warning .container {
     background-color: lighten(@brand-warning,25%);
     color: darken(@brand-warning,25%);
   }
