@@ -16,7 +16,7 @@ Bootstrap-temat och dokumentationen ligger för närvarande i mappen _styles_. N
     npm install
 
 
-## Anpassning av Bootstrap
+## Anpassning av stilguiden
 
 I mappen _custom_ skapar du egna regler utöver bootstraps egna. Öppna variables.less och testa att ändra på något.
 För att lägga till en fil i genereringen öppnar du filen _custom.less_ och lägger till
