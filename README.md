@@ -25,11 +25,13 @@ För att lägga till en fil i genereringen öppnar du filen _custom.less_ och l�
 
 ### Kod-riktlinjer
 
-När du lägger till en ny komponent eller en ny regel för en komponent så ska denna dokumenteras enligt KSS-metoden som går att läsa om [här](http://warpspire.com/kss/syntax/). Detta för att stilguiden ska kunna generera en vy över den nya komponenten/regeln.
+#### KSS
+
+När du lägger till en ny komponent eller en ny modifierare för en komponent så ska denna dokumenteras enligt KSS-syntaxen som går att läsa om [här](http://warpspire.com/kss/syntax/). Detta för att stilguiden ska kunna generera en vy över den nya komponenten/regeln.
 
 Kortfattat går det ut på att ange namn, beskrivning, modifierare samt önskad position i dokumentationen.
 
-Exempel:
+##### Exempel
 
 Här skapar jag 2 nya modifierare för klassen .card
 
@@ -67,10 +69,12 @@ Detta kommer att generera en vy likt denna:
 
 ![img](https://dl.dropboxusercontent.com/u/2316209/Screenshot%202015-06-03%2016.24.39.png)
 
+#### LESS-variabler
+
 LESS-variabler av mer global karaktär läggs med fördel till i _variables.less_ (såvida den inte redan finns representerad).
 Detta gör att anpassningsbarheten i projektet bibehålls och att strukturen hålls ren.
 
-Exempel:
+##### Exempel
 Jag vill redigera navbar-klassens border-width. Jag kollar i _variables.less_ om där redan finns en variabel att redigera. Eftersom det inte finns det så skapar jag en fil i custom-mappen som heter _navbar.less_, inkluderar den i _custom.less_
 
     @import 'navbar.less';
