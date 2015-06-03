@@ -16,7 +16,7 @@ Bootstrap-temat och dokumentationen ligger för närvarande i mappen _styles_. N
     npm install
 
 
-## Anpassning av Bootstrap
+## Anpassning av stilguiden
 
 I mappen _custom_ skapar du egna regler utöver bootstraps egna. Öppna variables.less och testa att ändra på något.
 För att lägga till en fil i genereringen öppnar du filen _custom.less_ och lägger till
@@ -25,9 +25,58 @@ För att lägga till en fil i genereringen öppnar du filen _custom.less_ och l�
 
 ### Kod-riktlinjer
 
-Om du lägger till en regel som inte redan finns reglerad i _variables.less_ så bör du ange den som en less-variabel och lägga till motsvarande variabel i _variables.less_. Detta gör att anpassningsbarheten i projektet bibehålls och att strukturen hålls ren.
+#### KSS
 
-Exempel:
+När du lägger till en ny komponent eller en ny modifierare för en komponent så ska denna dokumenteras enligt KSS-syntaxen som går att läsa om [här](http://warpspire.com/kss/syntax/). Detta för att stilguiden ska kunna generera en vy över den nya komponenten/regeln.
+
+Kortfattat går det ut på att ange namn, beskrivning, modifierare samt önskad position i dokumentationen.
+
+##### Exempel
+
+Här skapar jag 2 nya modifierare för klassen .card
+
+    .card {
+      &.card-danger {
+        background-color: lighten(@brand-danger,15%);
+        color: darken(@brand-danger,35%);
+      }
+      &.card-success {
+        background-color: lighten(@brand-success,25%);
+        color: darken(@brand-success,25%);
+      }
+    }
+    
+Sedan lägger jag följande kommentar ovanför koden
+
+    /*
+    Skinning of cards
+
+    Skins for different purposes
+    
+    .card-danger    - Card skin to use when we want to convey some kind of danger
+    .card-success   - Card skin to use when we want to convey some kind of success
+    
+    Markup:
+    <div class="card {{modifier_class}}">
+        <h1>Card</h1>
+        <p>Description</p>
+    </div>
+    
+    Styleguide 6.1.4
+    */
+
+Detta kommer att generera en vy likt denna:
+
+![img](https://dl.dropboxusercontent.com/u/2316209/Screenshot%202015-06-03%2016.24.39.png)
+
+#### LESS-variabler
+
+LESS-variabler av mer global karaktär läggs med fördel till i _variables.less_ (såvida den inte redan finns representerad). Är variabeln specifik för en komponent bör den läggas högst upp i samma fil som komponentens övriga regler.
+
+##### Exempel
+
+__Detta exempelavsnitt är inte aktuellt och bör uppdateras.__
+
 Jag vill redigera navbar-klassens border-width. Jag kollar i _variables.less_ om där redan finns en variabel att redigera. Eftersom det inte finns det så skapar jag en fil i custom-mappen som heter _navbar.less_, inkluderar den i _custom.less_
 
     @import 'navbar.less';
@@ -43,10 +92,6 @@ I _variables.less_ letar jag upp om det finns andra ställen där navbar-klassen
 >Om klassen inte har några andra variabler över huvud taget bör du skapa en ny sektion längst ner i filen där du kommenterar vilken klass det handlar om och lägger in variabeln.
 
 Du har nu gjort din anpassning och samtidigt sett till att variabeln finns tillgänglig för framtida anpassning.
-
-## Anpassning dokumentationen
-
-...
 
 ## Bygga stilmall och stilguide
 
