@@ -111,6 +111,6 @@ För att granska stilguiden lokalt behöver du köra
     
 Stilguiden går sedan att se på [http://localhost:8500/styleguide/](http://localhost:8500/styleguide/)
 
-## Användning av stilmallen
+## Användning av stilmallen i projekt
 
 Den byggda css-filen _kb-style.css_ hamnar i mappen _build_. Detta är filen du inkluderar i din tjänst.
