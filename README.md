@@ -5,15 +5,15 @@ Repot innehåller setup för anpassning av [Twitter Bootstrap](https://github.co
 
 ## Installation
 
-Ladda ner och installera [node.js](https://nodejs.org/download/).
+- Ladda ner och installera [node.js](https://nodejs.org/download/).
 
-Installera grunt-cli
+- Installera grunt-cli
 
-    npm install -g grunt-cli
+        npm install -g grunt-cli
 
-Bootstrap-temat och dokumentationen ligger för närvarande i mappen _styles_. Navigera dit och installera node-paketen
+- Navigera till mappen _styles_ och installera node-paketen
 
-    npm install
+        npm install
 
 
 ## Anpassning av stilguiden
