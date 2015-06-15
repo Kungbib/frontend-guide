@@ -1,12 +1,6 @@
 module.exports = function(grunt) {
 
-  grunt.loadNpmTasks('grunt-replace');
-  grunt.loadNpmTasks('grunt-kss');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-gh-pages');
+  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
   grunt.registerTask('default', ['build-all']);
   grunt.registerTask('build-all', ['less', 'replace', 'kss', 'copy']);
@@ -17,7 +11,7 @@ module.exports = function(grunt) {
     clean: ['build'],
     watch: {
       files: ["custom/**/*", "template/**/*"],
-      tasks: ['complete'],
+      tasks: ['build-all'],
       options: {
         nospawn: true,
         livereload: 35790
