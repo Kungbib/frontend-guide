@@ -4,13 +4,11 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     clean: ['build'],
     watch: {
-      styles: {
-        files: ["custom/**/*", "template/**/*"],
-        tasks: ['complete'],
-        options: {
-          nospawn: true,
-          livereload: 35790
-        }
+      files: ["custom/**/*", "template/**/*"],
+      tasks: ['complete'],
+      options: {
+        nospawn: true,
+        livereload: 35790
       }
     },
     less: {
@@ -51,6 +49,14 @@ module.exports = function(grunt) {
         ]
       }
     },
+    copy: {
+      main: {
+      files: [
+        // includes files within path 
+        {expand: true, src: ['examples/**'], dest: 'build/'},
+      ]
+      }
+    },
     'gh-pages': {
       options: {
         base: 'build',
@@ -62,12 +68,13 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-replace');
   grunt.loadNpmTasks('grunt-kss');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-gh-pages');
 
-  grunt.registerTask('complete', ['less', 'replace', 'kss']);
+  grunt.registerTask('complete', ['less', 'replace', 'kss', 'copy']);
   grunt.registerTask('default', ['complete']);
 
 };
