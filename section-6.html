@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Kungl. Bibliotekets Stilguide</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <link rel="stylesheet" href="public/kss.css" />
+    <link rel="stylesheet" href="/css/kb-style.css">
+
+    <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body id="kss-node">
+    <div class="kss-wrapper">
+      <div class="kss-sidebar">
+        <div class="kss-sidebar-inner">
+          <header class="kss-header">
+            <h1 class="kss-doc-title"><a href="./">KB Style guide</a></h1>
+          </header>
+          <nav class="kss-nav">
+            <ul class="kss-menu" data-kss-ref="6">
+              <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+              <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Logotypes</span></a></li>
+              <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">Accessability</span></a></li>
+              <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span class="kss-name">Variables</span></a></li>
+              <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span class="kss-name">Typography</span></a></li>
+              <li class="kss-menu-item"><a href="section-5.html"><span class="kss-ref">5</span><span class="kss-name">Buttons</span></a></li>
+              <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span class="kss-name">Containers</span></a></li>
+            </ul>
+            <ul class="kss-menu-child">
+              <li class="kss-menu-item"><a href="#section-6.1"><span class="kss-ref">6.1</span><span class="kss-name">Cards</span></a></li>
+              <li class="kss-menu-item"><a href="#section-6.1.1"><span class="kss-ref">6.1.1</span><span class="kss-name">Basic card</span></a></li>
+              <li class="kss-menu-item"><a href="#section-6.1.2"><span class="kss-ref">6.1.2</span><span class="kss-name">Skinning</span></a></li>
+              <li class="kss-menu-item"><a href="#section-6.1.3"><span class="kss-ref">6.1.3</span><span class="kss-name">Grid use</span></a></li>
+              <li class="kss-menu-item"><a href="#section-6.1.4"><span class="kss-ref">6.1.4</span><span class="kss-name">Cards with content</span></a></li>
+              <li class="kss-menu-item"><a href="#section-6.3"><span class="kss-ref">6.3</span><span class="kss-name">Modals</span></a></li>
+              <li class="kss-menu-item"><a href="#section-6.4"><span class="kss-ref">6.4</span><span class="kss-name">Wells</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="kss-content">
+        <article class="kss-article">
+          <section id="section-6" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">6</span> Containers</h1>
+          </section>
+          <section id="section-6.1" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">6.1</span> Cards</h1>
+          </section>
+          <section id="section-6.1.1" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">6.1.1</span> Basic card</h1>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="card [modifier class]">
+ <div class="container">
+  <h1>Card</h1>
+  <p>Description</p>
+ </div>
+</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;card [modifier class]&quot;&gt;
+ &lt;div class=&quot;container&quot;&gt;
+  &lt;h1&gt;Card&lt;/h1&gt;
+  &lt;p&gt;Description&lt;/p&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-6.1.2" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">6.1.2</span> Skinning</h1>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="card [modifier class]">
+ <div class="container">
+  <h1>Card</h1>
+  <p>Description</p>
+ </div>
+</div>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.card-primary</div>
+                  <div class="kss-modifier-description">
+                    Primary
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="card card-primary">
+ <div class="container">
+  <h1>Card</h1>
+  <p>Description</p>
+ </div>
+</div>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.card-info</div>
+                  <div class="kss-modifier-description">
+                    Info
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="card card-info">
+ <div class="container">
+  <h1>Card</h1>
+  <p>Description</p>
+ </div>
+</div>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.card-success</div>
+                  <div class="kss-modifier-description">
+                    Success
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="card card-success">
+ <div class="container">
+  <h1>Card</h1>
+  <p>Description</p>
+ </div>
+</div>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.card-warning</div>
+                  <div class="kss-modifier-description">
+                    Warning
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="card card-warning">
+ <div class="container">
+  <h1>Card</h1>
+  <p>Description</p>
+ </div>
+</div>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.card-danger</div>
+                  <div class="kss-modifier-description">
+                    Danger
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="card card-danger">
+ <div class="container">
+  <h1>Card</h1>
+  <p>Description</p>
+ </div>
+</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;card [modifier class]&quot;&gt;
+ &lt;div class=&quot;container&quot;&gt;
+  &lt;h1&gt;Card&lt;/h1&gt;
+  &lt;p&gt;Description&lt;/p&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-6.1.3" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">6.1.3</span> Grid use</h1>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="row">
+ <div class="card [modifier class]">
+  <div class="container">
+   <h1>Card</h1>
+   <p>Description</p>
+  </div>
+ </div>
+ <div class="card [modifier class]">
+  <div class="container">
+   <h1>Card</h1>
+   <p>Description</p>
+  </div>
+ </div>
+ <div class="card [modifier class]">
+  <div class="container">
+   <h1>Card</h1>
+   <p>Description</p>
+  </div>
+ </div>
+ <div class="card [modifier class]">
+  <div class="container">
+   <h1>Card</h1>
+   <p>Description</p>
+  </div>
+ </div>
+</div>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.col-md-6</div>
+                  <div class="kss-modifier-description">
+                    Example of grid use (6/12 cols)
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="row">
+ <div class="card col-md-6">
+  <div class="container">
+   <h1>Card</h1>
+   <p>Description</p>
+  </div>
+ </div>
+ <div class="card col-md-6">
+  <div class="container">
+   <h1>Card</h1>
+   <p>Description</p>
+  </div>
+ </div>
+ <div class="card col-md-6">
+  <div class="container">
+   <h1>Card</h1>
+   <p>Description</p>
+  </div>
+ </div>
+ <div class="card col-md-6">
+  <div class="container">
+   <h1>Card</h1>
+   <p>Description</p>
+  </div>
+ </div>
+</div>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.col-md-3</div>
+                  <div class="kss-modifier-description">
+                    Example of grid use (3/12 cols)
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="row">
+ <div class="card col-md-3">
+  <div class="container">
+   <h1>Card</h1>
+   <p>Description</p>
+  </div>
+ </div>
+ <div class="card col-md-3">
+  <div class="container">
+   <h1>Card</h1>
+   <p>Description</p>
+  </div>
+ </div>
+ <div class="card col-md-3">
+  <div class="container">
+   <h1>Card</h1>
+   <p>Description</p>
+  </div>
+ </div>
+ <div class="card col-md-3">
+  <div class="container">
+   <h1>Card</h1>
+   <p>Description</p>
+  </div>
+ </div>
+</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;row&quot;&gt;
+ &lt;div class=&quot;card [modifier class]&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+   &lt;h1&gt;Card&lt;/h1&gt;
+   &lt;p&gt;Description&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;card [modifier class]&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+   &lt;h1&gt;Card&lt;/h1&gt;
+   &lt;p&gt;Description&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;card [modifier class]&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+   &lt;h1&gt;Card&lt;/h1&gt;
+   &lt;p&gt;Description&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;card [modifier class]&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+   &lt;h1&gt;Card&lt;/h1&gt;
+   &lt;p&gt;Description&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-6.1.4" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">6.1.4</span> Cards with content</h1>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="card card-danger">
+ <div class="container">
+  <h1>Card</h1>
+  <p>Description</p>
+  <div class="button-container">
+   <button class="btn btn-link">Open</button>
+   <button class="btn btn-link">Dismiss</button>
+  </div>
+ </div>
+</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;card card-danger&quot;&gt;
+ &lt;div class=&quot;container&quot;&gt;
+  &lt;h1&gt;Card&lt;/h1&gt;
+  &lt;p&gt;Description&lt;/p&gt;
+  &lt;div class=&quot;button-container&quot;&gt;
+   &lt;button class=&quot;btn btn-link&quot;&gt;Open&lt;/button&gt;
+   &lt;button class=&quot;btn btn-link&quot;&gt;Dismiss&lt;/button&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-6.3" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">6.3</span> Modals</h1>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="modal fade [modifier class]">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.modal-info</div>
+                  <div class="kss-modifier-description">
+                    Info
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="modal fade modal-info">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.modal-danger</div>
+                  <div class="kss-modifier-description">
+                    Danger
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="modal fade modal-danger">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.modal-success</div>
+                  <div class="kss-modifier-description">
+                    Success
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="modal fade modal-success">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;modal fade [modifier class]&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal title&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;One fine body&amp;hellip;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-6.4" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">6.4</span> Wells</h1>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="well">Content</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;well&quot;&gt;Content&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+        </article>
+        <footer class="kss-footer">
+          <div>Last build: 2015-06-15 - 12:09:42 <br>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+      </div>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/jquery-1.9.1.min.js"></script>
+    <!--[if gt IE 8]><!-->
+    <script src="public/rainbow.min.js"></script>
+    <!--<![endif]-->
+    <script src="public/main.js"></script>
+  </body>
+</html>
