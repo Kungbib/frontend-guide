@@ -2,10 +2,10 @@ module.exports = function(grunt) {
 
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
-  grunt.registerTask('default', ['build-all']);
-  grunt.registerTask('build-all', ['less', 'replace', 'kss', 'copy']);
+  grunt.registerTask('default', ['build']);
+  grunt.registerTask('build', ['less', 'replace', 'kss', 'copy']);
   grunt.registerTask('serve', ['connect', 'watch']);
-  grunt.registerTask('deploy', ['build-all', 'gh-pages']);
+  grunt.registerTask('deploy', ['build', 'gh-pages']);
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
