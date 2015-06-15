@@ -5,7 +5,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['build']);
   grunt.registerTask('build', ['less', 'replace', 'kss', 'copy']);
   grunt.registerTask('serve', ['connect', 'watch']);
-  grunt.registerTask('deploy', ['build', 'gh-pages']);
+  grunt.registerTask('deploy', ['clean', 'build', 'gh-pages']);
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
