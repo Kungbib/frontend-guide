@@ -17,7 +17,7 @@ module.exports = function(grunt) {
     clean: ['build'],
     watch: {
       files: ["custom/**/*", "template/**/*"],
-      tasks: ['complete'],
+      tasks: ['default'],
       options: {
         nospawn: true,
         livereload: 35790
