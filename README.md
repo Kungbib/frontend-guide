@@ -95,21 +95,19 @@ Du har nu gjort din anpassning och samtidigt sett till att variabeln finns tillg
 
 ## Bygga stilmall och stilguide
 
-För att bygga din LESS till CSS samt uppdatera dokumentationen behöver du gå till styles-mappen och köra
+För att bygga din LESS till CSS samt uppdatera dokumentationen behöver du gå till styles-mappen och köra:
 
     $ grunt
 
-Vill du bygga automatiskt vid varje ändring kan du köra
+Vill du bygga automatiskt vid varje ändring kan du köra:
 
     $ grunt watch
 
-~~I mappen _preview_ finns _preview.html_ där du kan se hur dina ändringar påverkar stilmallen. Om du har en _grunt watch_ igång så uppdateras sidan automatiskt när du sparar ändringar i koden.~~
+För att granska stilguiden lokalt kan du starta watch och servering samtidigt med:
 
-För att granska stilguiden lokalt behöver du gå till "build" och köra
+    $ grunt serve
 
-    $ http-server . -p 8500
-
-Stilguiden går sedan att se på http://localhost:8500/
+Stilguiden går då att se på: http://localhost:8500/
 
 ## Användning av stilmallen i projekt
 
