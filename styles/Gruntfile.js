@@ -2,6 +2,7 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    clean: ['build'],
     watch: {
       styles: {
         files: ["custom/**/*", "template/**/*"],
@@ -20,18 +21,18 @@ module.exports = function(grunt) {
           optimization: 2
         },
         files: {
-          "build/kb-style.css": "custom/custom.less"
+          "build/css/kb-style.css": "custom/custom.less"
         }
       }
     },
     kss: {
       options: {
-        css: '/build/kb-style.css',
+        css: '/build/css/kb-style.css',
         template: 'template'
       },
       dist: {
           files: {
-            'styleguide': ['custom']
+            'build': ['custom']
           }
       }
     },
@@ -49,14 +50,22 @@ module.exports = function(grunt) {
           {expand: true, flatten: true, src: ['template/tmphtml/index.html'], dest: 'template/'}
         ]
       }
+    },
+    'gh-pages': {
+      options: {
+        base: 'build',
+        push: false
+      },
+      src: '**/*'
     }
   });
 
   grunt.loadNpmTasks('grunt-replace');
   grunt.loadNpmTasks('grunt-kss');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
-
+  grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('complete', ['less', 'replace', 'kss']);
   grunt.registerTask('default', ['complete']);

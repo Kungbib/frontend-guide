@@ -97,20 +97,20 @@ Du har nu gjort din anpassning och samtidigt sett till att variabeln finns tillg
 
 För att bygga din LESS till CSS samt uppdatera dokumentationen behöver du gå till styles-mappen och köra
 
-    grunt
-    
+    $ grunt
+
 Vill du bygga automatiskt vid varje ändring kan du köra
 
-    grunt watch
+    $ grunt watch
 
 ~~I mappen _preview_ finns _preview.html_ där du kan se hur dina ändringar påverkar stilmallen. Om du har en _grunt watch_ igång så uppdateras sidan automatiskt när du sparar ändringar i koden.~~
 
-För att granska stilguiden lokalt behöver du köra
+För att granska stilguiden lokalt behöver du gå till "build" och köra
 
-    http-server -p 8500
-    
-Stilguiden går sedan att se på [http://localhost:8500/styleguide/](http://localhost:8500/styleguide/)
+    $ http-server . -p 8500
+
+Stilguiden går sedan att se på http://localhost:8500/
 
 ## Användning av stilmallen i projekt
 
-Den byggda css-filen _kb-style.css_ hamnar i mappen _build_. Detta är filen du inkluderar i din tjänst.
+Den byggda css-filen _kb-style.css_ hamnar i mappen _build/css_. Detta är filen du inkluderar i din tjänst.
