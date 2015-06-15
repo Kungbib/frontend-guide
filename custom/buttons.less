@@ -3,21 +3,24 @@
 // Styleguide 5.
 
 .button-colors(@color) {
-	background-color: @color;
-	color: @white;
-	transition: 0.5s ease;
-	transition-property: color, background-color, border-color;
-	&:hover, &:focus {
-		background-color: transparent;
-		border-color: @color;
-		color: @color;
-	}
-	&:active {
-		transition: none;
-		background-color: fadeout(@color, 70%)
-	}
+	// background-color: @color;
+	// color: @white;
+	// transition: 0.5s ease;
+	// transition-property: color, background-color, border-color;
+	// &:hover, &:focus {
+	// 	background-color: transparent;
+	// 	border-color: @color;
+	// 	color: @color;
+	// }
+	// &:active {
+	// 	transition: none;
+	// 	background-color: fadeout(@color, 70%)
+	// }
 }
 
+.btn {
+	box-shadow: 0px 2px 0px 0px #666666;
+}
 
 // Sizes
 //
@@ -32,6 +35,21 @@
 //
 // Styleguide 5.1
 
+.btn {
+	border-radius: 40px;
+}
+.btn-lg {
+	border-radius: 50px;
+}
+.btn-sm {
+	border-radius: 30px;
+}
+.btn-xs {
+	border-radius: 20px;
+}
+.btn-block {
+	//
+}
 
 
 // Skinning
@@ -63,11 +81,6 @@
 .btn-warning {
 	.button-colors(@brand-warning);
 }
-
 .btn-danger {
 	.button-colors(@brand-danger);
-}
-
-.btn-holding {
-	.button-colors(@purple);
 }
