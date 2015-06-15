@@ -2,6 +2,22 @@
 //
 // Styleguide 5.
 
+.button-colors(@color) {
+	background-color: @color;
+	color: @white;
+	transition: 0.5s ease;
+	transition-property: color, background-color, border-color;
+	&:hover, &:focus {
+		background-color: transparent;
+		border-color: @color;
+		color: @color;
+	}
+	&:active {
+		transition: none;
+		background-color: fadeout(@color, 70%)
+	}
+}
+
 
 // Sizes
 //
@@ -16,7 +32,9 @@
 //
 // Styleguide 5.1
 
-// Skins
+
+
+// Skinning
 //
 // .btn-default    - Default
 // .btn-primary    - Primary
@@ -25,9 +43,31 @@
 // .btn-warning    - Warning
 // .btn-danger     - Danger
 // .btn-link			 - Link
+// .btn-holding		 - Holding
 //
 // Markup:
 // <button class="btn {{modifier_class}}">Button Element</button>
 // <button class="btn disabled {{modifier_class}}">Disabled</button>
 //
 // Styleguide 5.2
+
+.btn-primary {
+	.button-colors(@brand-primary);
+}
+.btn-info {
+	.button-colors(@brand-info);
+}
+.btn-success {
+	.button-colors(@brand-success);
+}
+.btn-warning {
+	.button-colors(@brand-warning);
+}
+
+.btn-danger {
+	.button-colors(@brand-danger);
+}
+
+.btn-holding {
+	.button-colors(@purple);
+}
