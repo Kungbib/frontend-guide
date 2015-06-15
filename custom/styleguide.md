@@ -4,13 +4,13 @@ Riktlinjer och exempel för användning vid gränssnittsutveckling hos KB.
 
 ## Filer
 
-* [Byggd CSS](/css/kb-style.css)
+* [Byggd CSS](./css/kb-style.css)
 
 ## Exempel-layouter
 
 Bootstrap-mallar som använder vår byggda stilmall.
 
-* [Jumbotron based](/examples/jumbotron.html)
+* [Jumbotron based](./examples/jumbotron.html)
 
 ## Relaterade länkar
 
