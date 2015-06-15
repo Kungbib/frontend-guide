@@ -4,11 +4,17 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['build-all']);
   grunt.registerTask('build-all', ['less', 'replace', 'kss', 'copy']);
+  grunt.registerTask('serve', ['connect', 'watch']);
   grunt.registerTask('deploy', ['build-all', 'gh-pages']);
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     clean: ['build'],
+    connect: {
+      all: {
+        options: {port: 8500, hostname: "0.0.0.0"}
+      }
+    },
     watch: {
       files: ["custom/**/*", "template/**/*"],
       tasks: ['build-all'],
