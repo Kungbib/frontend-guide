@@ -25,7 +25,7 @@ module.exports = function(grunt) {
     },
     kss: {
       options: {
-        css: '/build/css/kb-style.css',
+        css: '/css/kb-style.css',
         template: 'template'
       },
       dist: {
