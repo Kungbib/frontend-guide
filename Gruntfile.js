@@ -1,5 +1,17 @@
 module.exports = function(grunt) {
 
+  grunt.loadNpmTasks('grunt-replace');
+  grunt.loadNpmTasks('grunt-kss');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-gh-pages');
+
+  grunt.registerTask('default', ['build-all']);
+  grunt.registerTask('build-all', ['less', 'replace', 'kss', 'copy']);
+  grunt.registerTask('deploy', ['build-all', 'gh-pages']);
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     clean: ['build'],
@@ -25,7 +37,7 @@ module.exports = function(grunt) {
     },
     kss: {
       options: {
-        css: '/css/kb-style.css',
+        css: './css/kb-style.css',
         template: 'template'
       },
       dist: {
@@ -51,30 +63,17 @@ module.exports = function(grunt) {
     },
     copy: {
       main: {
-      files: [
-        // includes files within path 
-        {expand: true, src: ['examples/**'], dest: 'build/'},
-      ]
+        files: [
+          {expand: true, src: ['examples/**'], dest: 'build/'},
+        ]
       }
     },
     'gh-pages': {
       options: {
-        base: 'build',
-        push: false
+        base: 'build'
       },
       src: '**/*'
     }
   });
-
-  grunt.loadNpmTasks('grunt-replace');
-  grunt.loadNpmTasks('grunt-kss');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-gh-pages');
-
-  grunt.registerTask('complete', ['less', 'replace', 'kss', 'copy']);
-  grunt.registerTask('default', ['complete']);
 
 };
