@@ -1,4 +1,4 @@
-// Typography
+// Typografi
 //
 // Vi använder oss av [Cabin](https://www.google.com/fonts/specimen/Cabin) från Google Fonts. Vid behov av att använda ytterligare typsnitt ska dessa väljas med hänsyn till tillgänglighet och öppenhet.
 //
@@ -7,21 +7,21 @@
 @font-family-base: 'Cabin', sans-serif;
 
 /*
-Sizes
+Storlekar
 
-| Element | Storlek | 
-|---|---|
-| h1  | 36px
-| h2  | 30px
-| h3  | 24px
-| h4  | 20px
-| p 	| 14px
+| Element | Storlek | Vikt
+|---|---|---|
+| h1  | 36px | 700
+| h2  | 30px | 700
+| h3  | 24px | 700
+| h4  | 20px | 700
+| p 	| 14px | 500
 
 Styleguide 4.1
 */
 
 /*
-Headers
+Rubriker
 
 Different titles. All are using font-weight 700.
 
@@ -51,7 +51,7 @@ h4 {
 	font-size: 20px;
 }
 
-// Secondary text / Small text
+// Sekundär text / Liten text
 //
 // Implemented using &lt;small&gt; or .small
 //
@@ -70,74 +70,117 @@ h1, h2, h3, h4 {
 	}
 }
 
-// Inline text
-//
-// Styleguide 4.2
+/*
+Visuella modifierare
 
-// Highlighted
+Styleguide 4.2
+*/
+
+/*
+Skugga
+
+Markup:
+<h3 class="has-shadow">Text with shadow</h3>
+<p class="has-shadow">Text with shadow</p>
+
+Styleguide 4.2.1
+*/
+
+h1, h2, h3, h4, p {
+	&.has-shadow {
+		text-shadow: 1px 1px 5px #CCC;
+	}
+}
+
+/*
+Färg
+
+Markup:
+<h3 class="is-black">Black header without shadow</h3>
+<p class="is-black">Black text without shadow</p>
+<h3 class="has-shadow is-white">White header with shadow</h3>
+<p class="has-shadow is-white">White text with shadow</p>
+
+Styleguide 4.2.2
+*/
+
+h1, h2, h3, h4, p {
+	&.is-black {
+		color: @gray-base !important;
+	}
+	&.is-white {
+		color: @white !important;
+	}
+}
+
+// Brödtext
+//
+// Styleguide 4.3
+
+// Markerad
 //
 // Markup:
 // This text contains a <mark>highlighted</mark> word.
 //
-// Styleguide 4.2.1
+// Styleguide 4.3.1
 
-// Strikethrough / Deleted
+// Genomstruken / Borttagen
 //
 // Markup:
 // <p>This text contains a <s>strikethrough</s> word.</p>
 // <p>This text contains a <del>deleted</del> word.</p>
 //
-// Styleguide 4.2.2
+// Styleguide 4.3.2
 
-// Underline / Inserted
+// Understruken
 //
 // Markup:
 // <p>This text contains an <u>underlined</u> word.</p>
 // <p>This text contains an <ins>inserted</ins> word.</p>
 //
-// Styleguide 4.2.3
+// Styleguide 4.3.3
 
-// Bold text
+// Fet text
 //
 // Markup:
 // <p>This text contains an <strong>important</strong> word.</p>
 // <p>This text contains a <b>bold</b> word.</p>
 //
-// Styleguide 4.2.4
+// Styleguide 4.3.4
 
-// Italics
+// Kursiv / Betonad
 //
 // Markup:
 // <p>This text contains an <em>emphasized</em> word.</p>
 // <p>This text contains an <i>italicized</i> word.</p>
 //
-// Styleguide 4.2.5
+// Styleguide 4.3.5
 
-// Alignment
+// Horisontell justering
 //
 // Markup:
 // <p class="text-left">Left aligned</p>
 // <p class="text-center">Center aligned</p>
 // <p class="text-right">Right aligned</p>
 //
-// Styleguide 4.2.6
+// Styleguide 4.3.6
 
-// Transformation
+// Transformering
 //
 // Markup:
 // <p class="text-lowercase">Lowercased text</p>
 // <p class="text-uppercase">Uppercased text</p>
 // <p class="text-capitalize">capitalized text</p>
 //
-// Styleguide 4.2.7
+// Styleguide 4.3.7
 
-// Abbreviations / initialism
+// Förkortningar / initialer
 //
 // Markup:
 // <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
 // <p><abbr title="JavaScript Object Notation for Linked Data" class="initialism">JSON-LD</abbr> is pretty cool.</p>
 //
-// Styleguide 4.2.8
+// Styleguide 4.3.8
 
 
 
