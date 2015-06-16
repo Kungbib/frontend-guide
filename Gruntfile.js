@@ -65,6 +65,7 @@ module.exports = function(grunt) {
       main: {
         files: [
           {expand: true, src: ['examples/**'], dest: 'build/'},
+          {expand: true, src: ['assets/**'], dest: 'build/'},
         ]
       }
     },
