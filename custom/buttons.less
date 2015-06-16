@@ -7,14 +7,15 @@
 	// color: @white;
 	// transition: 0.5s ease;
 	// transition-property: color, background-color, border-color;
-	// &:hover, &:focus {
-	// 	background-color: transparent;
+	// &:hover {
+	// 	background-color: lighten(@color, 30%);
 	// 	border-color: @color;
 	// 	color: @color;
 	// }
 	// &:active {
 	// 	transition: none;
-	// 	background-color: fadeout(@color, 70%)
+	// 	border-color: darken(@color, 50%);
+	// 	background-color: fadeout(@color, 70%);
 	// }
 }
 
@@ -22,6 +23,10 @@
 	box-shadow: 0px 2px 0px 0px #666666;
 }
 .btn:active {
+	position: relative;
+	top: 2px;
+}
+button[disabled=disabled], button:disabled {
 	position: relative;
 	top: 2px;
 }
@@ -73,7 +78,7 @@ button:focus {outline:0 !important;}
 //
 // Markup:
 // <button class="btn {{modifier_class}}">Button Element</button>
-// <button class="btn disabled {{modifier_class}}">Disabled</button>
+// <button disabled class="btn {{modifier_class}}">Disabled</button>
 //
 // Styleguide 5.2
 
