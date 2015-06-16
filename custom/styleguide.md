@@ -1,4 +1,4 @@
-#Kungl. Bibliotekets Stilguide 
+#Kungl. bibliotekets Stilguide 
  
 Riktlinjer och exempel för användning vid gränssnittsutveckling hos KB.
 
