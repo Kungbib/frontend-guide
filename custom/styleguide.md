@@ -11,6 +11,7 @@ Riktlinjer och exempel för användning vid gränssnittsutveckling hos KB.
 Bootstrap-mallar som använder vår byggda stilmall.
 
 * [Jumbotron based](./examples/jumbotron.html)
+* [Elements](./examples/elements.html)
 
 ## Relaterade länkar
 
