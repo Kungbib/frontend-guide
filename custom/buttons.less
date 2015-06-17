@@ -1,28 +1,28 @@
 // Knappar
 //
+// Knappar används för att verkställa en handling. 
+//
+// Texten på en knapp ska vara kort och beskriva handlingen som knappen utför.  
+//
 // Styleguide 5.
 
 .button-colors(@color) {
-	// background-color: @color;
-	// color: @white;
-	// transition: 0.5s ease;
-	// transition-property: color, background-color, border-color;
-	// &:hover {
-	// 	background-color: lighten(@color, 30%);
-	// 	border-color: @color;
-	// 	color: @color;
-	// }
-	// &:active {
-	// 	transition: none;
-	// 	border-color: darken(@color, 50%);
-	// 	background-color: fadeout(@color, 70%);
-	// }
+	background-color: @color;
+	color: @white;
+	box-shadow: 0px 2px 0px 0px darken(@color, 20%);
+	&:hover {
+		background-color: lighten(@color, 10%);
+		border-color: lighten(@color, 10%);
+	}
+	&:active {
+		transition: none;
+	}
 }
 
 .btn {
-	box-shadow: 0px 2px 0px 0px #666666;
+	box-shadow: 0px 2px 0px 0px darken(#fff, 20%);
 	transition: 0.5s ease;
-	transition-property: position;
+	transition-property: color, background-color, border-color, position;
 }
 .btn:active {
 	position: relative;
@@ -51,16 +51,16 @@ button:focus {outline:0 !important;}
 // Styleguide 5.1
 
 .btn {
-	border-radius: 40px;
+	border-radius: 5px;
 }
 .btn-lg {
-	border-radius: 50px;
+	border-radius: 5px;
 }
 .btn-sm {
-	border-radius: 30px;
+	border-radius: 5px;
 }
 .btn-xs {
-	border-radius: 20px;
+	border-radius: 5px;
 }
 .btn-block {
 	//
