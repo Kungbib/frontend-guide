@@ -6,19 +6,6 @@
 //
 // Styleguide 5.
 
-.button-colors(@color) {
-	background-color: @color;
-	color: @white;
-	box-shadow: 0px 2px 0px 0px darken(@color, 20%);
-	&:hover {
-		background-color: lighten(@color, 10%);
-		border-color: lighten(@color, 10%);
-	}
-	&:active {
-		transition: none;
-	}
-}
-
 .btn {
 	box-shadow: 0px 2px 0px 0px darken(#fff, 20%);
 	transition: 0.5s ease;
@@ -76,13 +63,41 @@ button:focus {outline:0 !important;}
 // .btn-warning    - Warning
 // .btn-danger     - Danger
 // .btn-link			 - Link
-// .btn-holding		 - Holding
 //
 // Markup:
 // <button class="btn {{modifier_class}}">Button Element</button>
 // <button disabled class="btn {{modifier_class}}">Disabled</button>
 //
 // Styleguide 5.2
+
+.button-colors(@color) {
+	background-color: @color;
+	box-shadow: 0px 2px 0px 0px darken(@color, 20%);
+	&:hover {
+		background-color: darken(@color, 10%);
+		border-color: darken(@color, 10%);
+	}
+	& when (luma(@color) >= 60%) {
+	  color: darken(@color, 40%);
+	  &:hover {
+	  	color: darken(@color, 40%);
+	  }
+		&:active, &:focus {
+			background-color: @color;
+			color: darken(@color, 40%);
+		}
+	}
+	& when (luma(@color) < 60%) {
+	  color: lighten(@color, 40%);
+	  &:hover {
+	  	color: lighten(@color, 40%);
+	  }
+		&:active, &:focus {
+			background-color: @color;
+			color: lighten(@color, 40%);
+		}
+	}
+}
 
 .btn-primary {
 	.button-colors(@brand-primary);
