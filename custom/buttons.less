@@ -2,22 +2,26 @@
 //
 // Knappar används för att verkställa en handling. 
 //
-// Texten på en knapp ska vara kort och beskriva handlingen som knappen utför.  
+// Texten på en knapp ska vara kort och beskriva handlingen som knappen utför.
+//
+// Knappen måste ha någon typ av fokus-state för att följa tillgänglighetsstandarder.
 //
 // Styleguide 5.
 
 .btn {
+	position: relative;
+	top: -1px;
 	box-shadow: 0px 2px 0px 0px darken(#fff, 20%);
 	transition: 0.5s ease;
 	transition-property: color, background-color, border-color, position;
 }
 .btn:active {
 	position: relative;
-	top: 2px;
+	top: 1px;
 }
 button[disabled=disabled], button:disabled {
 	position: relative;
-	top: 2px;
+	top: 1px;
 }
 
 // Remember to use some other type of focus indicator when outline is removed.
