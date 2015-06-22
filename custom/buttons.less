@@ -16,6 +16,13 @@
 	transition: 0.5s ease;
 	transition-property: color, background-color, border-color, position;
 }
+.btn.btn-link {
+	box-shadow: none;
+	position: initial;
+	&:active {
+		position: initial;
+	}
+}
 .btn:active {
 	position: relative;
 	top: 1px;
@@ -83,13 +90,13 @@ button:focus {outline:0 !important;}
 		border-color: darken(@color, 10%);
 	}
 	& when (luma(@color) >= 60%) {
-	  color: darken(@color, 40%);
+	  color: darken(@color, 35%);
 	  &:hover {
-	  	color: darken(@color, 40%);
+	  	color: darken(@color, 35%);
 	  }
 		&:active, &:focus {
 			background-color: @color;
-			color: darken(@color, 40%);
+			color: darken(@color, 35%);
 		}
 	}
 	& when (luma(@color) < 60%) {
