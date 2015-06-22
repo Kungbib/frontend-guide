@@ -5,54 +5,88 @@ Använd KB’s färgpalett. Behöver tjänsten egna färger glöm ej att de mås
 
 Färgkontrasten för text och interaktiva element ska följa [W3C’s standard](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html).
 
-## Paletter
-Det finns fyra färgsviter att välja mellan: Glad, Dämpad, Pastell och Pastell dämpad. Färgsviterna är uppdelade i två familjer: Glad/Dämpad och Pastellfamiljen. Om man behöver fler färgkombinationer går det bra att kombinera färger inom respektive familj, men ej däremellan. Färger med stark accent används med fördel på mindre partier som ikoner eller citattecken, ej på stora ytor. Gråskalan går att kombinera med alla färgpaletter. Färger på knapparna är konstanta, se under *Knappar*.
-
 Styleguide 5.
 */
 
 /*
-Färger
+Paletter
 
-Demonstration av olika färger och deras variabelnamn.
+Det finns fyra färgsviter att välja mellan: Glad, Glad dämpad, Pastell och Pastell dämpad. Färgsviterna är uppdelade i två familjer: Gladfamiljen och Pastellfamiljen. Om man behöver fler färgkombinationer går det bra att kombinera färger inom respektive familj, men ej däremellan. Färger med stark accent används med fördel på mindre partier som ikoner eller citattecken, ej på stora ytor. Gråskalan går att kombinera med alla färgpaletter. Färger på knapparna är konstanta, se under *Knappar*.
 
-.is-happy-blue - @happy-blue
-.is-happy-magenta - @happy-magenta
-.is-happy-green - @happy-green
-.is-happy-desert - @happy-desert
-.is-happy-orange - @happy-orange
-.is-happy-muted-brown - @happy-muted-brown
-.is-happy-muted-desert - @happy-muted-desert
-.is-happy-muted-light-blue - @happy-muted-light-blue
-.is-happy-muted-magenta - @happy-muted-magenta
-.is-happy-muted-denim - @happy-muted-denim
-.is-pastel-denim - @pastel-denim
-.is-pastel-pink - @pastel-pink
-.is-pastel-light-blue - @pastel-light-blue
-.is-pastel-desert - @pastel-desert
-.is-pastel-desert-darker - @pastel-desert-darker
-.is-pastel-muted-purple - @pastel-muted-purple
-.is-pastel-muted-yellow - @pastel-muted-yellow
-.is-pastel-muted-pink - @pastel-muted-pink
-.is-pastel-muted-blue - @pastel-muted-blue
-.is-pastel-muted-denim - @pastel-muted-denim
-.is-white - @white
-.is-grey-lighter - @grey-lighter
-.is-grey-light - @grey-light
-.is-grey - @grey
-.is-grey-dark - @grey-dark
-.is-grey-darker - @grey-darker
+Styleguide 5.1.
+*/
+
+/*
+Palett: Glad
 
 Markup:
-<div class="color-box {{modifier_class}}"></div>
+<div class="color-box is-happy-blue"></div>
+<div class="color-box is-happy-magenta"></div>
+<div class="color-box is-happy-green"></div>
+<div class="color-box is-happy-desert"></div>
+<div class="color-box is-happy-orange"></div>
 
-Styleguide 5.1
+Styleguide 5.1.1
+*/
+
+/*
+Palett: Glad dämpad
+
+Markup:
+<div class="color-box is-happy-muted-brown"></div>
+<div class="color-box is-happy-muted-desert"></div>
+<div class="color-box is-happy-muted-light-blue"></div>
+<div class="color-box is-happy-muted-magenta"></div>
+<div class="color-box is-happy-muted-denim"></div>
+
+Styleguide 5.1.2
+*/
+
+/*
+Palett: Pastell
+
+Markup:
+<div class="color-box is-pastel-denim"></div>
+<div class="color-box is-pastel-pink"></div>
+<div class="color-box is-pastel-light-blue"></div>
+<div class="color-box is-pastel-desert"></div>
+<div class="color-box is-pastel-desert-darker"></div>
+
+Styleguide 5.1.3
+*/
+
+/*
+Palett: Pastell dämpad
+
+Markup:
+<div class="color-box is-pastel-muted-purple"></div>
+<div class="color-box is-pastel-muted-yellow"></div>
+<div class="color-box is-pastel-muted-pink"></div>
+<div class="color-box is-pastel-muted-blue"></div>
+<div class="color-box is-pastel-muted-denim"></div>
+
+Styleguide 5.1.4
+*/
+
+/*
+Palett: Gråskala
+
+Markup:
+<div class="color-box is-white"></div>
+<div class="color-box is-grey-lighter"></div>
+<div class="color-box is-grey-light"></div>
+<div class="color-box is-grey"></div>
+<div class="color-box is-grey-dark"></div>
+<div class="color-box is-grey-darker"></div>
+
+Styleguide 5.1.5
 */
 
 .color-box {
-	width: 150px;
+	display: inline-block;
+	width: 120px;
 	height: 60px;
-	border: 1px solid #ccc;
+	border: 1px solid @grey-dark;
 }
 
 // Glad
