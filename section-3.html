@@ -24,14 +24,20 @@
           <nav class="kss-nav">
             <ul class="kss-menu" data-kss-ref="3">
               <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
-              <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Logotyper</span></a></li>
-              <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">Tillgänglighet och riktlinjer</span></a></li>
-              <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span class="kss-name">Variabler</span></a></li>
+              <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Tillgänglighet och riktlinjer</span></a></li>
+              <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">Layout</span></a></li>
+              <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span class="kss-name">Sidhuvud/Sidfot</span></a></li>
               <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span class="kss-name">Typografi</span></a></li>
-              <li class="kss-menu-item"><a href="section-5.html"><span class="kss-ref">5</span><span class="kss-name">Knappar</span></a></li>
-              <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span class="kss-name">Behållare</span></a></li>
+              <li class="kss-menu-item"><a href="section-5.html"><span class="kss-ref">5</span><span class="kss-name">Färg</span></a></li>
+              <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span class="kss-name">Bilder</span></a></li>
+              <li class="kss-menu-item"><a href="section-7.html"><span class="kss-ref">7</span><span class="kss-name">Formulär</span></a></li>
+              <li class="kss-menu-item"><a href="section-8.html"><span class="kss-ref">8</span><span class="kss-name">Knappar</span></a></li>
+              <li class="kss-menu-item"><a href="section-9.html"><span class="kss-ref">9</span><span class="kss-name">Data</span></a></li>
             </ul>
             <ul class="kss-menu-child">
+              <li class="kss-menu-item"><a href="#section-3.1"><span class="kss-ref">3.1</span><span class="kss-name">Navigation bars</span></a></li>
+              <li class="kss-menu-item"><a href="#section-3.2"><span class="kss-ref">3.2</span><span class="kss-name">Logotyper</span></a></li>
+              <li class="kss-menu-item"><a href="#section-3.3"><span class="kss-ref">3.3</span><span class="kss-name">Footer</span></a></li>
             </ul>
           </nav>
         </div>
@@ -39,15 +45,243 @@
       <div class="kss-content">
         <article class="kss-article">
           <section id="section-3" class="kss-section kss-depth-1">
-            <h1 class="kss-title"><span class="kss-ref">3</span> Variabler</h1>
+            <h1 class="kss-title"><span class="kss-ref">3</span> Sidhuvud/Sidfot</h1>
+          </section>
+          <section id="section-3.1" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">3.1</span> Navigation bars</h1>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="navbar">
+	<div class="container">
+	  <div class="navbar-header">
+	    <a class="navbar-brand navbar-logo" href="#"><img src="../assets/kb_logo_black.svg" /></a>
+	    <a class="navbar-brand" href="#">Projektnamn</a>
+	  </div>
+	  <div id="navbar" class="navbar-collapse collapse">
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="#">Home</a></li>
+	      <li><a href="#about">About</a></li>
+	      <li><a href="#contact">Contact</a></li>
+	      <li class="dropdown">
+	        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+	      </li>
+	    </ul>
+	  </div>
+	</div>
+</div>
+<br>
+<div class="navbar navbar-inverse">
+	<div class="container">
+	  <div class="navbar-header">
+	    <a class="navbar-brand navbar-logo" href="#"><img src="../assets/kb_logo_white.svg" /></a>
+	    <a class="navbar-brand" href="#">Projektnamn</a>
+	  </div>
+	  <div id="navbar" class="navbar-collapse collapse">
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="#">Home</a></li>
+	      <li><a href="#about">About</a></li>
+	      <li><a href="#contact">Contact</a></li>
+	      <li class="dropdown">
+	        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+	      </li>
+	    </ul>
+	  </div>
+	</div>
+</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;navbar&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+	  &lt;div class=&quot;navbar-header&quot;&gt;
+	    &lt;a class=&quot;navbar-brand navbar-logo&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;../assets/kb_logo_black.svg&quot; /&gt;&lt;/a&gt;
+	    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Projektnamn&lt;/a&gt;
+	  &lt;/div&gt;
+	  &lt;div id=&quot;navbar&quot; class=&quot;navbar-collapse collapse&quot;&gt;
+	    &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+	      &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+	      &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+	      &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+	      &lt;li class=&quot;dropdown&quot;&gt;
+	        &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+	      &lt;/li&gt;
+	    &lt;/ul&gt;
+	  &lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class=&quot;navbar navbar-inverse&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+	  &lt;div class=&quot;navbar-header&quot;&gt;
+	    &lt;a class=&quot;navbar-brand navbar-logo&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;../assets/kb_logo_white.svg&quot; /&gt;&lt;/a&gt;
+	    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Projektnamn&lt;/a&gt;
+	  &lt;/div&gt;
+	  &lt;div id=&quot;navbar&quot; class=&quot;navbar-collapse collapse&quot;&gt;
+	    &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+	      &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+	      &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+	      &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+	      &lt;li class=&quot;dropdown&quot;&gt;
+	        &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+	      &lt;/li&gt;
+	    &lt;/ul&gt;
+	  &lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-3.2" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">3.2</span> Logotyper</h1>
             <div class="kss-description">
-              <p>List of variables used in the style guide</p>
+              <p>KBs Logotyp i SVG-format.</p>
+<h2 id="filer">Filer</h2>
+<ul>
+<li><a href="./assets/kb_logo_black.svg">KB Logo svart</a></li>
+<li><a href="./assets/kb_logo_white.svg">KB Logo vit</a></li>
+<li><a href="./assets/kb_text_black.svg">KB Text svart</a></li>
+<li><a href="./assets/kb_text_white.svg">KB Text vit</a></li>
+</ul>
 
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <img src="./assets/kb_logo_black.svg" class="[modifier class]" />
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.logo-small</div>
+                  <div class="kss-modifier-description">
+                    Liten logga (50px)
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <img src="./assets/kb_logo_black.svg" class="logo-small" />
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.logo-medium</div>
+                  <div class="kss-modifier-description">
+                    Mellan logga (100px)
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <img src="./assets/kb_logo_black.svg" class="logo-medium" />
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.logo-large</div>
+                  <div class="kss-modifier-description">
+                    Stor logga (150px)
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <img src="./assets/kb_logo_black.svg" class="logo-large" />
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;img src=&quot;./assets/kb_logo_black.svg&quot; class=&quot;[modifier class]&quot; /&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-3.3" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">3.3</span> Footer</h1>
+            <div class="kss-description">
+              <p>En sidfot är en sidfot är en sidfot.</p>
+<p>Använder .footer-container för att stapla flera footers inuti footer-tagen.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                      <footer class="footer">
+      <div class="footer-container is-grey-lighter">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h1>List 1</h1>
+              <ul class="list-unstyled">
+                <li>Lorem ipsum</li>
+                <li>Dorem</li>
+                <li>Ipsum santi laninum</li>
+                <li>Verti absolutom</li>
+                <li>Neo geosatium</li>
+                <li>Verti absolutom</li>
+                <li>Neo geosatium</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h1>List 2</h1>
+              <ul class="list-unstyled">
+                <li>Lorem ipsum</li>
+                <li>Dorem</li>
+                <li>Ipsum santi laninum</li>
+                <li>Verti absolutom</li>
+                <li>Neo geosatium</li>
+                <li>Verti absolutom</li>
+                <li>Neo geosatium</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-container is-happy-green">
+        <div class="container">
+          <p class="text-muted"><img src="../assets/kb_logo_white.svg" class="logo-medium" /></p>
+        </div>
+      </div>
+    </footer>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">    &lt;footer class=&quot;footer&quot;&gt;
+      &lt;div class=&quot;footer-container is-grey-lighter&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+          &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-6&quot;&gt;
+              &lt;h1&gt;List 1&lt;/h1&gt;
+              &lt;ul class=&quot;list-unstyled&quot;&gt;
+                &lt;li&gt;Lorem ipsum&lt;/li&gt;
+                &lt;li&gt;Dorem&lt;/li&gt;
+                &lt;li&gt;Ipsum santi laninum&lt;/li&gt;
+                &lt;li&gt;Verti absolutom&lt;/li&gt;
+                &lt;li&gt;Neo geosatium&lt;/li&gt;
+                &lt;li&gt;Verti absolutom&lt;/li&gt;
+                &lt;li&gt;Neo geosatium&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-md-6&quot;&gt;
+              &lt;h1&gt;List 2&lt;/h1&gt;
+              &lt;ul class=&quot;list-unstyled&quot;&gt;
+                &lt;li&gt;Lorem ipsum&lt;/li&gt;
+                &lt;li&gt;Dorem&lt;/li&gt;
+                &lt;li&gt;Ipsum santi laninum&lt;/li&gt;
+                &lt;li&gt;Verti absolutom&lt;/li&gt;
+                &lt;li&gt;Neo geosatium&lt;/li&gt;
+                &lt;li&gt;Verti absolutom&lt;/li&gt;
+                &lt;li&gt;Neo geosatium&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;footer-container is-happy-green&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+          &lt;p class=&quot;text-muted&quot;&gt;&lt;img src=&quot;../assets/kb_logo_white.svg&quot; class=&quot;logo-medium&quot; /&gt;&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;</code></pre>
+              </div>
             </div>
           </section>
         </article>
         <footer class="kss-footer">
-          <div>Last build: 2015-06-22 - 11:07:03 <br>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+          <div>Last build: 2015-06-22 - 15:18:52 <br>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
         </footer>
       </div>
     </div>
