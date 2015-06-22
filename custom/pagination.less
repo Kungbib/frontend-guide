@@ -1,0 +1,43 @@
+/*
+Paginering
+
+Markup:
+<nav>
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+Styleguide 2.4.1
+*/
+
+.pagination>li>a {
+	border: 0px;
+	border-radius: 30px !important;
+	margin-left: 0px;
+	font-size: 18px;
+	line-height: 1;
+	color: @happy-muted-light-blue;
+	&:hover, &:active {
+		color: @happy-muted-light-blue;
+	}
+}
+
+li a[aria-label="Next"], li a[aria-label="Previous"] {
+	background-color: @happy-muted-light-blue;
+	color: @white;
+}
