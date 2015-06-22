@@ -1,4 +1,51 @@
-// Footer
+/*
+Footer
+
+En sidfot är en sidfot är en sidfot.
+
+Använder .footer-container för att stapla flera footers inuti footer-tagen.
+
+Markup:
+    <footer class="footer">
+      <div class="footer-container is-grey-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h1>List 1</h1>
+              <ul class="list-unstyled">
+                <li>Lorem ipsum</li>
+                <li>Dorem</li>
+                <li>Ipsum santi laninum</li>
+                <li>Verti absolutom</li>
+                <li>Neo geosatium</li>
+                <li>Verti absolutom</li>
+                <li>Neo geosatium</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h1>List 2</h1>
+              <ul class="list-unstyled">
+                <li>Lorem ipsum</li>
+                <li>Dorem</li>
+                <li>Ipsum santi laninum</li>
+                <li>Verti absolutom</li>
+                <li>Neo geosatium</li>
+                <li>Verti absolutom</li>
+                <li>Neo geosatium</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-container is-green-pale">
+        <div class="container">
+          <p class="text-muted"><img src="../assets/kb_logo_white.svg" class="logo-medium" /></p>
+        </div>
+      </div>
+    </footer>
+
+Styleguide 6.2
+*/
 .footer {
   &>div:first-of-type {
     margin-top: 50px;
@@ -10,6 +57,21 @@
   }
 }
 
+.footer h1 {
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: @grey;
+}
+.footer h2 {
+  font-size: 14px;
+  font-weight: 700;
+}
+.footer div {
+  vertical-align: middle;
+}
 
 // Jumbotron
 .jumbotron {
