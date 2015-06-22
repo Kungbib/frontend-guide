@@ -1,41 +1,129 @@
 /*
 Färg
 
-List of variables used in the style guide
-
 Styleguide 5.
 */
 
 /*
 Färger
-?
+
+Demonstration av olika färger och deras variabelnamn.
+
+.is-happy-blue - @happy-blue
+.is-happy-magenta - @happy-magenta
+.is-happy-green - @happy-green
+.is-happy-desert - @happy-desert
+.is-happy-orange - @happy-orange
+.is-happy-muted-brown - @happy-muted-brown
+.is-happy-muted-desert - @happy-muted-desert
+.is-happy-muted-light-blue - @happy-muted-light-blue
+.is-happy-muted-magenta - @happy-muted-magenta
+.is-happy-muted-denim - @happy-muted-denim
+.is-pastel-denim - @pastel-denim
+.is-pastel-pink - @pastel-pink
+.is-pastel-light-blue - @pastel-light-blue
+.is-pastel-desert - @pastel-desert
+.is-pastel-desert-darker - @pastel-desert-darker
+.is-pastel-muted-purple - @pastel-muted-purple
+.is-pastel-muted-yellow - @pastel-muted-yellow
+.is-pastel-muted-pink - @pastel-muted-pink
+.is-pastel-muted-blue - @pastel-muted-blue
+.is-pastel-muted-denim - @pastel-muted-denim
+.is-white - @white
+.is-grey-lighter - @grey-lighter
+.is-grey-light - @grey-light
+.is-grey - @grey
+.is-grey-dark - @grey-dark
+.is-grey-darker - @grey-darker
+
+Markup:
+<div class="color-box {{modifier_class}}"></div>
+
 Styleguide 5.1
 */
 
-@blue-pale: #72B9DE;
-@blue: #37BAD4;
-@green-pale: #4CB6AC;
-@green: #34EAB4;
-@yellow: #FBED18;
-@orange: #FE8A65;
-@orange-pale: #F9897D;
-@red: #F84F4C;
+.color-box {
+	width: 150px;
+	height: 60px;
+	border: 1px solid #ccc;
+}
 
+// Glad
+@happy-blue: #5DC4ED;
+@happy-magenta: #2EB5B6;
+@happy-green: #34EAB4;
+@happy-desert: #FED481;
+@happy-orange: #FD8C41;
+// Glad dämpad
+@happy-muted-brown: #A39789;
+@happy-muted-desert: #EBE5BA;
+@happy-muted-light-blue: #BACAD4;
+@happy-muted-magenta: #72A8AD;
+@happy-muted-denim: #547E91;
+// Pastell
+@pastel-denim: #88B4C9;
+@pastel-pink: #F5B3D9;
+@pastel-light-blue: #AEEAF2;
+@pastel-desert: #CFD4AD;
+@pastel-desert-darker: #CCBFA8;
+// Pastell dämpad
+@pastel-muted-purple: #A5929C;
+@pastel-muted-yellow: #F9F0B4;
+@pastel-muted-pink: #F297C8;
+@pastel-muted-blue: #61B5BF;
+@pastel-muted-denim: #6C84A5;
+// Gråskala
 @white: #ffffff;
-
-@grey-dark: #4A5961;
-@grey: #90A4AD;
-@grey-base: #000000;
-@grey-light: #E5E5E5;
-@grey-lighter: #FAFAFA;
+@grey-lighter: #E0E6E9;
+@grey-light: #C4C7CA;
+@grey: #949A9E;
+@grey-dark: #6F767B;
+@grey-darker: #595D61;
+// Buttons
+@btn-green: #52BD34;
+@btn-green-hover: #52CB31;
+@btn-blue: #86B5CB;
+@btn-blue-hover: #9ACAE1;
+@btn-yellow: #FBED18;
+@btn-yellow-hover: #FFF77A;
+@btn-red: #F9897D;
+@btn-red-hover: #FF9795;
 
 
 // Color connections
-@brand-primary: @blue;
-@brand-info: @blue-pale;
-@brand-success: @green;
-@brand-warning: @yellow;
-@brand-danger: @red;
-@brand-link: @blue;
+@brand-primary: @happy-blue;
+@brand-info: @btn-blue;
+@brand-success: @btn-green;
+@brand-warning: @btn-yellow;
+@brand-danger: @btn-red;
+@brand-link: @happy-blue;
 
 @jumbotron-bg: @brand-primary;
+
+// Bg-Colors
+.is-happy-blue { background-color: @happy-blue; }
+.is-happy-magenta { background-color: @happy-magenta; }
+.is-happy-green { background-color: @happy-green; }
+.is-happy-desert { background-color: @happy-desert; }
+.is-happy-orange { background-color: @happy-orange; }
+.is-happy-muted-brown { background-color: @happy-muted-brown; }
+.is-happy-muted-desert { background-color: @happy-muted-desert; }
+.is-happy-muted-light-blue { background-color: @happy-muted-light-blue; }
+.is-happy-muted-magenta { background-color: @happy-muted-magenta; }
+.is-happy-muted-denim { background-color: @happy-muted-denim; }
+.is-pastel-denim { background-color: @pastel-denim; }
+.is-pastel-pink { background-color: @pastel-pink; }
+.is-pastel-light-blue { background-color: @pastel-light-blue; }
+.is-pastel-desert { background-color: @pastel-desert; }
+.is-pastel-desert-darker { background-color: @pastel-desert-darker; }
+.is-pastel-muted-purple { background-color: @pastel-muted-purple; }
+.is-pastel-muted-yellow { background-color: @pastel-muted-yellow; }
+.is-pastel-muted-pink { background-color: @pastel-muted-pink; }
+.is-pastel-muted-blue { background-color: @pastel-muted-blue; }
+.is-pastel-muted-denim { background-color: @pastel-muted-denim; }
+.is-white { background-color: @white; }
+.is-grey-lighter { background-color: @grey-lighter; }
+.is-grey-light { background-color: @grey-light; }
+.is-grey { background-color: @grey; }
+.is-grey-dark { background-color: @grey-dark; }
+.is-grey-darker { background-color: @grey-darker; }
