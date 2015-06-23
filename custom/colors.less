@@ -20,11 +20,11 @@ Styleguide 5.1.
 Palett: Glad
 
 Markup:
-<div class="color-box is-happy-blue"></div>
-<div class="color-box is-happy-magenta"></div>
-<div class="color-box is-happy-green"></div>
-<div class="color-box is-happy-desert"></div>
-<div class="color-box is-happy-orange"></div>
+<div class="color-box bg-happy-blue"></div>
+<div class="color-box bg-happy-magenta"></div>
+<div class="color-box bg-happy-green"></div>
+<div class="color-box bg-happy-desert"></div>
+<div class="color-box bg-happy-orange"></div>
 
 Styleguide 5.1.1
 */
@@ -33,11 +33,11 @@ Styleguide 5.1.1
 Palett: Glad dämpad
 
 Markup:
-<div class="color-box is-happy-muted-brown"></div>
-<div class="color-box is-happy-muted-desert"></div>
-<div class="color-box is-happy-muted-light-blue"></div>
-<div class="color-box is-happy-muted-magenta"></div>
-<div class="color-box is-happy-muted-denim"></div>
+<div class="color-box bg-happy-muted-brown"></div>
+<div class="color-box bg-happy-muted-desert"></div>
+<div class="color-box bg-happy-muted-light-blue"></div>
+<div class="color-box bg-happy-muted-magenta"></div>
+<div class="color-box bg-happy-muted-denim"></div>
 
 Styleguide 5.1.2
 */
@@ -46,11 +46,11 @@ Styleguide 5.1.2
 Palett: Pastell
 
 Markup:
-<div class="color-box is-pastel-denim"></div>
-<div class="color-box is-pastel-pink"></div>
-<div class="color-box is-pastel-light-blue"></div>
-<div class="color-box is-pastel-desert"></div>
-<div class="color-box is-pastel-desert-darker"></div>
+<div class="color-box bg-pastel-denim"></div>
+<div class="color-box bg-pastel-pink"></div>
+<div class="color-box bg-pastel-light-blue"></div>
+<div class="color-box bg-pastel-desert"></div>
+<div class="color-box bg-pastel-desert-darker"></div>
 
 Styleguide 5.1.3
 */
@@ -59,11 +59,11 @@ Styleguide 5.1.3
 Palett: Pastell dämpad
 
 Markup:
-<div class="color-box is-pastel-muted-purple"></div>
-<div class="color-box is-pastel-muted-yellow"></div>
-<div class="color-box is-pastel-muted-pink"></div>
-<div class="color-box is-pastel-muted-blue"></div>
-<div class="color-box is-pastel-muted-denim"></div>
+<div class="color-box bg-pastel-muted-purple"></div>
+<div class="color-box bg-pastel-muted-yellow"></div>
+<div class="color-box bg-pastel-muted-pink"></div>
+<div class="color-box bg-pastel-muted-blue"></div>
+<div class="color-box bg-pastel-muted-denim"></div>
 
 Styleguide 5.1.4
 */
@@ -72,12 +72,12 @@ Styleguide 5.1.4
 Palett: Gråskala
 
 Markup:
-<div class="color-box is-white subtleborder"></div>
-<div class="color-box is-grey-lighter"></div>
-<div class="color-box is-grey-light"></div>
-<div class="color-box is-grey"></div>
-<div class="color-box is-grey-dark"></div>
-<div class="color-box is-grey-darker"></div>
+<div class="color-box bg-white subtleborder"></div>
+<div class="color-box bg-grey-lighter"></div>
+<div class="color-box bg-grey-light"></div>
+<div class="color-box bg-grey"></div>
+<div class="color-box bg-grey-dark"></div>
+<div class="color-box bg-grey-darker"></div>
 
 Styleguide 5.1.5
 */
@@ -123,6 +123,7 @@ Styleguide 5.1.5
 @grey: #949A9E;
 @grey-dark: #6F767B;
 @grey-darker: #595D61;
+@black: #333;
 // Buttons
 @btn-green: #52BD34;
 @btn-green-hover: #52CB31;
@@ -145,32 +146,71 @@ Styleguide 5.1.5
 @jumbotron-bg: @brand-primary;
 
 // Bg-Colors
-.is-happy-blue { background-color: @happy-blue; }
-.is-happy-magenta { background-color: @happy-magenta; }
-.is-happy-green { background-color: @happy-green; }
-.is-happy-desert { background-color: @happy-desert; }
-.is-happy-orange { background-color: @happy-orange; }
-.is-happy-muted-brown { background-color: @happy-muted-brown; }
-.is-happy-muted-desert { background-color: @happy-muted-desert; }
-.is-happy-muted-light-blue { background-color: @happy-muted-light-blue; }
-.is-happy-muted-magenta { background-color: @happy-muted-magenta; }
-.is-happy-muted-denim { background-color: @happy-muted-denim; }
-.is-pastel-denim { background-color: @pastel-denim; }
-.is-pastel-pink { background-color: @pastel-pink; }
-.is-pastel-light-blue { background-color: @pastel-light-blue; }
-.is-pastel-desert { background-color: @pastel-desert; }
-.is-pastel-desert-darker { background-color: @pastel-desert-darker; }
-.is-pastel-muted-purple { background-color: @pastel-muted-purple; }
-.is-pastel-muted-yellow { background-color: @pastel-muted-yellow; }
-.is-pastel-muted-pink { background-color: @pastel-muted-pink; }
-.is-pastel-muted-blue { background-color: @pastel-muted-blue; }
-.is-pastel-muted-denim { background-color: @pastel-muted-denim; }
-.is-white { background-color: @white; }
-.is-grey-lighter { background-color: @grey-lighter; }
-.is-grey-light { background-color: @grey-light; }
-.is-grey { background-color: @grey; }
-.is-grey-dark { background-color: @grey-dark; }
-.is-grey-darker { background-color: @grey-darker; }
+.bg-happy-blue { background-color: @happy-blue; }
+.bg-happy-magenta { background-color: @happy-magenta; }
+.bg-happy-green { background-color: @happy-green; }
+.bg-happy-desert { background-color: @happy-desert; }
+.bg-happy-orange { background-color: @happy-orange; }
+.bg-happy-muted-brown { background-color: @happy-muted-brown; }
+.bg-happy-muted-desert { background-color: @happy-muted-desert; }
+.bg-happy-muted-light-blue { background-color: @happy-muted-light-blue; }
+.bg-happy-muted-magenta { background-color: @happy-muted-magenta; }
+.bg-happy-muted-denim { background-color: @happy-muted-denim; }
+.bg-pastel-denim { background-color: @pastel-denim; }
+.bg-pastel-pink { background-color: @pastel-pink; }
+.bg-pastel-light-blue { background-color: @pastel-light-blue; }
+.bg-pastel-desert { background-color: @pastel-desert; }
+.bg-pastel-desert-darker { background-color: @pastel-desert-darker; }
+.bg-pastel-muted-purple { background-color: @pastel-muted-purple; }
+.bg-pastel-muted-yellow { background-color: @pastel-muted-yellow; }
+.bg-pastel-muted-pink { background-color: @pastel-muted-pink; }
+.bg-pastel-muted-blue { background-color: @pastel-muted-blue; }
+.bg-pastel-muted-denim { background-color: @pastel-muted-denim; }
+.bg-white { background-color: @white; }
+.bg-grey-lighter { background-color: @grey-lighter; }
+.bg-grey-light { background-color: @grey-light; }
+.bg-grey { background-color: @grey; }
+.bg-grey-dark { background-color: @grey-dark; }
+.bg-grey-darker { background-color: @grey-darker; }
+.bg-black { background-color: @black; }
+
+// Text Colors
+.forced-text-color(@color) {
+	color: @color;
+	a {
+		color: @color;
+		&:hover {
+			color: lighten(@color, 10%);
+		}
+	}
+}
+.text-happy-blue { .forced-text-color(@happy-blue); }
+.text-happy-magenta { .forced-text-color(@happy-magenta); }
+.text-happy-green { .forced-text-color(@happy-green); }
+.text-happy-desert { .forced-text-color(@happy-desert); }
+.text-happy-orange { .forced-text-color(@happy-orange); }
+.text-happy-muted-brown { .forced-text-color(@happy-muted-brown); }
+.text-happy-muted-desert { .forced-text-color(@happy-muted-desert); }
+.text-happy-muted-light-blue { .forced-text-color(@happy-muted-light-blue); }
+.text-happy-muted-magenta { .forced-text-color(@happy-muted-magenta); }
+.text-happy-muted-denim { .forced-text-color(@happy-muted-denim); }
+.text-pastel-denim { .forced-text-color(@pastel-denim); }
+.text-pastel-pink { .forced-text-color(@pastel-pink); }
+.text-pastel-light-blue { .forced-text-color(@pastel-light-blue); }
+.text-pastel-desert { .forced-text-color(@pastel-desert); }
+.text-pastel-desert-darker { .forced-text-color(@pastel-desert-darker); }
+.text-pastel-muted-purple { .forced-text-color(@pastel-muted-purple); }
+.text-pastel-muted-yellow { .forced-text-color(@pastel-muted-yellow); }
+.text-pastel-muted-pink { .forced-text-color(@pastel-muted-pink); }
+.text-pastel-muted-blue { .forced-text-color(@pastel-muted-blue); }
+.text-pastel-muted-denim { .forced-text-color(@pastel-muted-denim); }
+.text-white { .forced-text-color(@white); }
+.text-grey-lighter { .forced-text-color(@grey-lighter); }
+.text-grey-light { .forced-text-color(@grey-light); }
+.text-grey { .forced-text-color(@grey); }
+.text-grey-dark { .forced-text-color(@grey-dark); }
+.text-grey-darker { .forced-text-color(@grey-darker); }
+.text-black { .forced-text-color(@black); }
 
 /*
 Mönster
@@ -183,9 +223,9 @@ Olika mönster som kan kombineras med färgerna ovan. I exemplen nedan är möns
 * [Korsmönster](./assets/pattern_cross.png)
 
 Markup:
-<div class="pattern-box is-pastel-denim has-pattern-waves"></div>
-<div class="pattern-box is-pastel-pink has-pattern-balls"></div>
-<div class="pattern-box is-pastel-desert has-pattern-cross"></div>
+<div class="pattern-box bg-pastel-denim has-pattern-waves"></div>
+<div class="pattern-box bg-pastel-pink has-pattern-balls"></div>
+<div class="pattern-box bg-pastel-desert has-pattern-cross"></div>
 
 Styleguide 5.2
 */
