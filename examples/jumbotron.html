@@ -37,24 +37,20 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand navbar-logo" href="#"><img src="../assets/kb_logo_white.svg" /></a>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">Project name <small>- sekundär text</small></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div class="jumbotron bg-pastel-denim">
       <div class="container">
         <h1>En rubrik!</h1>
         <p>Vidare beskrivning av tjänsten</p>
@@ -63,9 +59,16 @@
 
     <div class="container">
 
-      <div class="">
-        <h2>Test</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Test</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div>
       </div>
 
       <!-- Example row of columns -->
@@ -75,16 +78,11 @@
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
         </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-        </div>
       </div>
     </div> <!-- /container -->
 
     <footer class="footer">
-      <div class="footer-container is-grey-lighter">
+      <div class="footer-container bg-pastel-muted-blue">
         <div class="container">
           <div class="row">
             <div class="col-md-3">
@@ -138,19 +136,19 @@
           </div>
         </div>
       </div>
-      <div class="footer-container is-happy-magenta">
+      <div class="footer-container bg-pastel-light-blue">
         <div class="container">
           <div class="col-md-3">
           <p class="text-muted">
-            <img src="../assets/kb_logo_white.svg" class="logo-medium" />
+            <img src="../assets/kb_logo_black.svg" class="logo-medium" />
           </p>
           </div>
           <div class="col-md-9">
             <p>
               <br>
-              <strong>KUNGL. BIBLIOTEKET</strong><br>
-              <span>Postadress: Kungl. biblioteket, Box 5039, 102 41 Stockholm</span><br>
-              <span>Besöksadress: Humlegårdsgatan 26, Humlegården, Stockholm</span>
+              <strong class="text-black">KUNGL. BIBLIOTEKET</strong><br>
+              <span class="text-black"><a href="http://www.kb.se">Gå till KB.se <i class="fa fa-contact"></i></a></span><br>
+              <span class="text-black">Support: <a href="mailto:test.test@kb.se">test.test@kb.se</a></span>
             </p>
           </div>
         </div>
