@@ -124,46 +124,63 @@ En sidfot är en sidfot är en sidfot.
 Använder .footer-container för att stapla flera footers inuti footer-tagen.
 
 Markup:
-    <footer class="footer">
-      <div class="footer-container is-grey-lighter">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h1>List 1</h1>
-              <ul class="list-unstyled">
-                <li>Lorem ipsum</li>
-                <li>Dorem</li>
-                <li>Ipsum santi laninum</li>
-                <li>Verti absolutom</li>
-                <li>Neo geosatium</li>
-                <li>Verti absolutom</li>
-                <li>Neo geosatium</li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <h1>List 2</h1>
-              <ul class="list-unstyled">
-                <li>Lorem ipsum</li>
-                <li>Dorem</li>
-                <li>Ipsum santi laninum</li>
-                <li>Verti absolutom</li>
-                <li>Neo geosatium</li>
-                <li>Verti absolutom</li>
-                <li>Neo geosatium</li>
-              </ul>
-            </div>
+<div class="container">
+  <footer class="footer">
+    <div class="footer-container is-grey-lighter">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h1>List 1</h1>
+            <ul class="list-unstyled">
+              <li>Lorem ipsum</li>
+              <li>Dorem</li>
+              <li>Ipsum santi laninum</li>
+              <li>Verti absolutom</li>
+              <li>Neo geosatium</li>
+              <li>Verti absolutom</li>
+              <li>Neo geosatium</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h1>List 2</h1>
+            <ul class="list-unstyled">
+              <li>Ipsum santi laninum</li>
+              <li>Lorem ipsum</li>
+              <li>Neo geosatium</li>
+              <li>Verti absolutom</li>
+              <li>Neo geosatium</li>
+              <li>Dorem</li>
+              <li>Verti absolutom</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h1>List 3</h1>
+            <ul class="list-unstyled">
+              <li>Verti absolutom</li>
+              <li>Ipsum santi laninum</li>
+              <li>Dorem</li>
+              <li>Lorem ipsum</li>
+              <li>Neo geosatium</li>
+              <li>Verti absolutom</li>
+              <li>Neo geosatium</li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="footer-container is-happy-green">
-        <div class="container">
-          <p class="text-muted"><img src="./assets/kb_logo_white.svg" class="logo-medium" /></p>
-        </div>
+    </div>
+    <div class="footer-container is-happy-green">
+      <div class="container">
+        <p class="text-muted"><img src="./assets/kb_logo_white.svg" class="logo-medium" /></p>
       </div>
-    </footer>
+    </div>
+  </footer>
+</div>
 
 Styleguide 3.3
 */
+.footer {
+	overflow: hidden;
+}
 .footer {
   &>div:first-of-type {
     margin-top: 50px;
