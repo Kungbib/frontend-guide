@@ -89,28 +89,26 @@ Styleguide 8.1
 .button-colors(@color) {
 	background-color: @color;
 	box-shadow: 0px 2px 0px 0px darken(@color, 20%);
-	&:hover {
-		background-color: darken(@color, 10%);
-		border-color: darken(@color, 10%);
-	}
 	& when (luma(@color) >= 60%) {
 	  color: darken(@color, 35%);
-	  &:hover {
+	  &:hover, &:focus {
+	  	background-color: darken(@color, 10%);
 	  	color: darken(@color, 35%);
 	  }
-		&:active, &:focus {
+		&:active {
 			background-color: @color;
 			color: darken(@color, 35%);
 		}
 	}
 	& when (luma(@color) < 60%) {
 	  color: lighten(@color, 50%);
-	  &:hover {
+	  &:hover, &:focus {
+	  	background-color: darken(@color, 10%);
 	  	color: lighten(@color, 50%);
 	  }
-		&:active, &:focus {
+		&:active {
 			background-color: @color;
-			color: lighten(@color, 50%);
+	  	color: lighten(@color, 50%);
 		}
 	}
 }
