@@ -1,13 +1,23 @@
 /*
 Sidhuvud/Sidfot
 
+Sidhuvud och sidhuvud används för att [signalera källa och tjänstens namn](http://webbriktlinjer.se/r/22-ange-vilken-organisation-som-ar-utgivare-till-webbplatsen-pa-samtliga-sidor/)
 
 Styleguide 3.
 */
 
 
 /*
-Navigation bars
+Sidhuvud
+
+För tjänster med generiskt uttryck finns två olika varianter av sidhuvuden.
+
+###Sidhuvud version 1  
+I denna version skrivs KB:s logotype följt avntjänstens namn ut i headern. Typsnittet för namn är Open sans googlefont. Viktigt att tänka på är att länka logotyp + namn till tjänstens startsida. Vid behov ange beskrivande text om tjänsten i kursiv stil. 
+###Sidhuvud version 2  
+I denna version används KB:s logotyp i headern. Tjänstens namn skrivs ut centrerat i jumbotronen. 
+###Navigation i sidhuvud
+Vid behov använd toppnavigation för länkar som till exempel: Logga in, Feedback, Kontakt.
 
 Markup:
 <div class="navbar">
@@ -126,11 +136,21 @@ Styleguide 3.2
 
 
 /*
-Footer
+Sidfot
 
-En sidfot är en sidfot är en sidfot.
+Det finns två varianter av sidfötter, den minimala och den utökade. Det går att kombinera de båda alternativt att endast använda den minimala.
 
-Använder .footer-container för att stapla flera footers inuti footer-tagen.
+###Minimal sidfot
+Använd den minimala sidfoten för tjänster där behovet endast är att förmedla att KB är avsändare. Länka Kungl. biblioteket till www.kb.se och ange rätt länk till specifik support för tjänsten. Kan leda till Kundo-forum, mejladress eller en kontaktsida.
+
+Exempel: (bild)
+
+###Utökad sidfot
+Använd den utökade sidfoten om det finns behov av att förmedla ytterligare information som till exempel fler kontaktvägar, relaterade tjänster, licensuppgifter eller redovisa samarbeten med övriga organisationer för den specifika tjänsten. Tänk på att använda ytan i den utökade sidfoten endast för att stötta användarnas behov av mer information för att nå sina mål. 
+Exempel: (bild)
+
+### Användning
+Använd .footer-container för att stapla flera footers inuti footer-tagen.
 
 Markup:
 <div class="container">

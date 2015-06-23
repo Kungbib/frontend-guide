@@ -7,15 +7,15 @@ Instruktioner för layout, typografi, färger, bilder, ikoner, och förekommande
 **Vad behöver jag tänka på om tjänsten som utvecklas går utanför det generiska uttrycket?**  
 Se instruktioner under sidhuvud och sidfot och följ tillgänglighetsanpassningar.
 
-## Stilmall
-
-Som en del av guiden finns en tillhörande stilmall, som går att [ladda ner här](./css/kb-style.css).  
-Stilmallen är en anpassad version av [Twitter Bootstrap](http://getbootstrap.com/) och ersätter dess CSS-filer, dock ej dess JavaScript.
-
 ## Bidra till utvecklingen / anpassa stilmallen
 
 Källkoden är öppen och finns i ett [repository på Github](https://github.com/Kungbib/frontend-guide).  
 Vidare instruktion om hur du anpassar och bygger ihop dina filer finns i repositoriet.
+
+# Stilmall
+
+Som en del av guiden finns en tillhörande stilmall, som går att [ladda ner här](./css/kb-style.css).  
+Stilmallen är en anpassad version av [Twitter Bootstrap](http://getbootstrap.com/) och ersätter dess CSS-filer, dock ej dess JavaScript.
 
 ## Exempel
 
@@ -28,11 +28,11 @@ Vidare instruktion om hur du anpassar och bygger ihop dina filer finns i reposit
 
 * Inget här ännu...
 
-## Relaterade länkar
+# Relaterade länkar
 
 * [Grafisk profil för trycksaker](http://kb.idmanuals.com)
 * [KB Bildbank](https://www.flickr.com/photos/25300312@N08/)
 
-## Principer för utveckling
+# Principer för utveckling
 
 * [KBs programverksamhet](http://www.kb.se/Dokument/Programverksamhet/KB_Programmen_low.pdf)
