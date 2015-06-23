@@ -19,11 +19,12 @@
   }
   // Set the border and box shadow on specific inputs to match
   .form-control {
-    border-color: @border-color;
-    box-shadow: none;
+    border: 2px solid @grey-darker;
+    box-shadow: 0px 0px 0px 2px transparent;
     // .box-shadow(inset 0 1px 1px rgba(0,0,0,.075)); // Redeclare so transitions work
     &:focus {
       border-color: darken(@border-color, 10%);
+      box-shadow: 0px 0px 0px 2px @brand-primary;
       // @shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px lighten(@border-color, 20%);
       // .box-shadow(@shadow);
     }
@@ -55,11 +56,12 @@
 // contrast against a dark gray background.
 .form-control-focus(@color: @input-border-focus) {
   @color-rgba: rgba(red(@color), green(@color), blue(@color), .6);
-  border: 2px solid transparent;
+  border: 2px solid @grey-dark;
+  box-shadow: 0px 0px 0px 2px transparent;
   &:focus {
-    border: 2px solid @color;
+    border: 2px solid transparent;
     outline: 0;
-    box-shadow: none;
+    box-shadow: 0px 0px 0px 2px @brand-primary;
   }
 }
 

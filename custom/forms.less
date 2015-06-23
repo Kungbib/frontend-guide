@@ -105,9 +105,9 @@ Styleguide 7.5
 */
 
 #focusedInput {
-	border: 2px solid;
-	border-color: #ccc;
-  border-color: rgba(82,168,236,.8);
+  border: 2px solid transparent;
+  outline: 0;
+  box-shadow: 0px 0px 0px 2px @brand-primary;
   outline: 0;
   outline: thin dotted\9;
 }
@@ -142,7 +142,8 @@ Styleguide 7.7.
 */
 
 .form-control {
-	box-shadow: none;
+	border: 2px solid @grey-darker;
+	box-shadow: 0px 0px 0px 2px transparent;
 }
 
 /*
