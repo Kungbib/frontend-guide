@@ -11,7 +11,18 @@ Valfria och obligatoriska fält
 
 Fråga bara om den information som verkligen behövs. Om du frågar om information som är valfri så bör fältet markeras med (valfri). Markera inte obligatoriska fält med asterix (*).
 
-Exempel: (bild)
+Markup:
+<form class="col-md-4">
+  <div class="form-group">
+    <label for="exampleInputName1">Namn</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputOptional">Favoritbok</label>
+    <input type="text" class="form-control" id="exampleInputOptional" placeholder="">
+    <span id="helpBlock" class="help-block">(Valfri)</span>
+  </div>
+</form>
 
 Styleguide 7.1
 */
@@ -21,7 +32,21 @@ Etiketter
 
 Alla formulärfält ska beskrivs med en etikett. Etiketter ska vara linjerande ovanför sitt formulärfältet. Texten ska vara kort, kärnfull och tydlig. Kolon (:) ska inte användas på slutet. Göm inte etiketter såtillvida inte kontext och övrigt innehåll gör etiketten onödig. 
 
-Exempel: (bild)
+Markup:
+<form>
+  <div class="form-group">
+    <label for="exampleInputName1">Namn</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
+  </div>
+</form>
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Namn</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="">
+    </div>
+  </div>
+</form>
 
 Styleguide 7.2
 */
@@ -31,7 +56,16 @@ Formulärfält
 
 Gör fältens bredd proportionerligt till den information som ska fyllas i. Se till att informationen som fylls i får plats i fältet. Se till att användaren kan fylla i den information som behövs även på mindre skärmstorlekar. Sätt alltid formulärfälten till 100% bredd för mindre skärmstorlekar.
 
-Exempel: (bild)
+Markup:
+<div class="form-group">
+	<input class="form-control input-lg" type="text" placeholder=".input-lg">
+</div>
+<div class="form-group">
+	<input class="form-control" type="text" placeholder="Default input">
+</div>
+<div class="form-group">
+	<input class="form-control input-sm" type="text" placeholder=".input-sm">
+</div>
 
 Styleguide 7.3
 */
@@ -41,7 +75,17 @@ Fältgrupper
 
 Använd fältgrupper (fieldsets) för att gruppera formulärkontroller (form controls?) som är relaterade till varandra. Det första elementet i en fältgrupp måste vara ett legend-element som beskriver gruppen. 
 
-Exempel: (bild)
+Markup:
+<div>
+  <div class="form-group col-md-2">
+    <label for="exampleInputName1">Postnummer</label>
+    <input type="text" class="form-control" placeholder="">
+  </div>
+  <div class="form-group col-md-4">
+  	<label for="exampleInputName1">Postort</label>
+    <input type="text" class="form-control" placeholder="">
+  </div>
+</div>
 
 Styleguide 7.4
 */
@@ -49,12 +93,28 @@ Styleguide 7.4
 /*
 Fokustillstånd 
 
-För att highlighta ett element så bör fokusfärgen användas. 
+För att highlighta ett element så bör fokusfärgen användas. Ingen åtgärd behövs för denna funktionalitet. 
 
-Exempel: (bild)
+Markup:
+<form class="col-md-4">
+  <label for="exampleInputName1">Namn</label>
+  <input class="form-control" id="focusedInput" type="text" value="">
+</form>
 
 Styleguide 7.5
 */
+
+#focusedInput {
+	border: 2px solid;
+	border-color: #ccc;
+  border-color: rgba(82,168,236,.8);
+  outline: 0;
+  outline: thin dotted\9;
+}
+.form-control {
+	.form-control-focus();
+}
+
 
 /*
 Hjälptexter
@@ -63,7 +123,14 @@ Använd hjälptexter för att förklara vad som ska fyllas i fältet när det in
 
 Placera hjälptext ovanför fältet. Använd inte placeholder-texter inuti formulärfälten eftersom dessa försvinner direkt när användaren skriver in information i fältet. 
  
-Exempel: (bild)
+Markup:
+<form>
+  <div class="form-group col-md-6">
+    <label for="exampleInputName1">Födelseår</label>
+    <span id="helpBlock" class="help-block">Ange året med 4 siffror</span>
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
+  </div>
+</form>
 
 Styleguide 7.6
 */
@@ -73,6 +140,10 @@ Formulärelement
 
 Styleguide 7.7.
 */
+
+.form-control {
+	box-shadow: none;
+}
 
 /*
 Dropdownlistor
@@ -87,9 +158,19 @@ Checkboxar
 
 Använd checkboxar när användarens kan välja på/av för ett enskilt alternativ eller när användaren kan välja flera alternativ i en lista. 
 
-Exempel på/av: (bild)
-
-Exempel flera alternativ: (bild)
+Markup:
+<div class="checkbox">
+  <label>
+    <input type="checkbox" value="">
+    Alternativ 1
+  </label>
+</div>
+<div class="checkbox">
+  <label>
+    <input type="checkbox" value="">
+   	Alternativ 2
+  </label>
+</div>
 
 Styleguide 7.7.2
 */
@@ -99,7 +180,25 @@ Radioknappar
 
 Använd radioknappar när användaren ska välja ett alternativ från en lista. 
 
-Exempel: (bild)
+Markup:
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+    Alternativ 1
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Alternativ 2
+  </label>
+</div>
+<div class="radio disabled">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+    Alternativ 3
+  </label>
+</div>
 
 Styleguide 7.7.3
 */
