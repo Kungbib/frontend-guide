@@ -55,13 +55,18 @@ Styleguide 3.1
 	border-radius: 0px;
 	margin-bottom: 0px;
 }
-
+.navbar-nav>li>a {
+	padding: 7px 15px;
+}
 .navbar-inverse {
 	background-color: @gray-dark;
 	border-color: @gray-dark;
 	color: @white;
 	a {
-		color: @white;
+		color: @white !important;
+		&:hover {
+			background-color: @grey-lighter;
+		}
 	}
 	.navbar-brand {
 		color: @white;
@@ -70,8 +75,13 @@ Styleguide 3.1
 
 .navbar-brand {
 	color: @grey-dark;
-	font-size: 24px;
+	font-size: 25px;
 	font-weight: 500;
+	small {
+		margin-left: 10px;
+		margin-top: -5px;
+		font-size: 16px;
+	}
 }
 .navbar-logo {
   padding: 0px;
@@ -198,7 +208,6 @@ Styleguide 3.3
   font-weight: 700;
   border-width: 0px 0px 1px 0px;
   border-style: solid;
-  border-color: @grey;
 }
 .footer h2 {
   font-size: 14px;
