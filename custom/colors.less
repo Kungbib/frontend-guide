@@ -72,7 +72,7 @@ Styleguide 5.1.4
 Palett: Gråskala
 
 Markup:
-<div class="color-box is-white"></div>
+<div class="color-box is-white subtleborder"></div>
 <div class="color-box is-grey-lighter"></div>
 <div class="color-box is-grey-light"></div>
 <div class="color-box is-grey"></div>
@@ -81,14 +81,15 @@ Markup:
 
 Styleguide 5.1.5
 */
-
+.subtleborder {
+	border: 1px solid #ccc !important;
+}
 .color-box {
 	display: inline-block;
 	width: 120px;
 	height: 60px;
 	border-radius: 10px;
-	box-shadow: 0px 2px 0px 0px #000;
-	border: 1px solid @grey-dark;
+	border: 0px solid @grey-dark;
 }
 
 // Glad
@@ -193,7 +194,7 @@ Styleguide 5.2
 	display: inline-block;
 	width: 100%;
 	height: 200px;
-	border: 1px solid @grey-dark;
+	border: 0px solid @grey-dark;
 	background-size: 50%;
 	border-radius: 10px;
 }
