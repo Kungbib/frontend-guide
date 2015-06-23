@@ -1,27 +1,32 @@
-# Kungl. bibliotekets Stilguide 
+# Introduktion
  
-Riktlinjer och exempel för användning vid gränssnittsutveckling hos KB.
+Detta är en samling riktlinjer och exempel för användning vid gränssnittsutveckling hos KB.
 
 Instruktioner för layout, typografi, färger, bilder, ikoner, och förekommande komponenter/element för digitala tjänster.
 
 **Vad behöver jag tänka på om tjänsten som utvecklas går utanför det generiska uttrycket?**  
 Se instruktioner under sidhuvud och sidfot och följ tillgänglighetsanpassningar.
 
+## Stilmall
 
-## Letar du efter koden (HTML och CSS)?
+Som en del av guiden finns en tillhörande stilmall, som går att [ladda ner här](./css/kb-style.css).  
+Stilmallen är en anpassad version av [Twitter Bootstrap](http://getbootstrap.com/) och ersätter dess CSS-filer, dock ej dess JavaScript.
 
-* [källkoden som tillhör denna guide](https://github.com/Kungbib/frontend-guide)
+## Bidra till utvecklingen / anpassa stilmallen
 
-## Filer
+Källkoden är öppen och finns i ett [repository på Github](https://github.com/Kungbib/frontend-guide).  
+Vidare instruktion om hur du anpassar och bygger ihop dina filer finns i repositoriet.
 
-* [Byggd CSS](./css/kb-style.css)
+## Exempel
 
-## Exempel-layouter
-
-Bootstrap-mallar som använder vår byggda stilmall.
+### Templates som använder stilmallen
 
 * [Jumbotron based](./examples/jumbotron.html)
 * [Elements](./examples/elements.html)
+
+### Tjänster som använder stilmallen
+
+* Inget här ännu...
 
 ## Relaterade länkar
 
