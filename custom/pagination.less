@@ -4,7 +4,7 @@ Paginering
 Markup:
 <nav>
   <ul class="pagination">
-    <li>
+    <li class="pagination-previous">
       <a href="#" aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
       </a>
@@ -14,7 +14,7 @@ Markup:
     <li><a href="#">3</a></li>
     <li><a href="#">4</a></li>
     <li><a href="#">5</a></li>
-    <li>
+    <li class="pagination-next">
       <a href="#" aria-label="Next">
         <span aria-hidden="true">&raquo;</span>
       </a>
@@ -41,7 +41,7 @@ Styleguide 2.4.1
 	}
 }
 
-li a[aria-label="Next"], li a[aria-label="Previous"] {
+li.pagination-next a, li.pagination-previous a {
 	background-color: @brand-primary;
 	color: @white;
   padding-top: 0px;
