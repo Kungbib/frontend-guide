@@ -112,3 +112,9 @@ Stilguiden går då att se på: http://localhost:8500/
 ## Användning av stilmallen i projekt
 
 Den byggda css-filen _kb-style.css_ hamnar i mappen _build/css_. Detta är filen du inkluderar i din tjänst.
+
+## Kända problem
+
+### Bygga KSS i Windows-miljö
+
+KSS-generatorn har problem med pathnames när man bygger i Windows-miljö. För tillfället behöver du implementera [dessa ändringarna](https://github.com/igor-dv/grunt-kss/commit/c23f26a2499fdeac2e9ca9a313771b2b6c7f8043) för att dokumentationen ska genereras.
