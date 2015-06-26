@@ -138,17 +138,46 @@ Sidfot
 
 Det finns två varianter av sidfötter, den minimala och den utökade. Det går att kombinera de båda alternativt att endast använda den minimala.
 
-###Minimal sidfot
-Använd den minimala sidfoten för tjänster där behovet endast är att förmedla att KB är avsändare. Länka Kungl. biblioteket till www.kb.se och ange rätt länk till specifik support för tjänsten. Kan leda till Kundo-forum, mejladress eller en kontaktsida.
-
-Exempel: (bild)
-
-###Utökad sidfot
-Använd den utökade sidfoten om det finns behov av att förmedla ytterligare information som till exempel fler kontaktvägar, relaterade tjänster, licensuppgifter eller redovisa samarbeten med övriga organisationer för den specifika tjänsten. Tänk på att använda ytan i den utökade sidfoten endast för att stötta användarnas behov av mer information för att nå sina mål.
-Exempel: (bild)
-
 ### Användning
 Använd .footer-container för att stapla flera footers inuti footer-tagen.
+
+Styleguide 3.3
+*/
+
+/*
+Minimal sidfot
+
+Använd den minimala sidfoten för tjänster där behovet endast är att förmedla att KB är avsändare. Länka Kungl. biblioteket till www.kb.se och ange rätt länk till specifik support för tjänsten. Kan leda till Kundo-forum, mejladress eller en kontaktsida.
+
+Markup:
+<div class="container">
+  <footer class="footer">
+    <div class="footer-container bg-pastel-light-blue">
+      <div class="container">
+        <div class="col-md-2 col-md-offset-3">
+        <p class="text-muted">
+          <img src="../assets/kb_logo_black.svg" class="logo-medium" />
+        </p>
+        </div>
+        <div class="col-md-4">
+          <p>
+            <br>
+            <strong class="text-black"><a href="http://www.kb.se">KUNGL. BIBLIOTEKET</a></strong><br>
+            <span class="text-black">Support: <a href="mailto:test.test@kb.se">test.test@kb.se</a></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+Styleguide 3.3.1
+*/
+
+/*
+Utökad sidfot
+
+Använd den utökade sidfoten om det finns behov av att förmedla ytterligare information som till exempel fler kontaktvägar, relaterade tjänster, licensuppgifter eller redovisa samarbeten med övriga organisationer för den specifika tjänsten. Tänk på att använda ytan i den utökade sidfoten endast för att stötta användarnas behov av mer information för att nå sina mål.
 
 Markup:
 <div class="container">
@@ -193,26 +222,26 @@ Markup:
         </div>
       </div>
     </div>
-		<div class="footer-container bg-pastel-light-blue">
-			<div class="container">
-				<div class="col-md-2 col-md-offset-3">
-				<p class="text-muted">
-					<img src="../assets/kb_logo_black.svg" class="logo-medium" />
-				</p>
-				</div>
-				<div class="col-md-4">
-					<p>
-						<br>
-						<strong class="text-black"><a href="http://www.kb.se">KUNGL. BIBLIOTEKET</a></strong><br>
-						<span class="text-black">Support: <a href="mailto:test.test@kb.se">test.test@kb.se</a></span>
-					</p>
-				</div>
-			</div>
-		</div>
+    <div class="footer-container bg-pastel-light-blue">
+      <div class="container">
+        <div class="col-md-2 col-md-offset-3">
+        <p class="text-muted">
+          <img src="../assets/kb_logo_black.svg" class="logo-medium" />
+        </p>
+        </div>
+        <div class="col-md-4">
+          <p>
+            <br>
+            <strong class="text-black"><a href="http://www.kb.se">KUNGL. BIBLIOTEKET</a></strong><br>
+            <span class="text-black">Support: <a href="mailto:test.test@kb.se">test.test@kb.se</a></span>
+          </p>
+        </div>
+      </div>
+    </div>
   </footer>
 </div>
 
-Styleguide 3.3
+Styleguide 3.3.2
 */
 .footer {
 	overflow: hidden;
