@@ -252,9 +252,9 @@ Olika mönster som kan kombineras med färgerna ovan. I exemplen nedan är möns
 * [Korsmönster](./assets/pattern_cross.png)
 
 Markup:
-<div class="pattern-box bg-pastel-denim has-pattern-waves"></div>
-<div class="pattern-box bg-pastel-pink has-pattern-balls"></div>
-<div class="pattern-box bg-pastel-desert has-pattern-cross"></div>
+<div class="pattern-box bg-pastel-denim has-pattern pattern-waves"></div>
+<div class="pattern-box bg-pastel-pink has-pattern pattern-balls"></div>
+<div class="pattern-box bg-pastel-desert has-pattern pattern-cross"></div>
 
 Styleguide 5.2
 */
@@ -268,12 +268,40 @@ Styleguide 5.2
 	border-radius: 10px;
 }
 
-.has-pattern-waves {
+.has-pattern {
+	position: relative;
+	overflow: hidden;
+}
+
+.has-pattern * {
+	z-index: 2;
+	position: relative;
+}
+.pattern-waves:before {
 	background-image: url('../assets/pattern_waves.png');
 }
-.has-pattern-balls {
+.pattern-balls:before {
 	background-image: url('../assets/pattern_balls.png');
 }
-.has-pattern-cross {
+.pattern-cross:before {
 	background-image: url('../assets/pattern_cross.png');
+}
+
+
+.has-pattern:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.25;
+    background-position: 0 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
