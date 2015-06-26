@@ -2,11 +2,6 @@
  
 Detta är en samling riktlinjer och exempel för användning vid gränssnittsutveckling hos KB.
 
-Instruktioner för layout, typografi, färger, bilder, ikoner, och förekommande komponenter/element för digitala tjänster.
-
-**Vad behöver jag tänka på om tjänsten som utvecklas går utanför det generiska uttrycket?**  
-Se instruktioner under sidhuvud och sidfot och följ tillgänglighetsanpassningar.
-
 ## Bidra till utvecklingen / anpassa stilmallen
 
 Källkoden är öppen och finns i ett [repository på Github](https://github.com/Kungbib/frontend-guide).  
@@ -36,3 +31,7 @@ Stilmallen är en anpassad version av [Twitter Bootstrap](http://getbootstrap.co
 # Principer för utveckling
 
 * [KBs programverksamhet](http://www.kb.se/Dokument/Programverksamhet/KB_Programmen_low.pdf)
+
+# Tjänster med unikt utryck
+
+Om tjänsten har en specifik målgrupp med ett unikt behov kan man behöva gå utanför stilguiden men den minimala sidfoten och krav för tillgänglighet behöver följas.
