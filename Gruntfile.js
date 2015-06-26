@@ -66,6 +66,8 @@ module.exports = function(grunt) {
         files: [
           {expand: true, src: ['examples/**'], dest: 'build/'},
           {expand: true, src: ['assets/**'], dest: 'build/'},
+          {expand: true, flatten: true, src: ['node_modules/bootstrap/dist/js/bootstrap.min.js'], dest: 'build/vendor/'},
+          {expand: true, flatten: true, src: ['node_modules/jquery/dist/jquery.min.js'], dest: 'build/vendor/'},
         ]
       }
     },
