@@ -1,5 +1,5 @@
 # Introduktion
- 
+
 Detta är en samling riktlinjer och exempel för användning vid gränssnittsutveckling hos KB.
 
 ## Bidra till utvecklingen / anpassa stilmallen
@@ -21,7 +21,7 @@ Stilmallen är en anpassad version av [Twitter Bootstrap](http://getbootstrap.co
 
 ### Tjänster som använder stilmallen
 
-* Inget här ännu...
+* [Biografblad](https://biografblad.kb.se/)
 
 # Relaterade länkar
 
