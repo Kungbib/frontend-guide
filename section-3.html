@@ -37,6 +37,8 @@
             </ul>
             <ul class="kss-menu-child">
               <li class="kss-menu-item"><a href="#section-3.1"><span class="kss-ref">3.1</span><span class="kss-name">Sidhuvud</span></a></li>
+              <li class="kss-menu-item"><a href="#section-3.1.1"><span class="kss-ref">3.1.1</span><span class="kss-name">Sidhuvud version 1</span></a></li>
+              <li class="kss-menu-item"><a href="#section-3.1.2"><span class="kss-ref">3.1.2</span><span class="kss-name">Sidhuvud version 2</span></a></li>
               <li class="kss-menu-item"><a href="#section-3.2"><span class="kss-ref">3.2</span><span class="kss-name">Logotyper</span></a></li>
               <li class="kss-menu-item"><a href="#section-3.3"><span class="kss-ref">3.3</span><span class="kss-name">Sidfot</span></a></li>
               <li class="kss-menu-item"><a href="#section-3.3.1"><span class="kss-ref">3.3.1</span><span class="kss-name">Minimal sidfot</span></a></li>
@@ -58,12 +60,15 @@
             <h1 class="kss-title"><span class="kss-ref">3.1</span> Sidhuvud</h1>
             <div class="kss-description">
               <p>För tjänster med generiskt uttryck finns två olika varianter av sidhuvuden.</p>
-<h3 id="sidhuvud-version-1">Sidhuvud version 1</h3>
-<p>I denna version skrivs KB:s logotype följt avntjänstens namn ut i headern. Typsnittet för namn är Open sans googlefont. Viktigt att tänka på är att länka logotyp + namn till tjänstens startsida. Vid behov ange beskrivande text om tjänsten i kursiv stil.</p>
-<h3 id="sidhuvud-version-2">Sidhuvud version 2</h3>
-<p>I denna version används KB:s logotyp i headern. Tjänstens namn skrivs ut centrerat i jumbotronen.</p>
-<h3 id="navigation-i-sidhuvud">Navigation i sidhuvud</h3>
 <p>Vid behov använd toppnavigation för länkar som till exempel: Logga in, Feedback, Kontakt.</p>
+
+            </div>
+          </section>
+          <section id="section-3.1.1" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">3.1.1</span> Sidhuvud version 1</h1>
+            <div class="kss-description">
+              <p>I denna version skrivs KB:s logotype följt avntjänstens namn ut i headern. Typsnittet för namn är Open sans googlefont. Viktigt att tänka på är att länka logotyp + namn till tjänstens startsida. Vid behov ange beskrivande text om tjänsten i kursiv stil.</p>
+<p>Markup:</p>
 
             </div>
             <div class="kss-modifier-block">
@@ -145,6 +150,71 @@
 	    &lt;/ul&gt;
 	  &lt;/div&gt;
 	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-3.1.2" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">3.1.2</span> Sidhuvud version 2</h1>
+            <div class="kss-description">
+              <p>I denna version används KB:s logotyp i headern. Tjänstens namn skrivs ut centrerat i jumbotronen.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand navbar-logo" href="#"><img src="../assets/kb_logo_white.svg" /></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Logga in</a></li>
+        </ul>
+    </div><!--/.navbar-collapse -->
+  </div>
+</nav>
+<div class="jumbotron bg-happy-magenta">
+  <div class="container">
+    <h1>Tjänst</h1>
+    <p>Tilläggstext om tjänsten</p>
+  </div>
+</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;nav class=&quot;navbar navbar-inverse&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;navbar-header&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbar&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;navbar&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;a class=&quot;navbar-brand navbar-logo&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;../assets/kb_logo_white.svg&quot; /&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;navbar&quot; class=&quot;navbar-collapse collapse&quot;&gt;
+        &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Feedback&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Logga in&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;&lt;!--/.navbar-collapse --&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+&lt;div class=&quot;jumbotron bg-happy-magenta&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;h1&gt;Tjänst&lt;/h1&gt;
+    &lt;p&gt;Tilläggstext om tjänsten&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
               </div>
             </div>
@@ -407,7 +477,7 @@
           </section>
         </article>
         <footer class="kss-footer">
-          <div>Senast uppdaterad: 2015-06-29 - 15:11:32 <br>Skapad med hjälp av <a href="https://github.com/hughsk/kss-node">kss-node</a> och <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+          <div>Senast uppdaterad: 2015-06-29 - 18:11:57 <br>Skapad med hjälp av <a href="https://github.com/hughsk/kss-node">kss-node</a> och <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
         </footer>
       </div>
     </div>
