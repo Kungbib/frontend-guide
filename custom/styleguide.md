@@ -16,7 +16,8 @@ Stilmallen är en anpassad version av [Twitter Bootstrap](http://getbootstrap.co
 
 ### Templates som använder stilmallen
 
-* [Jumbotron based](./examples/jumbotron.html)
+* [Jumbotron (Pastel colors)](./examples/jumbotron.html)
+* [Jumbotron (Happy colors)](./examples/jumbotron2.html)
 * [Elements](./examples/elements.html)
 
 ### Tjänster som använder stilmallen
