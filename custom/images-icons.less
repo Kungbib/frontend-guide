@@ -9,7 +9,7 @@ Styleguide 6.
 /*
 Bilder
 
-Bilder som visas ska ha ration 3:2. 
+Bilder som visas ska ha ration 3:2.
 Bildram?
 
 Exempel: (bild)
@@ -21,7 +21,7 @@ Styleguide 6.1
 Ikoner
 
 Ikoner behöver vara enkla, tydliga och bör kompletteras med text.
- 
+
 Vi använder [Font Awesome](http://fontawesome.io/) som är ett open source bibliotek för ikoner.
 
 (Exempel på användning som bör vara gemensam i KB’s tjänster)
@@ -38,7 +38,7 @@ Favicon är en ikon som används för att representera hela webbsidan och visas 
 
 Använd KBs logotyp?
 
-Exempel: (bild) 
+Exempel: (bild)
 
 Styleguide 6.3
 */
@@ -46,3 +46,35 @@ Styleguide 6.3
 
 
 
+/*
+Beta-flaggor
+
+Flaggor som signalerar att tjänsten är i Beta.
+
+* Variant 1: [PNG](./assets/beta_1.png)
+* Variant 2: [PNG](./assets/beta_2.png)
+* Variant 3: [PNG](./assets/beta_3.png)
+
+Markup:
+<div class="logo-box bg-happy-blue">
+  Variant 1<br/>
+  <img src="./assets/beta_1.png" />
+</div>
+<div class="logo-box bg-happy-blue">
+  Variant 2<br/>
+  <img src="./assets/beta_2.png" />
+</div>
+<div class="logo-box bg-happy-blue">
+  Variant 3<br/>
+  <img src="./assets/beta_3.png" />
+</div>
+
+Styleguide 6.4
+*/
+
+.logo-box {
+  vertical-align: top;
+  padding: 5px;
+  text-align: center;
+  display: inline-block;
+}
