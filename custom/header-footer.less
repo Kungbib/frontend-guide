@@ -194,19 +194,17 @@ Använd den minimala sidfoten för tjänster där behovet endast är att förmed
 Markup:
 <div class="container">
   <footer class="footer">
-    <div class="footer-container bg-pastel-light-blue">
+    <div class="footer-container bg-happy-muted-light-blue">
       <div class="container">
-        <div class="col-md-2 col-md-offset-3">
-        <p class="text-muted">
-          <img src="../assets/kb_logo_black.svg" class="logo-medium" />
-        </p>
-        </div>
-        <div class="col-md-4">
-          <p>
-            <br>
-            <strong class="text-black"><a href="http://www.kb.se">KUNGL. BIBLIOTEKET</a></strong><br>
-            <span class="text-black">Support: <a href="mailto:test.test@kb.se">test.test@kb.se</a></span>
-          </p>
+        <div class="text-black">
+          <img src="./assets/kb_logo_black.svg" class="logo-medium pull-left" />
+            <p>
+              <br>
+              <strong><a href="http://www.kb.se" alt="Länk till Kungl. Bibliotekets webbplats">
+								KUNGL. BIBLIOTEKET
+							</a></strong><br>
+              <span>Support: <a href="mailto:test.test@kb.se">test.test@kb.se</a></span>
+            </p>
         </div>
       </div>
     </div>
@@ -264,19 +262,17 @@ Markup:
         </div>
       </div>
     </div>
-    <div class="footer-container bg-pastel-light-blue">
+    <div class="footer-container bg-happy-muted-light-blue">
       <div class="container">
-        <div class="col-md-2 col-md-offset-3">
-        <p class="text-muted">
-          <img src="../assets/kb_logo_black.svg" class="logo-medium" />
-        </p>
-        </div>
-        <div class="col-md-4">
-          <p>
-            <br>
-            <strong class="text-black"><a href="http://www.kb.se" alt="Länk till Kungl. Bibliotekets webbplats">KUNGL. BIBLIOTEKET</a></strong><br>
-            <span class="text-black">Support: <a href="mailto:test.test@kb.se">test.test@kb.se</a></span>
-          </p>
+        <div class="text-black">
+          <img src="./assets/kb_logo_black.svg" class="logo-medium pull-left" />
+            <p>
+              <br>
+              <strong><a href="http://www.kb.se" alt="Länk till Kungl. Bibliotekets webbplats">
+								KUNGL. BIBLIOTEKET
+							</a></strong><br>
+              <span>Support: <a href="mailto:test.test@kb.se">test.test@kb.se</a></span>
+            </p>
         </div>
       </div>
     </div>
@@ -289,6 +285,12 @@ Styleguide 3.3.2
 	overflow: hidden;
 }
 .footer {
+	.logo-small, .logo-medium, .logo-large {
+		margin-right: 2em;
+		@media screen and (max-width: @screen-sm-min) {
+			margin-left: 1em;
+		}
+	}
   &>div:first-of-type {
     margin-top: 50px;
   }
