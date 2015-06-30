@@ -16,10 +16,10 @@ Stilmallen är en anpassad version av [Twitter Bootstrap](http://getbootstrap.co
 
 ### Templates som använder stilmallen
 
-* [Jumbotron (Pastel colors)](./examples/jumbotron.html)
-* [Jumbotron (Happy colors)](./examples/jumbotron2.html)
+* [Jumbotron](./examples/jumbotron.html) (Pastel colors)
+* [Jumbotron](./examples/jumbotron2.html) (Happy colors)
 * [Elements](./examples/elements.html)
-* [Off-canvas](./examples/offcanvas.html)
+* [Off-canvas](./examples/offcanvas.html) (feat. [font awesome](http://fontawesome.io/))
 
 ### Tjänster som använder stilmallen
 
