@@ -171,46 +171,60 @@ a {	color: #07c; }
 @jumbotron-bg: @brand-primary;
 
 // Bg-Colors
-.bg-happy-blue { background-color: @happy-blue; }
-.bg-happy-magenta { background-color: @happy-magenta; }
-.bg-happy-green { background-color: @happy-green; }
-.bg-happy-desert { background-color: @happy-desert; }
-.bg-happy-orange { background-color: @happy-orange; }
-.bg-happy-muted-brown { background-color: @happy-muted-brown; }
-.bg-happy-muted-desert { background-color: @happy-muted-desert; }
-.bg-happy-muted-light-blue { background-color: @happy-muted-light-blue; }
-.bg-happy-muted-magenta { background-color: @happy-muted-magenta; }
-.bg-happy-muted-denim { background-color: @happy-muted-denim; }
-.bg-pastel-denim { background-color: @pastel-denim; }
-.bg-pastel-pink { background-color: @pastel-pink; }
-.bg-pastel-light-blue { background-color: @pastel-light-blue; }
-.bg-pastel-desert { background-color: @pastel-desert; }
-.bg-pastel-desert-darker { background-color: @pastel-desert-darker; }
-.bg-pastel-muted-purple { background-color: @pastel-muted-purple; }
-.bg-pastel-muted-yellow { background-color: @pastel-muted-yellow; }
-.bg-pastel-muted-pink { background-color: @pastel-muted-pink; }
-.bg-pastel-muted-blue { background-color: @pastel-muted-blue; }
-.bg-pastel-muted-denim { background-color: @pastel-muted-denim; }
-.bg-white { background-color: @white; }
-.bg-gray-lighter { background-color: @gray-lighter; }
-.bg-gray-light { background-color: @gray-light; }
-.bg-grey { background-color: @gray; }
-.bg-gray-dark { background-color: @gray-dark; }
-.bg-gray-darker { background-color: @gray-darker; }
-.bg-black { background-color: @black; }
-.bg-brand-primary { background-color: @brand-primary; }
-.bg-brand-success { background-color: @brand-success; }
-.bg-brand-warning { background-color: @brand-warning; }
-.bg-brand-info { background-color: @brand-info; }
-.bg-brand-danger { background-color: @brand-danger; }
+.bg-happy-blue { .forced-bg(@happy-blue); }
+.bg-happy-magenta { .forced-bg(@happy-magenta); }
+.bg-happy-green { .forced-bg(@happy-green); }
+.bg-happy-desert { .forced-bg(@happy-desert); }
+.bg-happy-orange { .forced-bg(@happy-orange); }
+.bg-happy-muted-brown { .forced-bg(@happy-muted-brown); }
+.bg-happy-muted-desert { .forced-bg(@happy-muted-desert); }
+.bg-happy-muted-light-blue { .forced-bg(@happy-muted-light-blue); }
+.bg-happy-muted-magenta { .forced-bg(@happy-muted-magenta); }
+.bg-happy-muted-denim { .forced-bg(@happy-muted-denim); }
+.bg-pastel-denim { .forced-bg(@pastel-denim); }
+.bg-pastel-pink { .forced-bg(@pastel-pink); }
+.bg-pastel-light-blue { .forced-bg(@pastel-light-blue); }
+.bg-pastel-desert { .forced-bg(@pastel-desert); }
+.bg-pastel-desert-darker { .forced-bg(@pastel-desert-darker); }
+.bg-pastel-muted-purple { .forced-bg(@pastel-muted-purple); }
+.bg-pastel-muted-yellow { .forced-bg(@pastel-muted-yellow); }
+.bg-pastel-muted-pink { .forced-bg(@pastel-muted-pink); }
+.bg-pastel-muted-blue { .forced-bg(@pastel-muted-blue); }
+.bg-pastel-muted-denim { .forced-bg(@pastel-muted-denim); }
+.bg-white { .forced-bg(@white); }
+.bg-gray-lighter { .forced-bg(@gray-lighter); }
+.bg-gray-light { .forced-bg(@gray-light); }
+.bg-grey { .forced-bg(@gray); }
+.bg-gray-dark { .forced-bg(@gray-dark); }
+.bg-gray-darker { .forced-bg(@gray-darker); }
+.bg-black { .forced-bg(@black); }
+.bg-brand-primary { .forced-bg(@brand-primary); }
+.bg-brand-success { .forced-bg(@brand-success); }
+.bg-brand-warning { .forced-bg(@brand-warning); }
+.bg-brand-info { .forced-bg(@brand-info); }
+.bg-brand-danger { .forced-bg(@brand-danger); }
 
+// Bg colors
+.forced-bg(@color) {
+	background-color: @color !important;
+	& when (luma(@color) >= 60%) {
+		.icon-bar {
+			background-color: @black;
+		}
+	}
+	& when (luma(@color) < 60%) {
+		.icon-bar {
+			background-color: @white;
+		}
+	}
+}
 // Text Colors
 .forced-text-color(@color) {
-	color: @color;
+	color: @color !important;
 	a {
-		color: @color;
+		color: @color !important;
 		&:hover {
-			color: lighten(@color, 10%);
+			color: lighten(@color, 10%) !important;
 		}
 	}
 }
