@@ -115,7 +115,7 @@ Styleguide 5.1.6
 	border: 0px solid @gray-dark;
 }
 
-a {	color: #07c; }
+a {	color: #337ab7; }
 
 // Glad
 @happy-blue: #5DC4ED;
@@ -204,30 +204,6 @@ a {	color: #07c; }
 .bg-brand-info { .forced-bg(@brand-info); }
 .bg-brand-danger { .forced-bg(@brand-danger); }
 
-// Bg colors
-.forced-bg(@color) {
-	background-color: @color !important;
-	& when (luma(@color) >= 60%) {
-		.icon-bar {
-			background-color: @black;
-		}
-	}
-	& when (luma(@color) < 60%) {
-		.icon-bar {
-			background-color: @white;
-		}
-	}
-}
-// Text Colors
-.forced-text-color(@color) {
-	color: @color !important;
-	a {
-		color: @color !important;
-		&:hover {
-			color: lighten(@color, 10%) !important;
-		}
-	}
-}
 .text-happy-blue { .forced-text-color(@happy-blue); }
 .text-happy-magenta { .forced-text-color(@happy-magenta); }
 .text-happy-green { .forced-text-color(@happy-green); }
@@ -275,12 +251,12 @@ Styleguide 5.2
 */
 
 .pattern-box {
-	display: inline-block;
-	width: 100%;
-	height: 200px;
-	border: 0px solid @gray-dark;
-	background-size: 50%;
-	border-radius: 10px;
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  border: 0px solid @gray-dark;
+  background-size: 50%;
+  border-radius: 10px;
 }
 
 .has-pattern {

@@ -106,6 +106,14 @@ Styleguide 3.1.2
 	border-radius: 0px;
 	margin-bottom: 0px;
 	border-width: 0px;
+
+	color: @black;
+	.navbar-nav>li>a {
+		&:hover {
+			background-color: @gray-lighter;
+		}
+		color: @black;
+	}
 }
 .navbar-collapse {
 	border-color: rgba(0, 0, 0, 0.2) !important;
