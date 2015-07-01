@@ -107,16 +107,16 @@ Styleguide 3.1.2
 	margin-bottom: 0px;
 	border-width: 0px;
 
-	color: @black;
-	.navbar-nav>li>a {
-		&:hover, &:focus {
-			background-color: @gray-lighter;
-		}
-		&:active {
-			background-color: @gray-light;
-		}
-		color: @black;
-	}
+  color: @black;
+  .navbar-nav>li>a {
+    &:hover, &:focus {
+      background-color: @gray-lighter;
+    }
+    &:active {
+      background-color: @gray-light;
+    }
+    color: @black;
+  }
 }
 .navbar-collapse {
 	border-color: rgba(0, 0, 0, 0.2) !important;
@@ -130,10 +130,13 @@ Styleguide 3.1.2
 	}
 }
 .navbar-inverse .navbar-nav>li>a {
-  &:hover {
+  &:hover, &:focus {
     background-color: @gray-dark;
   }
-  color: @white !important;
+  &:active {
+    background-color: @gray-darker;
+  }
+  color: @white;
 }
 
 .navbar-brand {
