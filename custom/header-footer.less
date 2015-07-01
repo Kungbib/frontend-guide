@@ -109,8 +109,11 @@ Styleguide 3.1.2
 
 	color: @black;
 	.navbar-nav>li>a {
-		&:hover {
+		&:hover, &:focus {
 			background-color: @gray-lighter;
+		}
+		&:active {
+			background-color: @gray-light;
 		}
 		color: @black;
 	}

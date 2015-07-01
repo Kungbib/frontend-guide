@@ -1,8 +1,11 @@
 // Bg colors
 .forced-bg(@color) {
   background-color: @color !important;
-  .navbar-nav>li>a:hover {
+  .navbar-nav>li>a:hover, .navbar-nav>li>a:focus {
     background-color: darken(@color, 15%) !important;
+  }
+  .navbar-nav>li>a:active {
+    background-color: darken(@color, 20%) !important;
   }
   .navbar-toggle {
     border-color: transparent;
