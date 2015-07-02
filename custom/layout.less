@@ -38,3 +38,36 @@ Navigation
 
 Styleguide 2.4
 */
+
+/*
+Anpassningar
+
+Då de olika tjänsterna varierar i sitt uttryck kan det ibland behöva göras anpassningar i stilmallarna.
+Om anpassningen inte är omfattande så finns inget behov av att bygga om grund-stilmallen, utan kan göras med hjälp av en egen stilmall ovanpå grund-stilmallen.
+
+Tänk på att ladda in dina egna regler *efter* grund-stilmallen.
+
+    <link href="../css/kb-style.css" rel="stylesheet">
+    <link href="../css/egna-styles.css" rel="stylesheet">
+
+
+Nedan följer ett par exempel på när det kan behövas.
+
+Styleguide 10.
+*/
+
+/*
+Marginaler
+
+Önskad marginaler mellan olika block i layouten kan variera beroende på hur din layout är uppbyggd. Ett sidhuvud med en jumbotron behöver sannolikt andra marginaler än en utan jumbotron, och ibland varierar layouten inom samma tjänst.
+
+Istället för att lägga din marginal på navigerings-baren eller på jumbotronen kan man ge sin innehålls-container en extra klass (t ex .content-container).
+
+I din egna CSS ger du sedan denna klassen en specifik marginal.
+
+    .content-container {
+      margin-top: 50px;
+    }
+
+Styleguide 10.1
+*/
