@@ -11,7 +11,7 @@ Repot innehåller setup för anpassning av [Twitter Bootstrap](https://github.co
 
         npm install -g grunt-cli
 
-- Navigera till mappen _styles_ och installera node-paketen
+- Navigera till repositoriet och installera node-paketen
 
         npm install
 
@@ -95,7 +95,7 @@ Du har nu gjort din anpassning och samtidigt sett till att variabeln finns tillg
 
 ## Bygga stilmall och stilguide
 
-För att bygga din LESS till CSS samt uppdatera dokumentationen behöver du gå till styles-mappen och köra:
+För att bygga din LESS till CSS samt uppdatera dokumentationen behöver du köra:
 
     $ grunt
 
@@ -107,7 +107,7 @@ För att granska stilguiden lokalt kan du starta watch och servering samtidigt m
 
     $ grunt serve
 
-Stilguiden går då att se på: http://localhost:8500/
+Stilguiden går då att se på: [http://localhost:8500/build/](http://localhost:8500/build/)
 
 ## Användning av stilmallen i projekt
 
