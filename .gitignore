@@ -2,3 +2,4 @@
 /build/
 /.grunt/
 /template/index.html
+.DS_Store
