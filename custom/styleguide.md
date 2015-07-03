@@ -2,13 +2,13 @@
 
 Detta är en samling riktlinjer och exempel för användning vid gränssnittsutveckling hos KB.
 
-## Bidra till utvecklingen / anpassa stilmallen
+## Bidra till utvecklingen
 
 Källkoden är öppen och finns i ett [repository på Github](https://github.com/Kungbib/frontend-guide).  
-
 Vidare instruktion om hur du anpassar och bygger ihop dina filer finns i repositoriet.
-
 Anpassningar av enklare natur bör göras med ett extra stylesheet istället för att ändra i grund-stilmallen, mer om detta under avsnittet *Anpassningar*.
+
+Denna guide är under utveckling och kommer att utökas kontinuerligt. Vi vill gärna ha förslag på förbättringar och vad guiden mer skulle kunna innehålla. Lämna gärna feedback antingen via [Trello](https://trello.com/b/lPYbNyNq/guide-for-ratt-uttryck) eller via [issues på Github](https://github.com/Kungbib/frontend-guide/issues). 
 
 # Stilmall
 
