@@ -1,18 +1,16 @@
 # Introduktion
 
-Detta är en samling riktlinjer och exempel för användning vid gränssnittsutveckling hos KB.
+Detta är [Kungl. Bibliotekets](http://www.kb.se/) stilguide. Stilguiden består av en samling riktlinjer och exempel som är tänkta att underlätta gränssnittsutveckling i KB:s digitala tjänster.
 
 ## Bidra till utvecklingen / anpassa stilmallen
 
-Källkoden är öppen och finns i ett [repository på Github](https://github.com/Kungbib/frontend-guide).  
-
-Vidare instruktion om hur du anpassar och bygger ihop dina filer finns i repositoriet.
+Källkoden är öppen och finns tillgänglig på [Github](https://github.com/Kungbib/frontend-guide). Deessa sidor skapas utifrån koden som ligger där.
 
 Anpassningar av enklare natur bör göras med ett extra stylesheet istället för att ändra i grund-stilmallen, mer om detta under avsnittet *Anpassningar*.
 
 # Stilmall
 
-Som en del av guiden finns en tillhörande stilmall, som går att [ladda ner här](./css/kb-style.css).  
+Som en del av guiden finns en tillhörande stilmall, som går att [ladda ner här](./css/kb-style.css).
 Stilmallen är en anpassad version av [Twitter Bootstrap](http://getbootstrap.com/) och ersätter dess CSS-filer, dock ej dess JavaScript.
 
 ## Exempel
