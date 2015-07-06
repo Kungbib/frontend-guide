@@ -4,7 +4,7 @@ Detta är [Kungl. Bibliotekets](http://www.kb.se/) stilguide. Stilguiden består
 
 ## Bidra till utvecklingen
 
-Källkoden är öppen och finns tillgänglig på [Github](https://github.com/Kungbib/frontend-guide). Deessa sidor skapas utifrån koden som ligger där.
+Källkoden är öppen och finns tillgänglig på [Github](https://github.com/Kungbib/frontend-guide). Dessa sidor skapas utifrån koden som ligger där.
 
 Anpassningar av enklare natur bör göras med ett extra stylesheet istället för att ändra i grund-stilmallen, mer om detta under avsnittet *Anpassningar*.
 
