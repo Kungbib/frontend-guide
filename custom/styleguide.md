@@ -23,6 +23,7 @@ Stilmallen är en anpassad version av [Twitter Bootstrap](http://getbootstrap.co
 * [Jumbotron](./examples/jumbotron2.html) (Happy colors)
 * [Elements](./examples/elements.html)
 * [Off-canvas](./examples/offcanvas.html) (feat. [font awesome](http://fontawesome.io/))
+* [Objekt med egenskaper](./examples/objectprop.html)
 
 ### Tjänster som använder stilmallen
 
