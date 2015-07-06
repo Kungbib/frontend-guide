@@ -24,7 +24,7 @@
             <img src="./assets/kb_text_black.svg" />
           </header>
           <nav class="kss-nav">
-            <ul class="kss-menu" data-kss-ref="9">
+            <ul class="kss-menu" data-kss-ref="10">
               <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Introduktion</span></a></li>
               <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Tillgänglighet</span></a></li>
               <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">Layout</span></a></li>
@@ -38,47 +38,35 @@
               <li class="kss-menu-item"><a href="section-10.html"><span class="kss-ref">10</span><span class="kss-name">Anpassningar</span></a></li>
             </ul>
             <ul class="kss-menu-child">
-              <li class="kss-menu-item"><a href="#section-9.1"><span class="kss-ref">9.1</span><span class="kss-name">Visualisering av data</span></a></li>
-              <li class="kss-menu-item"><a href="#section-9.2"><span class="kss-ref">9.2</span><span class="kss-name">Data i en tabell</span></a></li>
-              <li class="kss-menu-item"><a href="#section-9.3"><span class="kss-ref">9.3</span><span class="kss-name">Ledtexter</span></a></li>
+              <li class="kss-menu-item"><a href="#section-10.1"><span class="kss-ref">10.1</span><span class="kss-name">Marginaler</span></a></li>
             </ul>
           </nav>
         </div>
       </div>
       <div class="kss-content">
         <article class="kss-article">
-          <section id="section-9" class="kss-section kss-depth-1">
-            <h1 class="kss-title"><span class="kss-ref">9</span> Presentation av data</h1>
+          <section id="section-10" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">10</span> Anpassningar</h1>
             <div class="kss-description">
-              <p>Data används som alternativ till bilder. Vi behöver skapa tydlig presentation av data som stödjer och vägleder våra användare i sitt mål med användningen (understödjer princip 1) . Det gör vi med lättförstålig och konsekvent visualisering av data.</p>
+              <p>Då de olika tjänsterna varierar i sitt uttryck kan det ibland behöva göras anpassningar i stilmallarna.
+Om anpassningen inte är omfattande så finns inget behov av att bygga om grund-stilmallen, utan kan göras med hjälp av en egen stilmall ovanpå grund-stilmallen.</p>
+<p>Tänk på att ladda in dina egna regler <em>efter</em> grund-stilmallen.</p>
+<pre><code>&lt;link href=&quot;../css/kb-style.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;../css/egna-styles.css&quot; rel=&quot;stylesheet&quot;&gt;
+</code></pre><p>Nedan följer ett par exempel på när det kan behövas.</p>
 
             </div>
           </section>
-          <section id="section-9.1" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">9.1</span> Visualisering av data</h1>
+          <section id="section-10.1" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">10.1</span> Marginaler</h1>
             <div class="kss-description">
-              <p>Datavärdet ska alltid skrivas ut först, så att det blir rätt när en screen reader ska läsa upp det.</p>
-<p>Exempel: (bild)
-Visuell hierarki</p>
-
-            </div>
-          </section>
-          <section id="section-9.2" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">9.2</span> Data i en tabell</h1>
-            <div class="kss-description">
-              <p>Att visa data i en tabell kan underlätta för användaren att snabbt hitta vad den söker.</p>
-<p>Text vänsterjusteras. Siffror högerjusteras. Siffror som kompletteras med text ska vänsterjusteras.</p>
-<p>Exempel: (bild)</p>
-
-            </div>
-          </section>
-          <section id="section-9.3" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">9.3</span> Ledtexter</h1>
-            <div class="kss-description">
-              <p>Om du behöver förtydliga innehållet med en ledtext bör du tänka på att innehållet ofta är primärt och ledtexten sekundär, så använd en nedtonad färg och alternativt skriv inom parentes.
-Exempel: August Strindberg (författare)</p>
-<p>Kodexempel</p>
-
+              <p>Önskad marginaler mellan olika block i layouten kan variera beroende på hur din layout är uppbyggd. Ett sidhuvud med en jumbotron behöver sannolikt andra marginaler än en utan jumbotron, och ibland varierar layouten inom samma tjänst.</p>
+<p>Istället för att lägga din marginal på navigerings-baren eller på jumbotronen kan man ge sin innehålls-container en extra klass (t ex .content-container).</p>
+<p>I din egna CSS ger du sedan denna klassen en specifik marginal.</p>
+<pre><code>.content-container {
+  margin-top: 50px;
+}
+</code></pre>
             </div>
           </section>
         </article>

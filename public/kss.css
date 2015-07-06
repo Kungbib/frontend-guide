@@ -749,7 +749,9 @@ pre .regexp {
   pointer-events: none;
 }
 /* end fix */
-
-.kss-description td, .kss-description th {
-  padding: 5px;
+/* KB custom */
+.kss-markup.folded-example pre {
+  max-height: 2em;
+  opacity: 0.4;
+  overflow: hidden !important;
 }
