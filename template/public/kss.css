@@ -755,3 +755,7 @@ pre .regexp {
   opacity: 0.4;
   overflow: hidden !important;
 }
+.kss-description td,
+.kss-description th {
+  padding: 5px;
+}
