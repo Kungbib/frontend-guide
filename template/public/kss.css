@@ -751,5 +751,7 @@ pre .regexp {
 /* end fix */
 /* KB custom */
 .kss-markup.folded-example pre {
-  display: none;
+  max-height: 2em;
+  opacity: 0.4;
+  overflow: hidden !important;
 }
