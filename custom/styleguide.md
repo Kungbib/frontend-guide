@@ -15,6 +15,8 @@ Denna guide är under utveckling och kommer att utökas kontinuerligt. Vi vill g
 Som en del av guiden finns en tillhörande stilmall, som går att [ladda ner här](./css/kb-style.css).
 Stilmallen är en anpassad version av [Twitter Bootstrap](http://getbootstrap.com/) och ersätter dess CSS-filer, dock ej dess JavaScript.
 
+Stilmallen är kompatibel med **Bootstrap 3.3.4**.
+
 ## Exempel
 
 ### Templates som använder stilmallen
