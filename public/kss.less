@@ -10,6 +10,8 @@ body {
 @import "rainbow-github";
 // @import "solarized-dark";
 
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,700,400);
+
 #kss-node {
 
   border-top: 4px solid @key-color;
@@ -22,11 +24,12 @@ body {
   @wrapper-width: 960px;
   @sidebar-width: 220px;
   @code-font: Consolas, Menlo,'Liberation Mono', Courier, monospace;
+  @font-family-base: 'Open Sans', sans-serif;
 
   // Mixins
   .base-styles() {
     line-height: 1.3;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: @font-family-base;
     color: @text-color;
   }
   .doc-styles() {
@@ -284,7 +287,6 @@ body {
   // Content column
   .kss-content {
     overflow: hidden;
-    margin-left: @sidebar-width + 30px;
     padding: 40px 0 10px;
   }
 

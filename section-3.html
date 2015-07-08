@@ -16,8 +16,8 @@
   </head>
 
   <body id="kss-node">
-    <div class="kss-wrapper">
-      <div class="kss-sidebar">
+    <div class="container">
+      <div class="col-md-3 kss-menubar">
         <div class="kss-sidebar-inner">
           <header class="kss-header">
             <h4>Stilguide för</h4>
@@ -41,15 +41,15 @@
               <li class="kss-menu-item"><a href="#section-3.1"><span class="kss-ref">3.1</span><span class="kss-name">Sidhuvud</span></a></li>
               <li class="kss-menu-item"><a href="#section-3.1.1"><span class="kss-ref">3.1.1</span><span class="kss-name">Sidhuvud version 1</span></a></li>
               <li class="kss-menu-item"><a href="#section-3.1.2"><span class="kss-ref">3.1.2</span><span class="kss-name">Sidhuvud version 2</span></a></li>
-              <li class="kss-menu-item"><a href="#section-3.2"><span class="kss-ref">3.2</span><span class="kss-name">Logotyper</span></a></li>
-              <li class="kss-menu-item"><a href="#section-3.3"><span class="kss-ref">3.3</span><span class="kss-name">Sidfot</span></a></li>
-              <li class="kss-menu-item"><a href="#section-3.3.1"><span class="kss-ref">3.3.1</span><span class="kss-name">Minimal sidfot</span></a></li>
-              <li class="kss-menu-item"><a href="#section-3.3.2"><span class="kss-ref">3.3.2</span><span class="kss-name">Utökad sidfot</span></a></li>
+              <li class="kss-menu-item"><a href="#section-3.2"><span class="kss-ref">3.2</span><span class="kss-name">Sidfot</span></a></li>
+              <li class="kss-menu-item"><a href="#section-3.2.1"><span class="kss-ref">3.2.1</span><span class="kss-name">Minimal sidfot</span></a></li>
+              <li class="kss-menu-item"><a href="#section-3.2.2"><span class="kss-ref">3.2.2</span><span class="kss-name">Utökad sidfot</span></a></li>
+              <li class="kss-menu-item"><a href="#section-3.3"><span class="kss-ref">3.3</span><span class="kss-name">Logotyper</span></a></li>
             </ul>
           </nav>
         </div>
       </div>
-      <div class="kss-content">
+      <div class="col-md-9 kss-content">
         <article class="kss-article">
           <section id="section-3" class="kss-section kss-depth-1">
             <h1 class="kss-title"><span class="kss-ref">3</span> Sidhuvud/Sidfot</h1>
@@ -63,6 +63,9 @@
             <div class="kss-description">
               <p>För tjänster med generiskt uttryck finns två olika varianter av sidhuvuden.</p>
 <p>Vid behov använd toppnavigation för länkar som till exempel: Logga in, Feedback, Kontakt.</p>
+<h3 id="anv-ndning">Användning</h3>
+<h4 id="f-sta-sidhuvud">Fästa sidhuvud</h4>
+<p>För att fästa sidhuvudet till toppen av sidan (sk &quot;fixed&quot; eller &quot;sticky&quot;), ge den klassen <code>.navbar-fixed-top</code> och anpassa dina marginaler efter behov. <a href="http://getbootstrap.com/examples/sticky-footer-navbar/">Se exempel</a>.</p>
 
             </div>
           </section>
@@ -221,7 +224,208 @@
             </div>
           </section>
           <section id="section-3.2" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">3.2</span> Logotyper</h1>
+            <h1 class="kss-title"><span class="kss-ref">3.2</span> Sidfot</h1>
+            <div class="kss-description">
+              <p>Det finns två varianter av sidfötter, den minimala och den utökade. Det går att kombinera de båda alternativt att endast använda den minimala.</p>
+<h3 id="anv-ndning">Användning</h3>
+<p>Använd .footer-container för att stapla flera footers inuti footer-tagen.</p>
+<h4 id="f-sta-sidfoten">Fästa sidfoten</h4>
+<p>För att fästa sidfoten till botten av sidan (sk &quot;sticky&quot;) se <a href="http://getbootstrap.com/examples/sticky-footer/">detta exemplet</a>.</p>
+
+            </div>
+          </section>
+          <section id="section-3.2.1" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">3.2.1</span> Minimal sidfot</h1>
+            <div class="kss-description">
+              <p>Använd den minimala sidfoten för tjänster där behovet endast är att förmedla att KB är avsändare. Länka Kungl. biblioteket till www.kb.se och ange rätt länk till specifik support för tjänsten. Kan leda till Kundo-forum, mejladress eller en kontaktsida.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="container-fluid">
+  <footer class="footer">
+    <div class="footer-container bg-happy-muted-light-blue">
+    <div class="container">
+      <div class="col-md-2 text-center">
+        <img src="./assets/kb_logo_black.svg" class="logo-medium" alt="" />
+      </div>
+      <div class="col-md-10 text-black">
+        <p>
+          <strong><a href="http://www.kb.se" alt="Länk till Kungl. Bibliotekets webbplats">
+            KUNGL. BIBLIOTEKET
+          </a></strong>
+          <br>
+          <span>Support: <a href="mailto:test.test@kb.se">test.test@kb.se</a></span>
+        </p>
+      </div>
+    </div>
+    </div>
+  </footer>
+</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;container-fluid&quot;&gt;
+  &lt;footer class=&quot;footer&quot;&gt;
+    &lt;div class=&quot;footer-container bg-happy-muted-light-blue&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;col-md-2 text-center&quot;&gt;
+        &lt;img src=&quot;./assets/kb_logo_black.svg&quot; class=&quot;logo-medium&quot; alt=&quot;&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-10 text-black&quot;&gt;
+        &lt;p&gt;
+          &lt;strong&gt;&lt;a href=&quot;http://www.kb.se&quot; alt=&quot;Länk till Kungl. Bibliotekets webbplats&quot;&gt;
+            KUNGL. BIBLIOTEKET
+          &lt;/a&gt;&lt;/strong&gt;
+          &lt;br&gt;
+          &lt;span&gt;Support: &lt;a href=&quot;mailto:test.test@kb.se&quot;&gt;test.test@kb.se&lt;/a&gt;&lt;/span&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/footer&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-3.2.2" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">3.2.2</span> Utökad sidfot</h1>
+            <div class="kss-description">
+              <p>Använd den utökade sidfoten om det finns behov av att förmedla ytterligare information som till exempel fler kontaktvägar, relaterade tjänster, licensuppgifter eller redovisa samarbeten med övriga organisationer för den specifika tjänsten. Tänk på att använda ytan i den utökade sidfoten endast för att stötta användarnas behov av mer information för att nå sina mål.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="container-fluid">
+  <footer class="footer">
+    <div class="footer-container bg-gray-lighter">
+      <div class="container">
+        <div class="col-md-3">
+          <h1>List 1</h1>
+          <ul class="list-unstyled">
+            <li>Lorem ipsum</li>
+            <li>Dorem</li>
+            <li>Ipsum santi laninum</li>
+            <li>Verti absolutom</li>
+            <li>Neo geosatium</li>
+            <li>Verti absolutom</li>
+            <li>Neo geosatium</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h1>List 2</h1>
+          <ul class="list-unstyled">
+            <li>Ipsum santi laninum</li>
+            <li>Lorem ipsum</li>
+            <li>Neo geosatium</li>
+            <li>Verti absolutom</li>
+            <li>Neo geosatium</li>
+            <li>Dorem</li>
+            <li>Verti absolutom</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h1>List 3</h1>
+          <ul class="list-unstyled">
+            <li>Verti absolutom</li>
+            <li>Ipsum santi laninum</li>
+            <li>Dorem</li>
+            <li>Lorem ipsum</li>
+            <li>Neo geosatium</li>
+            <li>Verti absolutom</li>
+            <li>Neo geosatium</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-container bg-happy-muted-light-blue">
+      <div class="container">
+        <div class="col-md-2 text-center">
+          <img src="./assets/kb_logo_black.svg" class="logo-medium" alt="" />
+        </div>
+        <div class="col-md-10 text-black">
+          <p>
+            <strong><a href="http://www.kb.se" alt="Länk till Kungl. Bibliotekets webbplats">
+              KUNGL. BIBLIOTEKET
+            </a></strong>
+            <br>
+            <span>Support: <a href="mailto:test.test@kb.se">test.test@kb.se</a></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;container-fluid&quot;&gt;
+  &lt;footer class=&quot;footer&quot;&gt;
+    &lt;div class=&quot;footer-container bg-gray-lighter&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;col-md-3&quot;&gt;
+          &lt;h1&gt;List 1&lt;/h1&gt;
+          &lt;ul class=&quot;list-unstyled&quot;&gt;
+            &lt;li&gt;Lorem ipsum&lt;/li&gt;
+            &lt;li&gt;Dorem&lt;/li&gt;
+            &lt;li&gt;Ipsum santi laninum&lt;/li&gt;
+            &lt;li&gt;Verti absolutom&lt;/li&gt;
+            &lt;li&gt;Neo geosatium&lt;/li&gt;
+            &lt;li&gt;Verti absolutom&lt;/li&gt;
+            &lt;li&gt;Neo geosatium&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-3&quot;&gt;
+          &lt;h1&gt;List 2&lt;/h1&gt;
+          &lt;ul class=&quot;list-unstyled&quot;&gt;
+            &lt;li&gt;Ipsum santi laninum&lt;/li&gt;
+            &lt;li&gt;Lorem ipsum&lt;/li&gt;
+            &lt;li&gt;Neo geosatium&lt;/li&gt;
+            &lt;li&gt;Verti absolutom&lt;/li&gt;
+            &lt;li&gt;Neo geosatium&lt;/li&gt;
+            &lt;li&gt;Dorem&lt;/li&gt;
+            &lt;li&gt;Verti absolutom&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-3&quot;&gt;
+          &lt;h1&gt;List 3&lt;/h1&gt;
+          &lt;ul class=&quot;list-unstyled&quot;&gt;
+            &lt;li&gt;Verti absolutom&lt;/li&gt;
+            &lt;li&gt;Ipsum santi laninum&lt;/li&gt;
+            &lt;li&gt;Dorem&lt;/li&gt;
+            &lt;li&gt;Lorem ipsum&lt;/li&gt;
+            &lt;li&gt;Neo geosatium&lt;/li&gt;
+            &lt;li&gt;Verti absolutom&lt;/li&gt;
+            &lt;li&gt;Neo geosatium&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;footer-container bg-happy-muted-light-blue&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;col-md-2 text-center&quot;&gt;
+          &lt;img src=&quot;./assets/kb_logo_black.svg&quot; class=&quot;logo-medium&quot; alt=&quot;&quot; /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-10 text-black&quot;&gt;
+          &lt;p&gt;
+            &lt;strong&gt;&lt;a href=&quot;http://www.kb.se&quot; alt=&quot;Länk till Kungl. Bibliotekets webbplats&quot;&gt;
+              KUNGL. BIBLIOTEKET
+            &lt;/a&gt;&lt;/strong&gt;
+            &lt;br&gt;
+            &lt;span&gt;Support: &lt;a href=&quot;mailto:test.test@kb.se&quot;&gt;test.test@kb.se&lt;/a&gt;&lt;/span&gt;
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/footer&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-3.3" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">3.3</span> Logotyper</h1>
             <div class="kss-description">
               <p>KBs Logotyp i SVG-format.</p>
 <h2 id="filer">Filer</h2>
@@ -285,208 +489,9 @@
               </div>
             </div>
           </section>
-          <section id="section-3.3" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">3.3</span> Sidfot</h1>
-            <div class="kss-description">
-              <p>Det finns två varianter av sidfötter, den minimala och den utökade. Det går att kombinera de båda alternativt att endast använda den minimala.</p>
-<h3 id="anv-ndning">Användning</h3>
-<p>Använd .footer-container för att stapla flera footers inuti footer-tagen.</p>
-
-            </div>
-          </section>
-          <section id="section-3.3.1" class="kss-section kss-depth-3">
-            <h1 class="kss-title"><span class="kss-ref">3.3.1</span> Minimal sidfot</h1>
-            <div class="kss-description">
-              <p>Använd den minimala sidfoten för tjänster där behovet endast är att förmedla att KB är avsändare. Länka Kungl. biblioteket till www.kb.se och ange rätt länk till specifik support för tjänsten. Kan leda till Kundo-forum, mejladress eller en kontaktsida.</p>
-
-            </div>
-            <div class="kss-modifier-block">
-              <div class="kss-modifier kss-modifier-original">
-                <div class="kss-modifier-example">
-                  <div class="container">
-  <footer class="footer">
-    <div class="footer-container bg-happy-muted-light-blue">
-    <div class="container">
-      <div class="col-md-2 text-center">
-        <img src="./assets/kb_logo_black.svg" class="logo-medium" alt="" />
-      </div>
-      <div class="col-md-10 text-black">
-        <p>
-          <strong><a href="http://www.kb.se" alt="Länk till Kungl. Bibliotekets webbplats">
-            KUNGL. BIBLIOTEKET
-          </a></strong>
-          <br>
-          <span>Support: <a href="mailto:test.test@kb.se">test.test@kb.se</a></span>
-        </p>
-      </div>
-    </div>
-    </div>
-  </footer>
-</div>
-                </div>
-              </div>
-              <div class="kss-markup">
-                <pre><code data-language="html">&lt;div class=&quot;container&quot;&gt;
-  &lt;footer class=&quot;footer&quot;&gt;
-    &lt;div class=&quot;footer-container bg-happy-muted-light-blue&quot;&gt;
-    &lt;div class=&quot;container&quot;&gt;
-      &lt;div class=&quot;col-md-2 text-center&quot;&gt;
-        &lt;img src=&quot;./assets/kb_logo_black.svg&quot; class=&quot;logo-medium&quot; alt=&quot;&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-md-10 text-black&quot;&gt;
-        &lt;p&gt;
-          &lt;strong&gt;&lt;a href=&quot;http://www.kb.se&quot; alt=&quot;Länk till Kungl. Bibliotekets webbplats&quot;&gt;
-            KUNGL. BIBLIOTEKET
-          &lt;/a&gt;&lt;/strong&gt;
-          &lt;br&gt;
-          &lt;span&gt;Support: &lt;a href=&quot;mailto:test.test@kb.se&quot;&gt;test.test@kb.se&lt;/a&gt;&lt;/span&gt;
-        &lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/footer&gt;
-&lt;/div&gt;</code></pre>
-              </div>
-            </div>
-          </section>
-          <section id="section-3.3.2" class="kss-section kss-depth-3">
-            <h1 class="kss-title"><span class="kss-ref">3.3.2</span> Utökad sidfot</h1>
-            <div class="kss-description">
-              <p>Använd den utökade sidfoten om det finns behov av att förmedla ytterligare information som till exempel fler kontaktvägar, relaterade tjänster, licensuppgifter eller redovisa samarbeten med övriga organisationer för den specifika tjänsten. Tänk på att använda ytan i den utökade sidfoten endast för att stötta användarnas behov av mer information för att nå sina mål.</p>
-
-            </div>
-            <div class="kss-modifier-block">
-              <div class="kss-modifier kss-modifier-original">
-                <div class="kss-modifier-example">
-                  <div class="container">
-  <footer class="footer">
-    <div class="footer-container bg-gray-lighter">
-      <div class="container">
-        <div class="col-md-3">
-          <h1>List 1</h1>
-          <ul class="list-unstyled">
-            <li>Lorem ipsum</li>
-            <li>Dorem</li>
-            <li>Ipsum santi laninum</li>
-            <li>Verti absolutom</li>
-            <li>Neo geosatium</li>
-            <li>Verti absolutom</li>
-            <li>Neo geosatium</li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h1>List 2</h1>
-          <ul class="list-unstyled">
-            <li>Ipsum santi laninum</li>
-            <li>Lorem ipsum</li>
-            <li>Neo geosatium</li>
-            <li>Verti absolutom</li>
-            <li>Neo geosatium</li>
-            <li>Dorem</li>
-            <li>Verti absolutom</li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h1>List 3</h1>
-          <ul class="list-unstyled">
-            <li>Verti absolutom</li>
-            <li>Ipsum santi laninum</li>
-            <li>Dorem</li>
-            <li>Lorem ipsum</li>
-            <li>Neo geosatium</li>
-            <li>Verti absolutom</li>
-            <li>Neo geosatium</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-container bg-happy-muted-light-blue">
-      <div class="container">
-        <div class="col-md-2 text-center">
-          <img src="./assets/kb_logo_black.svg" class="logo-medium" alt="" />
-        </div>
-        <div class="col-md-10 text-black">
-          <p>
-            <strong><a href="http://www.kb.se" alt="Länk till Kungl. Bibliotekets webbplats">
-              KUNGL. BIBLIOTEKET
-            </a></strong>
-            <br>
-            <span>Support: <a href="mailto:test.test@kb.se">test.test@kb.se</a></span>
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-</div>
-                </div>
-              </div>
-              <div class="kss-markup">
-                <pre><code data-language="html">&lt;div class=&quot;container&quot;&gt;
-  &lt;footer class=&quot;footer&quot;&gt;
-    &lt;div class=&quot;footer-container bg-gray-lighter&quot;&gt;
-      &lt;div class=&quot;container&quot;&gt;
-        &lt;div class=&quot;col-md-3&quot;&gt;
-          &lt;h1&gt;List 1&lt;/h1&gt;
-          &lt;ul class=&quot;list-unstyled&quot;&gt;
-            &lt;li&gt;Lorem ipsum&lt;/li&gt;
-            &lt;li&gt;Dorem&lt;/li&gt;
-            &lt;li&gt;Ipsum santi laninum&lt;/li&gt;
-            &lt;li&gt;Verti absolutom&lt;/li&gt;
-            &lt;li&gt;Neo geosatium&lt;/li&gt;
-            &lt;li&gt;Verti absolutom&lt;/li&gt;
-            &lt;li&gt;Neo geosatium&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-md-3&quot;&gt;
-          &lt;h1&gt;List 2&lt;/h1&gt;
-          &lt;ul class=&quot;list-unstyled&quot;&gt;
-            &lt;li&gt;Ipsum santi laninum&lt;/li&gt;
-            &lt;li&gt;Lorem ipsum&lt;/li&gt;
-            &lt;li&gt;Neo geosatium&lt;/li&gt;
-            &lt;li&gt;Verti absolutom&lt;/li&gt;
-            &lt;li&gt;Neo geosatium&lt;/li&gt;
-            &lt;li&gt;Dorem&lt;/li&gt;
-            &lt;li&gt;Verti absolutom&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-md-3&quot;&gt;
-          &lt;h1&gt;List 3&lt;/h1&gt;
-          &lt;ul class=&quot;list-unstyled&quot;&gt;
-            &lt;li&gt;Verti absolutom&lt;/li&gt;
-            &lt;li&gt;Ipsum santi laninum&lt;/li&gt;
-            &lt;li&gt;Dorem&lt;/li&gt;
-            &lt;li&gt;Lorem ipsum&lt;/li&gt;
-            &lt;li&gt;Neo geosatium&lt;/li&gt;
-            &lt;li&gt;Verti absolutom&lt;/li&gt;
-            &lt;li&gt;Neo geosatium&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;footer-container bg-happy-muted-light-blue&quot;&gt;
-      &lt;div class=&quot;container&quot;&gt;
-        &lt;div class=&quot;col-md-2 text-center&quot;&gt;
-          &lt;img src=&quot;./assets/kb_logo_black.svg&quot; class=&quot;logo-medium&quot; alt=&quot;&quot; /&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-md-10 text-black&quot;&gt;
-          &lt;p&gt;
-            &lt;strong&gt;&lt;a href=&quot;http://www.kb.se&quot; alt=&quot;Länk till Kungl. Bibliotekets webbplats&quot;&gt;
-              KUNGL. BIBLIOTEKET
-            &lt;/a&gt;&lt;/strong&gt;
-            &lt;br&gt;
-            &lt;span&gt;Support: &lt;a href=&quot;mailto:test.test@kb.se&quot;&gt;test.test@kb.se&lt;/a&gt;&lt;/span&gt;
-          &lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/footer&gt;
-&lt;/div&gt;</code></pre>
-              </div>
-            </div>
-          </section>
         </article>
         <footer class="kss-footer">
-          <div>Senast uppdaterad: 2015-07-06 - 18:12:27 <br>Skapad med hjälp av <a href="https://github.com/hughsk/kss-node">kss-node</a> och <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+          <div>Senast uppdaterad: 2015-07-08 - 17:13:56 <br>Skapad med hjälp av <a href="https://github.com/hughsk/kss-node">kss-node</a> och <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
         </footer>
       </div>
     </div>
