@@ -33,6 +33,16 @@ module.exports = function(grunt) {
         files: {
           "build/css/kb-style.css": "custom/custom.less"
         }
+      },
+      kssdev: {
+        options: {
+          compress: false,
+          yucompress: false,
+          optimization: 2
+        },
+        files: {
+          "template/public/kss.css": "template/public/kss.less"
+        }
       }
     },
     kss: {

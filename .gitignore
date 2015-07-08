@@ -2,4 +2,5 @@
 /build/
 /.grunt/
 /template/index.html
+/template/public/kss.css
 .DS_Store
