@@ -1,3 +1,5 @@
+@import '../../custom/custom.less';
+
 .kss-markup {
   &.folded-example {
     pre {
@@ -10,4 +12,19 @@
 
 .kss-description td, .kss-description th {
   padding: 5px;
+}
+
+.kss-menubar {
+  @media screen and (min-width: @screen-md-min) {
+    .kss-sidebar-inner {
+      position: fixed;
+      top: 0px;
+      margin-left: -2%;
+      width: 230px;
+    }
+  }
+}
+
+.kss-content {
+  margin-left: none !important;
 }
