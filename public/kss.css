@@ -9588,7 +9588,7 @@ Styleguide 6.4
     width: 230px;
   }
 }
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .kss-menubar .kss-menu-item {
     font-size: 20px !important;
     line-height: 1.5 !important;
