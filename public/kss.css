@@ -9436,7 +9436,7 @@ Markup:
 </div>
 <div class="radio disabled">
   <label>
-    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
     Alternativ 3
   </label>
 </div>
@@ -9593,7 +9593,8 @@ Styleguide 6.4
     font-size: 20px !important;
     line-height: 1.5 !important;
   }
-  .kss-menubar .kss-menu-item .kss-name {
+  .kss-menubar .kss-menu-item .kss-name,
+  .kss-menubar .kss-menu-item .kss-ref {
     white-space: normal !important;
   }
 }
