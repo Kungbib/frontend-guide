@@ -30,6 +30,9 @@
 }
 .kss-menu {
   > .kss-menu-item {
+    &:hover {
+      background-color: fadeout(@happy-muted-magenta, 40%);
+    }
     .label {
       margin: 0.7em 0px;
       font-size: 0.5em !important;
@@ -49,12 +52,12 @@
     &.kss-active > ul {
       list-style: none;
       padding: 0px;
-      background-color: fadeout(@happy-muted-magenta, 40%);
+      background-color: lighten(@happy-muted-magenta, 25%);
       li {
         padding: 0px 0px 0px 20px;
         margin-left: 0px;
         &:hover {
-          background-color: lighten(@happy-muted-magenta, 25%);
+          background-color: fadeout(@happy-muted-magenta, 40%);
         }
       }
       > .kss-active {
@@ -121,7 +124,8 @@
   margin-left: none !important;
 }
 .kss-section {
-  margin-bottom: 3em;
+  margin-bottom: 0em;
+  padding-top: 3em;
   .kss-title {
     border: solid #333333;
     border-width: 0px 0px 0.1em 0px;
