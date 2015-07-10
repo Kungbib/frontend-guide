@@ -9574,6 +9574,11 @@ Styleguide 6.4
 .kss-navbar .update-text {
   padding: 14px;
 }
+@media screen and (max-width: 991px) {
+  .kss-navbar .update-text {
+    display: none;
+  }
+}
 .kss-navbar .navbar-header {
   padding: 12px;
 }
@@ -9591,15 +9596,18 @@ Styleguide 6.4
 .kss-menu > .kss-menu-item .label {
   margin: 0.7em 0px;
   font-size: 0.5em !important;
+  font-weight: normal;
 }
 .kss-menu > .kss-menu-item a {
   color: black;
   font-weight: 400;
   padding: 0px 10px;
+  display: block;
+  text-decoration: none;
 }
 .kss-menu > .kss-menu-item.kss-active > a {
   background-color: #72a8ad;
-  color: #ffffff;
+  color: #e0e6e9;
 }
 .kss-menu > .kss-menu-item.kss-active > ul {
   list-style: none;
@@ -9607,12 +9615,17 @@ Styleguide 6.4
   background-color: rgba(114, 168, 173, 0.6);
 }
 .kss-menu > .kss-menu-item.kss-active > ul li {
-  padding: 0px 10px 0px 20px;
+  padding: 0px 0px 0px 20px;
   margin-left: 0px;
 }
+.kss-menu > .kss-menu-item.kss-active > ul li:hover {
+  background-color: #c3dadc;
+}
 .kss-menu > .kss-menu-item.kss-active > ul > .kss-active {
-  background-color: #72a8ad;
-  color: #ffffff;
+  background-color: #72a8ad !important;
+}
+.kss-menu > .kss-menu-item.kss-active > ul > .kss-active a {
+  color: #e0e6e9;
 }
 .kss-markup.folded-example pre {
   display: none;
@@ -9649,9 +9662,6 @@ Styleguide 6.4
 .kss-modifier-head .kss-modifier-description {
   display: inline;
 }
-.kss-content {
-  margin-left: none !important;
-}
 .kss-depth-1 h1 {
   font-size: 36px;
 }
@@ -9664,10 +9674,14 @@ Styleguide 6.4
 .kss-depth-4 h1 {
   font-size: 20px;
 }
+.kss-content {
+  margin-left: none !important;
+}
 .kss-section {
   margin-bottom: 3em;
 }
 .kss-section .kss-title {
   border: solid #333333;
   border-width: 0px 0px 0.1em 0px;
+  margin-bottom: 1em;
 }
