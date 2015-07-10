@@ -85,7 +85,7 @@
             {{else}}
             {{#eachSection rootName}}
             <section id="section-{{reference}}" class="kss-section kss-depth-{{depth}}">
-              <h1 class="kss-title"><span class="kss-ref">{{reference}}</span> {{header}}</h1>
+              <h1 class="kss-title"><span class="kss-ref label label-default bg-black">{{reference}}</span> {{header}}</h1>
               {{#if markup}}
               {{#if description}}
               <div class="kss-description">
@@ -101,10 +101,10 @@
                 {{#eachModifier}}
                 <div class="kss-modifier">
                   <div class="kss-modifier-head">
-                    <div class="kss-modifier-name">{{name}}</div>
                     <div class="kss-modifier-description">
                       {{{description}}}
                     </div>
+                    <div class="kss-modifier-name"><pre>{{name}}</pre></div>
                   </div>
                   <div class="kss-modifier-example">
                     {{{markup}}}
