@@ -9593,6 +9593,9 @@ Styleguide 6.4
 .sidebar {
   padding: 10px 20px 10px 20px !important;
 }
+.kss-menu > .kss-menu-item:hover {
+  background-color: rgba(114, 168, 173, 0.6);
+}
 .kss-menu > .kss-menu-item .label {
   margin: 0.7em 0px;
   font-size: 0.5em !important;
@@ -9612,14 +9615,14 @@ Styleguide 6.4
 .kss-menu > .kss-menu-item.kss-active > ul {
   list-style: none;
   padding: 0px;
-  background-color: rgba(114, 168, 173, 0.6);
+  background-color: #c3dadc;
 }
 .kss-menu > .kss-menu-item.kss-active > ul li {
   padding: 0px 0px 0px 20px;
   margin-left: 0px;
 }
 .kss-menu > .kss-menu-item.kss-active > ul li:hover {
-  background-color: #c3dadc;
+  background-color: rgba(114, 168, 173, 0.6);
 }
 .kss-menu > .kss-menu-item.kss-active > ul > .kss-active {
   background-color: #72a8ad !important;
@@ -9678,7 +9681,8 @@ Styleguide 6.4
   margin-left: none !important;
 }
 .kss-section {
-  margin-bottom: 3em;
+  margin-bottom: 0em;
+  padding-top: 3em;
 }
 .kss-section .kss-title {
   border: solid #333333;
