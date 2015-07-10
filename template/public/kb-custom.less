@@ -1,5 +1,26 @@
 @import '../../custom/custom.less';
 
+.navbar-header {
+  padding: 12px;
+  img {
+    height: 30px;
+    display: inline;
+  }
+  h4 {
+    display: inline;
+    vertical-align: middle;
+  }
+}
+
+.kss-menu {
+  > .kss-menu-item {
+    &.kss-active > a {
+      background-color: @happy-orange;
+      color: @text-color;
+    }
+  }
+}
+
 .kss-markup {
   &.folded-example {
     pre {
