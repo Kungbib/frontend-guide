@@ -9607,7 +9607,7 @@ Styleguide 6.4
 }
 .kss-menu > .kss-menu-item.kss-active > a {
   background-color: #72a8ad;
-  color: #e0e6e9;
+  color: #ffffff;
 }
 .kss-menu > .kss-menu-item.kss-active > ul {
   list-style: none;
@@ -9625,7 +9625,7 @@ Styleguide 6.4
   background-color: #72a8ad !important;
 }
 .kss-menu > .kss-menu-item.kss-active > ul > .kss-active a {
-  color: #e0e6e9;
+  color: #ffffff;
 }
 .kss-markup.folded-example pre {
   display: none;
