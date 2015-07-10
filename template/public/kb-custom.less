@@ -14,9 +14,17 @@
 
 .kss-menu {
   > .kss-menu-item {
+    a {
+      color: black;
+      font-weight: 400;
+    }
     &.kss-active > a {
-      background-color: @happy-orange;
-      color: @text-color;
+      background-color: @happy-muted-magenta;
+      color: @white;
+    }
+    &.kss-active > ul > .kss-active {
+      background-color: @happy-muted-magenta;
+      color: @white;
     }
   }
 }
