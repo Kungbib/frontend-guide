@@ -1,7 +1,14 @@
+// Custom KSS styles for KB Styleguide
+// This is only used for the documentation
+
 @import '../../custom/custom.less';
 
+// Navbar
 .kss-navbar {
   .update-text {
+    @media screen and (max-width: @screen-sm-max) {
+      display: none;
+    }
     padding: 14px;
   }
   .navbar-header {
@@ -16,6 +23,8 @@
     }
   }
 }
+
+// Sidebar
 .sidebar {
   padding: 10px 20px 10px 20px !important;
 }
@@ -24,27 +33,33 @@
     .label {
       margin: 0.7em 0px;
       font-size: 0.5em !important;
+      font-weight: normal;
     }
     a {
       color: black;
       font-weight: 400;
       padding: 0px 10px;
+      display: block;
+      text-decoration: none;
     }
     &.kss-active > a {
       background-color: @happy-muted-magenta;
-      color: @white;
+      color: @gray-lighter;
     }
     &.kss-active > ul {
       list-style: none;
       padding: 0px;
       background-color: fadeout(@happy-muted-magenta, 40%);
       li {
-        padding: 0px 10px 0px 20px;
+        padding: 0px 0px 0px 20px;
         margin-left: 0px;
+        &:hover {
+          background-color: lighten(@happy-muted-magenta, 25%);
+        }
       }
       > .kss-active {
-        background-color: @happy-muted-magenta;
-        color: @white;
+        background-color: @happy-muted-magenta !important;
+        a { color: @gray-lighter;}
       }
     }
   }
@@ -85,6 +100,7 @@
   }
 }
 
+// Modifiers
 .kss-modifier-head {
   margin: 20px 0px;
   .kss-modifier-name, .kss-modifier-description {
@@ -92,15 +108,18 @@
   }
 }
 
-.kss-content {
-  margin-left: none !important;
-}
 
+// Headers
 .kss-depth-1 h1 { font-size: 36px; }
 .kss-depth-2 h1 { font-size: 30px; }
 .kss-depth-3 h1 { font-size: 24px; }
 .kss-depth-4 h1 { font-size: 20px; }
 
+// Content
+
+.kss-content {
+  margin-left: none !important;
+}
 .kss-section {
   margin-bottom: 3em;
   .kss-title {
