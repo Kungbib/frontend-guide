@@ -1,6 +1,6 @@
 @import '../../custom/custom.less';
 
-.navbar-header {
+.kss-navbar .navbar-header {
   padding: 12px;
   img {
     height: 30px;
@@ -14,17 +14,31 @@
 
 .kss-menu {
   > .kss-menu-item {
+    .label {
+      margin: 0.7em 0px;
+      font-size: 0.5em !important;
+    }
     a {
       color: black;
       font-weight: 400;
+      padding: 0px 10px;
     }
     &.kss-active > a {
       background-color: @happy-muted-magenta;
       color: @white;
     }
-    &.kss-active > ul > .kss-active {
-      background-color: @happy-muted-magenta;
-      color: @white;
+    &.kss-active > ul {
+      list-style: none;
+      padding: 0px;
+      background-color: fadeout(@happy-muted-magenta, 40%);
+      li {
+        padding: 0px 10px 0px 20px;
+        margin-left: 0px;
+      }
+      > .kss-active {
+        background-color: @happy-muted-magenta;
+        color: @white;
+      }
     }
   }
 }
@@ -32,6 +46,7 @@
 .kss-markup {
   &.folded-example {
     pre {
+      display: none;
       max-height: 2em;
       opacity: 0.4;
       overflow: hidden !important;
