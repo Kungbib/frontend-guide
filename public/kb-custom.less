@@ -3,6 +3,14 @@
 
 @import '../../custom/custom.less';
 
+// Responsive
+.logo-text {
+  @media screen and (max-width: @screen-xs-max) {
+    display: none !important;
+  }
+  margin-right: 0.5em;
+}
+
 // Navbar
 .kss-navbar {
   .update-text {
@@ -12,7 +20,6 @@
     padding: 14px;
   }
   .navbar-header {
-    padding: 12px;
     img {
       height: 30px;
       display: inline;
@@ -21,6 +28,14 @@
       display: inline;
       vertical-align: middle;
     }
+  }
+}
+.navbar-collapse {
+  max-height: 100% !important;
+}
+.navbar-nav {
+  @media screen and (min-width: @screen-sm-min) {
+    display: none !important;
   }
 }
 

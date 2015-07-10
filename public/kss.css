@@ -9571,6 +9571,14 @@ Styleguide 6.4
     font-size: 35px;
   }
 }
+.logo-text {
+  margin-right: 0.5em;
+}
+@media screen and (max-width: 767px) {
+  .logo-text {
+    display: none !important;
+  }
+}
 .kss-navbar .update-text {
   padding: 14px;
 }
@@ -9579,9 +9587,6 @@ Styleguide 6.4
     display: none;
   }
 }
-.kss-navbar .navbar-header {
-  padding: 12px;
-}
 .kss-navbar .navbar-header img {
   height: 30px;
   display: inline;
@@ -9589,6 +9594,14 @@ Styleguide 6.4
 .kss-navbar .navbar-header h4 {
   display: inline;
   vertical-align: middle;
+}
+.navbar-collapse {
+  max-height: 100% !important;
+}
+@media screen and (min-width: 768px) {
+  .navbar-nav {
+    display: none !important;
+  }
 }
 .sidebar {
   padding: 10px 20px 10px 20px !important;
