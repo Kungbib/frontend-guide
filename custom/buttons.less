@@ -1,7 +1,7 @@
 /*
 Knappar och etiketter
 
-Styleguide 8.
+Styleguide 7.
 */
 
 /*
@@ -13,7 +13,7 @@ Beroende på vilken funktion knappen har så har knappen olika färger. Färgern
 
 Texten på en knapp ska vara kort och beskriva handlingen som knappen utför.
 
-Styleguide 8.1
+Styleguide 7.1
 */
 
 .btn {
@@ -56,7 +56,7 @@ Markup:
 <button class="btn btn-default {{modifier_class}}">Button</button>
 <button class="btn btn-primary {{modifier_class}}">Button</button>
 
-Styleguide 8.1.1
+Styleguide 7.1.1
 */
 
 .btn {
@@ -83,22 +83,23 @@ Styleguide 8.1.1
 	//
 }
 
+/*
+Skal
 
-// Skal
-//
-// .btn-default    - Default
-// .btn-primary    - Primary
-// .btn-info       - Info
-// .btn-success    - Success
-// .btn-warning    - Warning
-// .btn-danger     - Danger
-// .btn-link			 - Link
-//
-// Markup:
-// <button class="btn {{modifier_class}}">Button Element</button>
-// <button disabled class="btn {{modifier_class}}">Disabled</button>
-//
-// Styleguide 8.1.2
+ .btn-default    - Default
+ .btn-primary    - Primary
+.btn-info       - Info
+.btn-success    - Success
+.btn-warning    - Warning
+.btn-danger     - Danger
+.btn-link			 - Link
+
+Markup:
+<button class="btn {{modifier_class}}">Button Element</button>
+<button disabled class="btn {{modifier_class}}">Disabled</button>
+ 
+Styleguide 7.1.2
+*/
 
 .button-colors(@color) {
 	background-color: @color;

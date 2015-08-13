@@ -1,30 +1,21 @@
-/*
-Sidhuvud/Sidfot
-
-Sidhuvud och sidhuvud används för att [signalera källa och tjänstens namn](http://webbriktlinjer.se/r/22-ange-vilken-organisation-som-ar-utgivare-till-webbplatsen-pa-samtliga-sidor/).
-
-Styleguide 3.
-*/
 
 
 /*
 Sidhuvud
 
-För tjänster med generiskt uttryck finns två olika varianter av sidhuvuden.
+Sidhuvudet används tillsammans med sidfoten, för att [signalera källa och tjänstens namn](http://webbriktlinjer.se/r/22-ange-vilken-organisation-som-ar-utgivare-till-webbplatsen-pa-samtliga-sidor/).
 
 Vid behov använd toppnavigation för länkar som till exempel: Logga in, Feedback, Kontakt.
 
-### Användning
-#### Fästa sidhuvud
 För att fästa sidhuvudet till toppen av sidan (sk "fixed" eller "sticky"), ge den klassen ``.navbar-fixed-top`` och anpassa dina marginaler efter behov. [Se exempel](http://getbootstrap.com/examples/sticky-footer-navbar/).
 
-Styleguide 3.1
+Styleguide 2.4
 */
 
 /*
 Sidhuvud version 1
 
-I denna version skrivs KB:s logotype följt av tjänstens namn ut i headern. Typsnittet för namn är Open sans googlefont. Viktigt att tänka på är att länka logotyp + namn till tjänstens startsida. Vid behov ange beskrivande text om tjänsten i kursiv stil.
+I denna version skrivs KB:s logotyp följt av tjänstens namn ut i headern. Typsnittet som ska användas för tjänstens namn är Open sans googlefont. Viktigt att tänka på är att länka logotyp + namn till tjänstens startsida. Vid behov ange beskrivande text om tjänsten i kursiv stil.
 
 
 Markup:
@@ -66,42 +57,7 @@ Markup:
 	</div>
 </div>
 
-Styleguide 3.1.1
-*/
-
-/*
-Sidhuvud version 2
-
-I denna version används KB:s logotyp i headern. Tjänstens namn skrivs ut centrerat i jumbotronen.
-
-Markup:
-<nav class="navbar navbar-inverse">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand navbar-logo" href="#"><img src="./assets/kb_logo_white.svg" alt="" /></a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Feedback</a></li>
-          <li><a href="#">Logga in</a></li>
-        </ul>
-    </div><!--/.navbar-collapse -->
-  </div>
-</nav>
-<div class="jumbotron bg-happy-magenta">
-  <div class="container">
-    <h1>Tjänst</h1>
-    <p>Tilläggstext om tjänsten</p>
-  </div>
-</div>
-
-Styleguide 3.1.2
+Styleguide 2.4.1
 */
 
 
@@ -165,6 +121,8 @@ Styleguide 3.1.2
 /*
 Logotyper
 
+För tjänster med unikt uttryck ange logotypen i Cabin (?). (Det här behöver undersökas).
+
 KBs Logotyp i SVG-format.
 
 ## Filer
@@ -189,7 +147,7 @@ För att indikera att en logo endast är dekorativ ska följande uppfyllas:
 Markup:
 <img src="./assets/kb_logo_black.svg" class="{{modifier_class}}" alt="" />
 
-Styleguide 3.3
+Styleguide 5.1
 */
 
 .logo-small {
@@ -206,6 +164,9 @@ Styleguide 3.3
 /*
 Sidfot
 
+Sidfot används tillsammans med sidhuvudet, för att [signalera källa och tjänstens namn](http://webbriktlinjer.se/r/22-ange-vilken-organisation-som-ar-utgivare-till-webbplatsen-pa-samtliga-sidor/).
+
+
 Det finns två varianter av sidfötter, den minimala och den utökade. Det går att kombinera de båda alternativt att endast använda den minimala.
 
 ### Användning
@@ -214,7 +175,7 @@ Använd .footer-container för att stapla flera footers inuti footer-tagen.
 #### Fästa sidfoten
 För att fästa sidfoten till botten av sidan (sk "sticky") se [detta exemplet](http://getbootstrap.com/examples/sticky-footer/).
 
-Styleguide 3.2
+Styleguide 2.5
 */
 
 /*
@@ -244,7 +205,7 @@ Markup:
   </footer>
 </div>
 
-Styleguide 3.2.1
+Styleguide 2.5.1
 */
 
 /*
@@ -314,7 +275,7 @@ Markup:
   </footer>
 </div>
 
-Styleguide 3.2.2
+Styleguide 2.5.2
 */
 .footer {
 	overflow: hidden;
