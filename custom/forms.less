@@ -1,7 +1,7 @@
 /*
 Formulär
 
-Skapa formulär som är så enkla som möjligt för användaren.
+Skapa formulär som är så enkla som möjligt för användaren att fylla i.
 
 Styleguide 7.
 */
@@ -19,8 +19,8 @@ Markup:
   </div>
   <div class="form-group">
     <label for="exampleInputOptional">Favoritbok</label>
-    <input type="text" class="form-control" id="exampleInputOptional" placeholder="">
     <span id="helpBlock" class="help-block">(Valfri)</span>
+    <input type="text" class="form-control" id="exampleInputOptional" placeholder="">
   </div>
 </form>
 
@@ -58,13 +58,13 @@ Gör fältens bredd proportionerligt till den information som ska fyllas i. Se t
 
 Markup:
 <div class="form-group">
-	<input class="form-control input-lg" type="text" placeholder=".input-lg">
+	<input class="form-control" type="text" placeholder="">
 </div>
 <div class="form-group">
-	<input class="form-control" type="text" placeholder="Default input">
+  <input class="form-control input-lg" type="text" placeholder="">
 </div>
 <div class="form-group">
-	<input class="form-control input-sm" type="text" placeholder=".input-sm">
+	<input class="form-control input-sm" type="text" placeholder="">
 </div>
 
 Styleguide 7.3
@@ -93,7 +93,7 @@ Styleguide 7.4
 /*
 Fokustillstånd
 
-För att highlighta ett element så bör fokusfärgen användas. Ingen åtgärd behövs för denna funktionalitet.
+För att visa att ett element är aktivt så bör fokusfärgen användas. Ingen åtgärd behövs för denna funktionalitet.
 
 Markup:
 <form>
@@ -119,9 +119,9 @@ Styleguide 7.5
 /*
 Hjälptexter
 
-Använd hjälptexter för att förklara vad som ska fyllas i fältet när det inte är självklart.
+Använd hjälptexter för att förklara vad som ska fyllas i fältet om det inte är självklart.
 
-Placera hjälptext ovanför fältet. Använd inte placeholder-texter inuti formulärfälten eftersom dessa försvinner direkt när användaren skriver in information i fältet.
+Placera hjälptexten ovanför fältet. [Undvik att använda platshållare](http://www.nngroup.com/articles/form-design-placeholders/) inuti formulärfälten eftersom dessa försvinner direkt när användaren skriver in information i fältet.
 
 Markup:
 <form>
@@ -155,24 +155,26 @@ Styleguide 7.7.
 }
 
 /*
-Dropdownlistor
+Rullgardinslistor
 
-Dropdownlistor kan användas när det finns flera alternativ att välja mellan och användaren enbart ska kunna välja en. En dropdown-lista kan ofta medföra [en dålig användarupplevelse](https://medium.com/apegroup-texts/why-drop-down-lists-are-bad-for-the-user-experience-eeda5cbbd315) och bör bara användas om det finns goda skäl. Många gånger finns det bättre alternativ att välja.
+Rullgardinslistor kan användas när det finns flera alternativ att välja mellan och användaren enbart ska kunna välja en. En rullgardinslista kan ofta medföra [en dålig användarupplevelse](https://medium.com/apegroup-texts/why-drop-down-lists-are-bad-for-the-user-experience-eeda5cbbd315) och bör bara användas om det finns goda skäl. Många gånger finns det bättre alternativ att välja.
 
-Dropdown-listor kan passa att använda om antalet alternativ är ungefär 5 - 15 stycken och om användaren inte känner till alternativen. För färre alternativ passar det oftast bättre med radioknappar. När det finns många alternativ kan fritextfält eller comboboxar (dropdownlista med textfält för autocomplete) passa.
+Rullgardinslistor kan passa om antalet alternativ är ungefär 5 - 15 stycken och om användaren inte känner till alternativen. För färre alternativ passar det oftast bättre med radioknappar. När det finns många alternativ kan fritextfält eller komboboxar (rullgardinslista med textfält för autocomplete) passa.
 
-Läs mer om hur du [använder dropdownlistor rätt](http://uxmovement.com/forms/stop-misusing-select-menus/)
-och [väljer kontroller som passar för mobila plattformar](http://www.lukew.com/ff/entry.asp?1950).
+Läs mer om hur du [använder rullgardinslistor rätt](http://uxmovement.com/forms/stop-misusing-select-menus/)
+och [väljer andra kontroller anpassade för mobila plattformar](http://www.lukew.com/ff/entry.asp?1950).
 
-Exempel på projekt där andra kontroller utforskats som alternativ till dropdown för stora datamängder: [välja land](http://www.smashingmagazine.com/2011/11/redesigning-the-country-selector/).
+Exempel på projekt där andra kontroller utforskats som alternativ till rullgardinslistor för stora datamängder: [välja land](http://www.smashingmagazine.com/2011/11/redesigning-the-country-selector/).
+
+Exempel:
 
 Styleguide 7.7.1
 */
 
 /*
-Kryssboxar
+Kryssrutor
 
-Använd kryssboxar när användarens kan välja på/av för ett enskilt alternativ eller när användaren kan välja flera alternativ i en lista.
+Använd kryssrutor när användarens ska kunna välja på/av för ett enskilt alternativ eller flera alternativ i en lista.
 
 Markup:
 <div class="checkbox">
@@ -194,7 +196,7 @@ Styleguide 7.7.2
 /*
 Radioknappar
 
-Använd radioknappar när användaren ska välja ett alternativ från en lista.
+Använd radioknappar när användaren ska kunna välja ett alternativ från en lista.
 
 Markup:
 <div class="radio">
@@ -225,11 +227,11 @@ Fel och validering
 Tydlig kommunikation i formulär minimerar risken för användaren att göra fel.
 - [Gruppera långa formulär](http://webbriktlinjer.se/r/53-gruppera-formularets-falt/) i till exempel flera sidor.
 - [Minimera antalet fält](http://webbriktlinjer.se/r/50-minimera-antal-falt-och-obligatoriska-falt-i-formular/).
-- Ge [direkt och konstruktiv feedback](http://webbriktlinjer.se/r/77-notifiera-och-ge-anvandaren-aterkoppling/) till användaren om vad som blivit fel med hjälp av alert-färg.
+- Ge [direkt och konstruktiv feedback](http://webbriktlinjer.se/r/77-notifiera-och-ge-anvandaren-aterkoppling/) till användaren om vad som blivit fel med hjälp av statusfärger.
 
 Läs mer [vägledning för formulär](http://webbriktlinjer.se/vagledning/taggar/formular/).
 
-Exempel: (bild)
+Exempel:
 
 Styleguide 7.8
 */
@@ -239,7 +241,7 @@ Infällda formulärelement
 
 Kan användas för att be användaren lägga till extra kontextuell information.
 
-Exempel: (bild)
+Exempel:
 
 Styleguide 7.9
 */

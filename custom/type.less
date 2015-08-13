@@ -1,13 +1,20 @@
-// Typografi
-//
-// Vi använder oss av Open Sans från Google Fonts. Vid behov av att använda ytterligare typsnitt ska dessa väljas med hänsyn till tillgänglighet och öppenhet. Välj om möjligt licensfria alternativ. 
-//
-// Styleguide 4.
+/* 
+Typografi
+
+Vi använder oss av Open Sans från Google Fonts. Vid behov av att använda ytterligare typsnitt ska dessa väljas med hänsyn till tillgänglighet och öppenhet. Välj om möjligt licensfria alternativ. 
+
+Styleguide 4.
+*/
 
 @font-family-base: 'Open Sans', sans-serif;
 
+
 /*
-Storlekar
+Rubriker
+
+Använd rubriker kontinuerligt för att skapa en tydlig hierarki. 
+
+Huvudrubriken ska tydligt beskriva sidans innehåll och innefatta de viktigaste nyckelorden och sökorden. Den bör inte vara för lång. Använd bara en huvudrubrik per sida. 
 
 | Element | Storlek | Vikt
 |---|---|---|
@@ -15,21 +22,14 @@ Storlekar
 | h2  | 30px | 700
 | h3  | 24px | 700
 | h4  | 20px | 700
-| p 	| 16px | 400
-
-Styleguide 4.1
-*/
-
-/*
-Rubriker
 
 Markup:
-<h1>h1 - This is a main title</h1>
-<h2>h2 - This is a subtitle</h2>
-<h3>h3 - This is a section title</h3>
-<h4>h4 - This is a section subtitle</h4>
+<h1>h1 - Det här är en huvudrubrik (nivå 1)</h1>
+<h2>h2 - Det här är en underrubrik (nivå 2)</h2>
+<h3>h3 - Det här är en underrubrik (nivå 3) </h3>
+<h4>h4 - Det här är en underrubrik (nivå 4)</h4>
 
-Styleguide 4.1.1
+Styleguide 4.1
 */
 body {
 	line-height: 1.6;
@@ -53,18 +53,20 @@ h4 {
 	font-size: 20px;
 }
 
-// Sekundär text / Liten text
-//
-// Implemented using &lt;small&gt; or .small
-//
-// Markup:
-// <h1>h1 - This is a main title - <small>Secondary text</small></h1>
-// <h2>h2 - This is a subtitle - <small>Secondary text</small></h2>
-// <h3>h3 - This is a section title - <small>Secondary text</small></h3>
-// <h4>h4 - This is a section subtitle - <small>Secondary text</small></h4>
-// <p>p - This is a normal text with <small>secondary text</small> inside of it.</p>
-//
-// Styleguide 4.1.2
+/*
+Sekundär text / Liten text
+
+Implementeras genom att använda &lt;small&gt; eller .small
+
+ Markup:
+<h1>h1 - This is a main title - <small>Secondary text</small></h1>
+<h2>h2 - This is a subtitle - <small>Secondary text</small></h2>
+<h3>h3 - This is a section title - <small>Secondary text</small></h3>
+<h4>h4 - This is a section subtitle - <small>Secondary text</small></h4>
+<p>p - This is a normal text with <small>secondary text</small> inside of it.</p>
+
+Styleguide 4.1.1
+*/
 
 h1, h2, h3, h4 {
 	.small, small {
@@ -72,10 +74,94 @@ h1, h2, h3, h4 {
 	}
 }
 
+
+
+/*
+Brödtext
+
+| Element | Storlek | Vikt
+|---|---|---|
+| p 	| 16px | 400
+
+
+Styleguide 4.2
+*/
+
+/*
+Markerad
+
+Markup:
+This text contains a <mark>highlighted</mark> word.
+
+Styleguide 4.2.1
+*/
+
+/*
+Genomstruken / Borttagen
+
+Markup:
+<p>This text contains a <s>strikethrough</s> word.</p>
+<p>This text contains a <del>deleted</del> word.</p>
+
+Styleguide 4.2.2
+*/
+
+/*
+Understruken
+
+Markup:
+<p>This text contains an <u>underlined</u> word.</p>
+<p>This text contains an <ins>inserted</ins> word.</p>
+
+Styleguide 4.2.3
+*/
+
+// Fet text
+//
+// Markup:
+// <p>This text contains an <strong>important</strong> word.</p>
+// <p>This text contains a <b>bold</b> word.</p>
+//
+// Styleguide 4.2.4
+
+// Kursiv / Betonad
+//
+// Markup:
+// <p>This text contains an <em>emphasized</em> word.</p>
+// <p>This text contains an <i>italicized</i> word.</p>
+//
+// Styleguide 4.2.5
+
+// Horisontell justering
+//
+// Markup:
+// <p class="text-left">Left aligned</p>
+// <p class="text-center">Center aligned</p>
+// <p class="text-right">Right aligned</p>
+//
+// Styleguide 4.2.6
+
+// Transformering
+//
+// Markup:
+// <p class="text-lowercase">Lowercased text</p>
+// <p class="text-uppercase">Uppercased text</p>
+// <p class="text-capitalize">capitalized text</p>
+//
+// Styleguide 4.2.7
+
+// Förkortningar / initialism
+//
+// Markup:
+// <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+// <p><abbr title="JavaScript Object Notation for Linked Data" class="initialism">JSON-LD</abbr> is pretty cool.</p>
+//
+// Styleguide 4.2.8
+
 /*
 Visuella modifierare
 
-Styleguide 4.2
+Styleguide 4.3
 */
 
 /*
@@ -85,7 +171,7 @@ Markup:
 <h3 class="has-shadow">Text with shadow</h3>
 <p class="has-shadow">Text with shadow</p>
 
-Styleguide 4.2.1
+Styleguide 4.3.1
 */
 
 h1, h2, h3, h4, p {
@@ -103,74 +189,30 @@ Markup:
 <h3 class="has-shadow text-white">White header with shadow</h3>
 <p class="has-shadow text-white">White text with shadow</p>
 
-Styleguide 4.2.2
+Styleguide 4.3.2
 */
 
-// Brödtext
-//
-// Styleguide 4.3
+/*
+Listor
 
-// Markerad
-//
-// Markup:
-// This text contains a <mark>highlighted</mark> word.
-//
-// Styleguide 4.3.1
+Listor används för att strukturera upp innehåll. Det finns tre varianter av listor: oordnade, ordnade och definitionslistor. 
+[Läs mer om rekommendationer för listor på webbriktlinjer](http://webbriktlinjer.se/r/104-gor-listor-med-de-html-element-som-ar-till-for-att-skapa-listor/#rekommendationer-fr-listor).
 
-// Genomstruken / Borttagen
-//
-// Markup:
-// <p>This text contains a <s>strikethrough</s> word.</p>
-// <p>This text contains a <del>deleted</del> word.</p>
-//
-// Styleguide 4.3.2
 
-// Understruken
-//
-// Markup:
-// <p>This text contains an <u>underlined</u> word.</p>
-// <p>This text contains an <ins>inserted</ins> word.</p>
-//
-// Styleguide 4.3.3
+[Läs mer om olika sätt att skriva punktlistor](http://www.iklartext.se/skriv-punktlistor/).
 
-// Fet text
-//
-// Markup:
-// <p>This text contains an <strong>important</strong> word.</p>
-// <p>This text contains a <b>bold</b> word.</p>
-//
-// Styleguide 4.3.4
+Exempel på olika listor:
 
-// Kursiv / Betonad
-//
-// Markup:
-// <p>This text contains an <em>emphasized</em> word.</p>
-// <p>This text contains an <i>italicized</i> word.</p>
-//
-// Styleguide 4.3.5
+Styleguide 4.4
+*/
 
-// Horisontell justering
-//
-// Markup:
-// <p class="text-left">Left aligned</p>
-// <p class="text-center">Center aligned</p>
-// <p class="text-right">Right aligned</p>
-//
-// Styleguide 4.3.6
+/*
+Länkar
 
-// Transformering
-//
-// Markup:
-// <p class="text-lowercase">Lowercased text</p>
-// <p class="text-uppercase">Uppercased text</p>
-// <p class="text-capitalize">capitalized text</p>
-//
-// Styleguide 4.3.7
+Skriv länkarna så att användarna förstår vart länken leder även när den är lyft ur sitt sammanhang. [Läs mer om länkar](http://webbriktlinjer.se/r/5-skriv-tydliga-lankar/).
 
-// Förkortningar / initialism
-//
-// Markup:
-// <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
-// <p><abbr title="JavaScript Object Notation for Linked Data" class="initialism">JSON-LD</abbr> is pretty cool.</p>
-//
-// Styleguide 4.3.8
+Styleguide 4.5
+*/
+
+
+
