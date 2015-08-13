@@ -7463,7 +7463,7 @@ Styleguide 5.
 /*
 Paletter
 
-Det finns fyra färgsviter att välja mellan: Glad, Glad dämpad, Pastell och Pastell dämpad. Färgsviterna är uppdelade i två familjer: Gladfamiljen och Pastellfamiljen. Om man behöver fler färgkombinationer går det bra att kombinera färger inom respektive familj, men ej däremellan. Färger med stark accent används med fördel på mindre partier som ikoner eller citattecken, ej på stora ytor. Gråskalan går att kombinera med alla färgpaletter. Färger på knapparna är **konstanta**, se under *knappar*.
+Det finns fyra färgsviter att välja mellan: Glad, Glad dämpad, Pastell och Pastell dämpad. Färgsviterna är uppdelade i två familjer: Gladfamiljen och Pastellfamiljen. Om man behöver fler färgkombinationer går det bra att kombinera färger inom respektive familj, men ej däremellan. Färger med stark accent används med fördel på mindre partier som ikoner eller citattecken, ej på stora ytor. Gråskalan går att kombinera med alla färgpaletter. Färger på knapparna är **konstanta**, se under [knappar](/frontend-guide/section-8.html).
 
 För att underlätta användandet av färgerna kan man använda sig av ett par hjälpklasser som fungerar på följande vis:
 
@@ -7475,7 +7475,7 @@ Styleguide 5.1.
 /*
 Palett: Glad
 
-Dessa färger får kombineras med färgerna i **Palett: Glad dämpad** samt **Palett: Gråskala**. 
+Dessa färger får kombineras med färgerna i **Palett: Glad dämpad** samt **Palett: Gråskala**.
 
 Markup:
 <div class="color-box bg-happy-blue"></div>
@@ -7489,7 +7489,7 @@ Styleguide 5.1.1
 /*
 Palett: Glad dämpad
 
-Dessa färger får kombineras med färgerna i **Palett: Glad** samt **Palett: Gråskala**. 
+Dessa färger får kombineras med färgerna i **Palett: Glad** samt **Palett: Gråskala**.
 
 
 Markup:
@@ -7504,7 +7504,7 @@ Styleguide 5.1.2
 /*
 Palett: Pastell
 
-Dessa färger får kombineras med färgerna i **Palett: Pastell dämpad** samt **Palett: Gråskala**. 
+Dessa färger får kombineras med färgerna i **Palett: Pastell dämpad** samt **Palett: Gråskala**.
 
 Markup:
 <div class="color-box bg-pastel-denim"></div>
@@ -7518,7 +7518,7 @@ Styleguide 5.1.3
 /*
 Palett: Pastell dämpad
 
-Dessa färger får kombineras med färgerna i **Palett: Pastell** samt **Palett: Gråskala**. 
+Dessa färger får kombineras med färgerna i **Palett: Pastell** samt **Palett: Gråskala**.
 
 Markup:
 <div class="color-box bg-pastel-muted-purple"></div>
@@ -7532,7 +7532,7 @@ Styleguide 5.1.4
 /*
 Palett: Gråskala
 
-Dessa färger får kombineras med färgerna i samtliga paletter. 
+Dessa färger får kombineras med färgerna i samtliga paletter.
 
 Markup:
 <div class="color-box bg-white subtleborder"></div>
@@ -8497,19 +8497,43 @@ a {
 /*
 Mönster
 
-Olika mönster som kan kombineras med färgerna ovan. I exemplen nedan är mönstren nedskalade till 50%.
+Det finns tre olika mönster som bland annat kan användas som bakgrund. Dessa kan kombineras med färgerna ovan. Välj dämpade färger (från vilka paletter?). I exemplen nedan är mönstren nedskalade till 50%. 
 
-### Tillhörande filer
-* [Vågmönster](./assets/pattern_waves.png)
-* [Bollmönster](./assets/pattern_balls.png)
-* [Korsmönster](./assets/pattern_cross.png)
+Styleguide 5.2
+*/
+/*
+Mönster: Vågor
+
+[Ladda ner vågmönster](./assets/pattern_waves.png)
 
 Markup:
 <div class="pattern-box bg-pastel-denim has-pattern pattern-waves"></div>
+
+
+
+Styleguide 5.2.1
+*/
+/*
+Mönster: Bollar
+
+[Ladda ner bollmönster](./assets/pattern_balls.png)
+
+Markup:
 <div class="pattern-box bg-pastel-pink has-pattern pattern-balls"></div>
+
+
+Styleguide 5.2.2
+*/
+/*
+Mönster: Kors
+
+[Ladda ner korsmönster](./assets/pattern_cross.png)
+
+Markup:
 <div class="pattern-box bg-pastel-desert has-pattern pattern-cross"></div>
 
-Styleguide 5.2
+
+Styleguide 5.2.3
 */
 .pattern-box {
   display: inline-block;
@@ -8614,18 +8638,18 @@ Styleguide 5.2
   color: #71777c !important;
 }
 /*
-Knappar / Indikatorer
+Knappar och etiketter
 
 Styleguide 8.
 */
 /*
 Knappar
 
-Knappar används för att verkställa en handling.
+Knappar används för att verkställa en handling. Knappen måste ha någon typ av fokus-state för att följa tillgänglighetsstandarder.
+
+Beroende på vilken funktion knappen har så har knappen olika färger. Färgerna på knapparna är konstanta, oberoende av vilken färgpalett som används. Val av knapp ska vara konsekvent. Använd enbart dessa varianter. 
 
 Texten på en knapp ska vara kort och beskriva handlingen som knappen utför.
-
-Knappen måste ha någon typ av fokus-state för att följa tillgänglighetsstandarder.
 
 Styleguide 8.1
 */
@@ -8786,7 +8810,7 @@ Styleguide 3.1
 /*
 Sidhuvud version 1
 
-I denna version skrivs KB:s logotype följt avntjänstens namn ut i headern. Typsnittet för namn är Open sans googlefont. Viktigt att tänka på är att länka logotyp + namn till tjänstens startsida. Vid behov ange beskrivande text om tjänsten i kursiv stil.
+I denna version skrivs KB:s logotype följt av tjänstens namn ut i headern. Typsnittet för namn är Open sans googlefont. Viktigt att tänka på är att länka logotyp + namn till tjänstens startsida. Vid behov ange beskrivande text om tjänsten i kursiv stil.
 
 
 Markup:
@@ -9095,8 +9119,24 @@ Styleguide 3.2.2
   font-size: 14px;
   font-weight: 700;
 }
+/* 
+Typografi
+
+Styleguide 4.
+*/
+/* 
+Typsnitt
+
+Vi använder oss av Open Sans från Google Fonts. Vid behov av att använda ytterligare typsnitt ska dessa väljas med hänsyn till tillgänglighet och öppenhet. Välj om möjligt licensfria alternativ. 
+
+Styleguide 4.1
+*/
 /*
-Storlekar
+Rubriker
+
+Använd rubriker kontinuerligt för att skapa en tydlig hierarki. 
+
+Huvudrubriken ska tydligt beskriva sidans innehåll och innefatta de viktigaste nyckelorden och sökorden. Den bör inte vara för lång. Använd bara en huvudrubrik per sida. 
 
 | Element | Storlek | Vikt
 |---|---|---|
@@ -9104,20 +9144,14 @@ Storlekar
 | h2  | 30px | 700
 | h3  | 24px | 700
 | h4  | 20px | 700
-| p 	| 16px | 400
-
-Styleguide 4.1
-*/
-/*
-Rubriker
 
 Markup:
-<h1>h1 - This is a main title</h1>
-<h2>h2 - This is a subtitle</h2>
-<h3>h3 - This is a section title</h3>
-<h4>h4 - This is a section subtitle</h4>
+<h1>h1 - Det här är en huvudrubrik (nivå 1)</h1>
+<h2>h2 - Det här är en underrubrik (nivå 2)</h2>
+<h3>h3 - Det här är en underrubrik (nivå 3) </h3>
+<h4>h4 - Det här är en underrubrik (nivå 4)</h4>
 
-Styleguide 4.1.1
+Styleguide 4.2
 */
 body {
   line-height: 1.6;
@@ -9142,6 +9176,20 @@ h3 {
 h4 {
   font-size: 20px;
 }
+/*
+Sekundär text / Liten text
+
+Implementeras genom att använda &lt;small&gt; eller .small
+
+ Markup:
+<h1>h1 - This is a main title - <small>Secondary text</small></h1>
+<h2>h2 - This is a subtitle - <small>Secondary text</small></h2>
+<h3>h3 - This is a section title - <small>Secondary text</small></h3>
+<h4>h4 - This is a section subtitle - <small>Secondary text</small></h4>
+<p>p - This is a normal text with <small>secondary text</small> inside of it.</p>
+
+Styleguide 4.2.1
+*/
 h1 .small,
 h2 .small,
 h3 .small,
@@ -9153,9 +9201,45 @@ h4 small {
   color: #949a9e;
 }
 /*
+Brödtext
+
+| Element | Storlek | Vikt
+|---|---|---|
+| p 	| 16px | 400
+
+
+Styleguide 4.3
+*/
+/*
+Markerad
+
+Markup:
+This text contains a <mark>highlighted</mark> word.
+
+Styleguide 4.3.1
+*/
+/*
+Genomstruken / Borttagen
+
+Markup:
+<p>This text contains a <s>strikethrough</s> word.</p>
+<p>This text contains a <del>deleted</del> word.</p>
+
+Styleguide 4.3.2
+*/
+/*
+Understruken
+
+Markup:
+<p>This text contains an <u>underlined</u> word.</p>
+<p>This text contains an <ins>inserted</ins> word.</p>
+
+Styleguide 4.3.3
+*/
+/*
 Visuella modifierare
 
-Styleguide 4.2
+Styleguide 4.4
 */
 /*
 Skugga
@@ -9164,7 +9248,7 @@ Markup:
 <h3 class="has-shadow">Text with shadow</h3>
 <p class="has-shadow">Text with shadow</p>
 
-Styleguide 4.2.1
+Styleguide 4.4.1
 */
 h1.has-shadow,
 h2.has-shadow,
@@ -9182,7 +9266,27 @@ Markup:
 <h3 class="has-shadow text-white">White header with shadow</h3>
 <p class="has-shadow text-white">White text with shadow</p>
 
-Styleguide 4.2.2
+Styleguide 4.4.2
+*/
+/*
+Listor
+
+Listor används för att strukturera upp innehåll. Det finns tre varianter av listor: oordnade, ordnade och definitionslistor. 
+[Läs mer om rekommendationer för listor på webbriktlinjer](http://webbriktlinjer.se/r/104-gor-listor-med-de-html-element-som-ar-till-for-att-skapa-listor/#rekommendationer-fr-listor).
+
+
+[Läs mer om olika sätt att skriva punktlistor](http://www.iklartext.se/skriv-punktlistor/).
+
+Exempel på olika listor:
+
+Styleguide 4.5
+*/
+/*
+Länkar
+
+Skriv länkarna så att användarna förstår vart länken leder även när den är lyft ur sitt sammanhang. [Läs mer om länkar](http://webbriktlinjer.se/r/5-skriv-tydliga-lankar/).
+
+Styleguide 4.6
 */
 /*
 Paginering
@@ -9236,7 +9340,7 @@ li.pagination-previous a {
 /*
 Formulär
 
-Skapa formulär som är så enkla som möjligt för användaren.
+Skapa formulär som är så enkla som möjligt för användaren att fylla i.
 
 Styleguide 7.
 */
@@ -9253,8 +9357,8 @@ Markup:
   </div>
   <div class="form-group">
     <label for="exampleInputOptional">Favoritbok</label>
-    <input type="text" class="form-control" id="exampleInputOptional" placeholder="">
     <span id="helpBlock" class="help-block">(Valfri)</span>
+    <input type="text" class="form-control" id="exampleInputOptional" placeholder="">
   </div>
 </form>
 
@@ -9290,13 +9394,13 @@ Gör fältens bredd proportionerligt till den information som ska fyllas i. Se t
 
 Markup:
 <div class="form-group">
-	<input class="form-control input-lg" type="text" placeholder=".input-lg">
+	<input class="form-control" type="text" placeholder="">
 </div>
 <div class="form-group">
-	<input class="form-control" type="text" placeholder="Default input">
+  <input class="form-control input-lg" type="text" placeholder="">
 </div>
 <div class="form-group">
-	<input class="form-control input-sm" type="text" placeholder=".input-sm">
+	<input class="form-control input-sm" type="text" placeholder="">
 </div>
 
 Styleguide 7.3
@@ -9323,7 +9427,7 @@ Styleguide 7.4
 /*
 Fokustillstånd
 
-För att highlighta ett element så bör fokusfärgen användas. Ingen åtgärd behövs för denna funktionalitet.
+För att visa att ett element är aktivt så bör fokusfärgen användas. Ingen åtgärd behövs för denna funktionalitet.
 
 Markup:
 <form>
@@ -9357,9 +9461,9 @@ Styleguide 7.5
 /*
 Hjälptexter
 
-Använd hjälptexter för att förklara vad som ska fyllas i fältet när det inte är självklart.
+Använd hjälptexter för att förklara vad som ska fyllas i fältet om det inte är självklart.
 
-Placera hjälptext ovanför fältet. Använd inte placeholder-texter inuti formulärfälten eftersom dessa försvinner direkt när användaren skriver in information i fältet.
+Placera hjälptexten ovanför fältet. [Undvik att använda platshållare](http://www.nngroup.com/articles/form-design-placeholders/) inuti formulärfälten eftersom dessa försvinner direkt när användaren skriver in information i fältet.
 
 Markup:
 <form>
@@ -9389,16 +9493,25 @@ Styleguide 7.7.
   box-shadow: 0px 0px 0px 2px transparent;
 }
 /*
-Dropdownlistor
+Rullgardinslistor
 
-Undvik dropdownlistor i formulär, använd checkboxar eller radioknappar istället.
+Rullgardinslistor kan användas när det finns flera alternativ att välja mellan och användaren enbart ska kunna välja en. En rullgardinslista kan ofta medföra [en dålig användarupplevelse](https://medium.com/apegroup-texts/why-drop-down-lists-are-bad-for-the-user-experience-eeda5cbbd315) och bör bara användas om det finns goda skäl. Många gånger finns det bättre alternativ att välja.
+
+Rullgardinslistor kan passa om antalet alternativ är ungefär 5 - 15 stycken och om användaren inte känner till alternativen. För färre alternativ passar det oftast bättre med radioknappar. När det finns många alternativ kan fritextfält eller komboboxar (rullgardinslista med textfält för autocomplete) passa.
+
+Läs mer om hur du [använder rullgardinslistor rätt](http://uxmovement.com/forms/stop-misusing-select-menus/)
+och [väljer andra kontroller anpassade för mobila plattformar](http://www.lukew.com/ff/entry.asp?1950).
+
+Exempel på projekt där andra kontroller utforskats som alternativ till rullgardinslistor för stora datamängder: [välja land](http://www.smashingmagazine.com/2011/11/redesigning-the-country-selector/).
+
+Exempel:
 
 Styleguide 7.7.1
 */
 /*
-Checkboxar
+Kryssrutor
 
-Använd checkboxar när användarens kan välja på/av för ett enskilt alternativ eller när användaren kan välja flera alternativ i en lista.
+Använd kryssrutor när användarens ska kunna välja på/av för ett enskilt alternativ eller flera alternativ i en lista.
 
 Markup:
 <div class="checkbox">
@@ -9419,7 +9532,7 @@ Styleguide 7.7.2
 /*
 Radioknappar
 
-Använd radioknappar när användaren ska välja ett alternativ från en lista.
+Använd radioknappar när användaren ska kunna välja ett alternativ från en lista.
 
 Markup:
 <div class="radio">
@@ -9449,11 +9562,11 @@ Fel och validering
 Tydlig kommunikation i formulär minimerar risken för användaren att göra fel.
 - [Gruppera långa formulär](http://webbriktlinjer.se/r/53-gruppera-formularets-falt/) i till exempel flera sidor.
 - [Minimera antalet fält](http://webbriktlinjer.se/r/50-minimera-antal-falt-och-obligatoriska-falt-i-formular/).
-- Ge [direkt och konstruktiv feedback](http://webbriktlinjer.se/r/77-notifiera-och-ge-anvandaren-aterkoppling/) till användaren om vad som blivit fel med hjälp av alert-färg.
+- Ge [direkt och konstruktiv feedback](http://webbriktlinjer.se/r/77-notifiera-och-ge-anvandaren-aterkoppling/) till användaren om vad som blivit fel med hjälp av statusfärger.
 
 Läs mer [vägledning för formulär](http://webbriktlinjer.se/vagledning/taggar/formular/).
 
-Exempel: (bild)
+Exempel:
 
 Styleguide 7.8
 */
@@ -9462,7 +9575,7 @@ Infällda formulärelement
 
 Kan användas för att be användaren lägga till extra kontextuell information.
 
-Exempel: (bild)
+Exempel:
 
 Styleguide 7.9
 */
@@ -9579,6 +9692,9 @@ Styleguide 6.4
     display: none !important;
   }
 }
+.container > .row {
+  margin-top: -30px;
+}
 .kss-navbar .update-text {
   padding: 14px;
 }
@@ -9604,7 +9720,28 @@ Styleguide 6.4
   }
 }
 .sidebar {
-  padding: 10px 20px 10px 20px !important;
+  padding: 50px 20px 10px 20px !important;
+  width: 240px;
+  margin-top: 30px;
+}
+.sidebar .nav-sidebar {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+@media screen and (min-width: 768px) {
+  .sidebar .nav-sidebar {
+    width: 260px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .sidebar .nav-sidebar {
+    width: 260px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sidebar .nav-sidebar {
+    width: 300px;
+  }
 }
 .kss-menu > .kss-menu-item:hover {
   background-color: rgba(114, 168, 173, 0.6);
@@ -9616,6 +9753,7 @@ Styleguide 6.4
 }
 .kss-menu > .kss-menu-item a {
   color: black;
+  font-size: 14px;
   font-weight: 400;
   padding: 0px 10px;
   display: block;
@@ -9631,6 +9769,7 @@ Styleguide 6.4
   background-color: #c3dadc;
 }
 .kss-menu > .kss-menu-item.kss-active > ul li {
+  font-size: 12px;
   padding: 0px 0px 0px 20px;
   margin-left: 0px;
 }
@@ -9655,8 +9794,6 @@ Styleguide 6.4
 }
 @media screen and (min-width: 992px) {
   .kss-menubar .kss-sidebar-inner {
-    position: fixed;
-    top: 0px;
     margin-left: -2%;
     width: 230px;
   }
@@ -9678,16 +9815,16 @@ Styleguide 6.4
 .kss-modifier-head .kss-modifier-description {
   display: inline;
 }
-.kss-depth-1 h1 {
+.kss-depth-1 > h1 {
   font-size: 36px;
 }
-.kss-depth-2 h1 {
+.kss-depth-2 > h1 {
   font-size: 30px;
 }
-.kss-depth-3 h1 {
+.kss-depth-3 > h1 {
   font-size: 24px;
 }
-.kss-depth-4 h1 {
+.kss-depth-4 > h1 {
   font-size: 20px;
 }
 .kss-content {

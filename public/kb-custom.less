@@ -11,6 +11,10 @@
   margin-right: 0.5em;
 }
 
+.container>.row {
+  margin-top: -30px;
+}
+
 // Navbar
 .kss-navbar {
   .update-text {
@@ -41,7 +45,22 @@
 
 // Sidebar
 .sidebar {
-  padding: 10px 20px 10px 20px !important;
+  padding: 50px 20px 10px 20px !important;
+  width: 240px;
+  margin-top: 30px;
+  .nav-sidebar {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+    @media screen and (min-width: @screen-sm-min) {
+      width: 260px;
+    }
+    @media screen and (min-width: @screen-md-min) {
+      width: 260px;
+    }
+    @media screen and (min-width: @screen-lg-min) {
+      width: 300px;
+    }
+  }
 }
 .kss-menu {
   > .kss-menu-item {
@@ -55,6 +74,7 @@
     }
     a {
       color: black;
+      font-size: 14px;
       font-weight: 400;
       padding: 0px 10px;
       display: block;
@@ -69,6 +89,7 @@
       padding: 0px;
       background-color: lighten(@happy-muted-magenta, 25%);
       li {
+        font-size: 12px;
         padding: 0px 0px 0px 20px;
         margin-left: 0px;
         &:hover {
@@ -101,8 +122,8 @@
 .kss-menubar {
   @media screen and (min-width: @screen-md-min) {
     .kss-sidebar-inner {
-      position: fixed;
-      top: 0px;
+      // position: fixed;
+      // top: 0px;
       margin-left: -2%;
       width: 230px;
     }
@@ -128,10 +149,10 @@
 
 
 // Headers
-.kss-depth-1 h1 { font-size: 36px; }
-.kss-depth-2 h1 { font-size: 30px; }
-.kss-depth-3 h1 { font-size: 24px; }
-.kss-depth-4 h1 { font-size: 20px; }
+.kss-depth-1>h1 { font-size: 36px; }
+.kss-depth-2>h1 { font-size: 30px; }
+.kss-depth-3>h1 { font-size: 24px; }
+.kss-depth-4>h1 { font-size: 20px; }
 
 // Content
 
