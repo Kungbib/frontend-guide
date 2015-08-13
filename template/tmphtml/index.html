@@ -22,7 +22,7 @@
   <body>
 
     <nav class="navbar navbar-inverse navbar-fixed-top kss-navbar">
-      <div class="container-fluid">
+      <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -53,10 +53,10 @@
       </div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
-        <div class="col-sm-4 col-md-4 sidebar col-lg-3">
-          <ul class="nav nav-sidebar kss-menu" data-kss-ref="{{rootName}}">
+        <div class="col-sm-4 col-md-3 sidebar col-lg-3">
+          <ul class="nav nav-sidebar kss-menu" data-kss-ref="{{rootName}}" data-spy="affix">
           {{#if homepage}}
             <li class="kss-menu-item kss-active"><a href="./"><span class="kss-ref pull-right label label-default bg-black">0</span><span class="kss-name">Introduktion</span></a></li>
           {{else}}
@@ -78,7 +78,7 @@
           </ul>
           {{/if}}
         </div>
-        <div class="col-sm-8 col-sm-offset-4 col-md-8 col-md-offset-4 col-lg-offset-3 col-lg-7 main kss-content">
+        <div class="col-sm-8 col-md-9 col-lg-9 main kss-content">
 
           <article class="kss-article">
             {{#if homepage}}
