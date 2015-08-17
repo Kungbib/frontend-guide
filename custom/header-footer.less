@@ -121,34 +121,47 @@ Styleguide 2.4.1
 /*
 Logotyper
 
-För tjänster med unikt uttryck ange logotypen i Cabin (?). (Det här behöver undersökas).
+KB har två olika logotyper, dels en kombinerad logotyp med symbol och text och dels en logotyp enbart i text.
 
-KBs Logotyp i SVG-format.
+Logotyperna används bland annat i sidhuvudet och bör då länka till tjänstens startsida. Om logotypen används för navigation som i sidhuvudet så bör det framgå i alt-texten (alt="Kungliga bibliotekets webbplats"). Läs mer i avsnittet [Sidhuvud](/frontend-guide/section-2.4.html).
 
-## Filer
+Om logotypen används i annat syfte, kan alt-texten ange att det är en logotyp (alt="Kungliga bibliotekets logotyp" eller så kan alt-attributet vara tomt (alt=" "). 
 
-* [KB Logo svart](./assets/kb_logo_black.svg)
-* [KB Logo vit](./assets/kb_logo_white.svg)
-* [KB Text svart](./assets/kb_text_black.svg)
-* [KB Text vit](./assets/kb_text_white.svg)
+Logotyper bör, precis som andra bilder, alltid ha attributet alt. Detta underlättar för användare som använder skärmläsare. 
+Om man vill att skärmläsare inte ska ta hänsyn till logotypen så behöver alt-attributet finnas men vara tomt (alt=" "). 
+Title-attributet ska då inte finnas eller vara tomt. 
+Mer information om detta finns på [W3C:s webbplats](http://www.w3.org/TR/WCAG20-TECHS/H67.html).  
 
-För att indikera att en logo endast är dekorativ ska följande uppfyllas:
 
->Check that title attribute is either absent or empty.
->
->Check that alt attribute is present and empty.
 
-* http://www.w3.org/TR/WCAG20-TECHS/H67.html
+För tjänster med unikt uttryck, ange logotypen i Cabin (?). (Det här behöver undersökas).
+
+
+Styleguide 5.1
+*/
+
+/*
+Kombinerad logotyp 
+
+Den kombinerade logotypen består av en symbol och Kungl. biblioteket skrivet i text runt om symbolen. 
+Logotypen finns i svart och vitt. Denna ska alltid användas i sidhuvudet för KB:s tjänster. 
+
+
+#### Ladda ner logotyp
+* [KB Logotyp svart (SVG, 6K)](./assets/kb_logo_black.svg)
+* [KB Logotyp vit (SVG, 6K)](./assets/kb_logo_white.svg)
+
 
 .logo-small - Liten logga (50px)
 .logo-medium - Mellan logga (100px)
 .logo-large - Stor logga (150px)
 
 Markup:
-<img src="./assets/kb_logo_black.svg" class="{{modifier_class}}" alt="" />
+<img src="./assets/kb_logo_black.svg" class="{{modifier_class}}" alt="Kungliga bibliotekets logotyp" />
 
-Styleguide 5.1
+Styleguide 5.1.1
 */
+
 
 .logo-small {
 	height: 50px;
@@ -159,6 +172,21 @@ Styleguide 5.1
 .logo-large {
 	height: 150px;
 }
+
+/*
+Textlogotyp
+
+Textlogotypen består av Kungl Biblioteket utskrivet i text. Logotypen finns i svart och vitt. 
+
+#### Ladda ner logotyp:
+* [KBs textlogotyp svart (SVG, 5K)](./assets/kb_text_black.svg)
+* [KBs textlogotyp vitt (SVG, 5K)](./assets/kb_text_white.svg)
+
+Markup:
+<img src="./assets/kb_text_black.svg" class="{{modifier_class}}" alt="Kungl. biblioteket" />
+
+Styleguide 5.1.2
+*/
 
 
 /*
