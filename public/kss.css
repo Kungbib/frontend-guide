@@ -7458,7 +7458,7 @@ Använd KB’s färgpalett. Behöver tjänsten egna färger glöm ej att de mås
 
 Färgkontrasten för text och interaktiva element ska följa [W3C’s standard](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html).
 
-Styleguide 5.
+Styleguide 4.
 */
 /*
 Paletter
@@ -7470,7 +7470,7 @@ För att underlätta användandet av färgerna kan man använda sig av ett par h
 - .bg-[färg] (t ex .bg-happy-blue) Sätter färgen som bakgrund
 - .text-[färg] (t ex .text-happy-blue) Sätter färgen som text och tvingar även länkar att vara den färgen
 
-Styleguide 5.1.
+Styleguide 4.1.
 */
 /*
 Palett: Glad
@@ -7484,7 +7484,7 @@ Markup:
 <div class="color-box bg-happy-desert"></div>
 <div class="color-box bg-happy-orange"></div>
 
-Styleguide 5.1.1
+Styleguide 4.1.1
 */
 /*
 Palett: Glad dämpad
@@ -7499,7 +7499,7 @@ Markup:
 <div class="color-box bg-happy-muted-magenta"></div>
 <div class="color-box bg-happy-muted-denim"></div>
 
-Styleguide 5.1.2
+Styleguide 4.1.2
 */
 /*
 Palett: Pastell
@@ -7513,7 +7513,7 @@ Markup:
 <div class="color-box bg-pastel-desert"></div>
 <div class="color-box bg-pastel-desert-darker"></div>
 
-Styleguide 5.1.3
+Styleguide 4.1.3
 */
 /*
 Palett: Pastell dämpad
@@ -7527,7 +7527,7 @@ Markup:
 <div class="color-box bg-pastel-muted-blue"></div>
 <div class="color-box bg-pastel-muted-denim"></div>
 
-Styleguide 5.1.4
+Styleguide 4.1.4
 */
 /*
 Palett: Gråskala
@@ -7543,10 +7543,10 @@ Markup:
 <div class="color-box bg-gray-darker"></div>
 <div class="color-box bg-black"></div>
 
-Styleguide 5.1.5
+Styleguide 4.1.5
 */
 /*
-Palett: Statusfärger
+Statusfärger
 
 Dessa färger används till knappar och olika statusindikatorer.
 
@@ -7557,7 +7557,7 @@ Markup:
 <div class="color-box bg-brand-warning"></div>
 <div class="color-box bg-brand-danger"></div>
 
-Styleguide 5.1.6
+Styleguide 4.2
 */
 .subtleborder {
   border: 1px solid #ccc !important;
@@ -8497,43 +8497,43 @@ a {
 /*
 Mönster
 
-Det finns tre olika mönster som bland annat kan användas som bakgrund. Dessa kan kombineras med färgerna ovan. Välj dämpade färger (från vilka paletter?). I exemplen nedan är mönstren nedskalade till 50%. 
+Det finns tre olika mönster som kan användas bland annat som bakgrund. I exemplen nedan är mönstren nedskalade till 50%. Mönstrena kan kombineras med en färg från någon av paletterna ovan. Tänk dock på att anpassa förgvalet så att det inte blir allt för hög kontrast. 
 
-Styleguide 5.2
+Styleguide 4.3
 */
 /*
 Mönster: Vågor
 
-[Ladda ner vågmönster](./assets/pattern_waves.png)
+[Ladda ner vågmönster (PNG, 366K)](./assets/pattern_waves.png)
 
 Markup:
 <div class="pattern-box bg-pastel-denim has-pattern pattern-waves"></div>
 
 
 
-Styleguide 5.2.1
+Styleguide 4.3.1
 */
 /*
 Mönster: Bollar
 
-[Ladda ner bollmönster](./assets/pattern_balls.png)
+[Ladda ner bollmönster (PNG, 316K)](./assets/pattern_balls.png)
 
 Markup:
 <div class="pattern-box bg-pastel-pink has-pattern pattern-balls"></div>
 
 
-Styleguide 5.2.2
+Styleguide 4.3.2
 */
 /*
 Mönster: Kors
 
-[Ladda ner korsmönster](./assets/pattern_cross.png)
+[Ladda ner korsmönster (PNG, 373K)](./assets/pattern_cross.png)
 
 Markup:
 <div class="pattern-box bg-pastel-desert has-pattern pattern-cross"></div>
 
 
-Styleguide 5.2.3
+Styleguide 4.3.3
 */
 .pattern-box {
   display: inline-block;
@@ -8640,7 +8640,7 @@ Styleguide 5.2.3
 /*
 Knappar och etiketter
 
-Styleguide 8.
+Styleguide 7.
 */
 /*
 Knappar
@@ -8651,7 +8651,7 @@ Beroende på vilken funktion knappen har så har knappen olika färger. Färgern
 
 Texten på en knapp ska vara kort och beskriva handlingen som knappen utför.
 
-Styleguide 8.1
+Styleguide 7.1
 */
 .btn {
   position: relative;
@@ -8692,7 +8692,7 @@ Markup:
 <button class="btn btn-default {{modifier_class}}">Button</button>
 <button class="btn btn-primary {{modifier_class}}">Button</button>
 
-Styleguide 8.1.1
+Styleguide 7.1.1
 */
 .btn {
   border-radius: 5px;
@@ -8717,6 +8717,23 @@ Styleguide 8.1.1
   font-size: 12px;
   border-radius: 5px;
 }
+/*
+Skal
+
+ .btn-default    - Default
+ .btn-primary    - Primary
+.btn-info       - Info
+.btn-success    - Success
+.btn-warning    - Warning
+.btn-danger     - Danger
+.btn-link			 - Link
+
+Markup:
+<button class="btn {{modifier_class}}">Button Element</button>
+<button disabled class="btn {{modifier_class}}">Disabled</button>
+ 
+Styleguide 7.1.2
+*/
 .btn-primary {
   background-color: #5dc4ed;
   box-shadow: 0px 2px 0px 0px #1799cd;
@@ -8788,29 +8805,20 @@ Styleguide 8.1.1
   color: #ffffff;
 }
 /*
-Sidhuvud/Sidfot
-
-Sidhuvud och sidhuvud används för att [signalera källa och tjänstens namn](http://webbriktlinjer.se/r/22-ange-vilken-organisation-som-ar-utgivare-till-webbplatsen-pa-samtliga-sidor/).
-
-Styleguide 3.
-*/
-/*
 Sidhuvud
 
-För tjänster med generiskt uttryck finns två olika varianter av sidhuvuden.
+Sidhuvudet används tillsammans med sidfoten, för att [signalera källa och tjänstens namn](http://webbriktlinjer.se/r/22-ange-vilken-organisation-som-ar-utgivare-till-webbplatsen-pa-samtliga-sidor/).
 
 Vid behov använd toppnavigation för länkar som till exempel: Logga in, Feedback, Kontakt.
 
-### Användning
-#### Fästa sidhuvud
 För att fästa sidhuvudet till toppen av sidan (sk "fixed" eller "sticky"), ge den klassen ``.navbar-fixed-top`` och anpassa dina marginaler efter behov. [Se exempel](http://getbootstrap.com/examples/sticky-footer-navbar/).
 
-Styleguide 3.1
+Styleguide 2.4
 */
 /*
 Sidhuvud version 1
 
-I denna version skrivs KB:s logotype följt av tjänstens namn ut i headern. Typsnittet för namn är Open sans googlefont. Viktigt att tänka på är att länka logotyp + namn till tjänstens startsida. Vid behov ange beskrivande text om tjänsten i kursiv stil.
+I denna version skrivs KB:s logotyp följt av tjänstens namn ut i headern. Typsnittet som ska användas för tjänstens namn är Open sans googlefont. Viktigt att tänka på är att länka logotyp + namn till tjänstens startsida. Vid behov ange beskrivande text om tjänsten i kursiv stil.
 
 
 Markup:
@@ -8852,41 +8860,7 @@ Markup:
 	</div>
 </div>
 
-Styleguide 3.1.1
-*/
-/*
-Sidhuvud version 2
-
-I denna version används KB:s logotyp i headern. Tjänstens namn skrivs ut centrerat i jumbotronen.
-
-Markup:
-<nav class="navbar navbar-inverse">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand navbar-logo" href="#"><img src="./assets/kb_logo_white.svg" alt="" /></a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Feedback</a></li>
-          <li><a href="#">Logga in</a></li>
-        </ul>
-    </div><!--/.navbar-collapse -->
-  </div>
-</nav>
-<div class="jumbotron bg-happy-magenta">
-  <div class="container">
-    <h1>Tjänst</h1>
-    <p>Tilläggstext om tjänsten</p>
-  </div>
-</div>
-
-Styleguide 3.1.2
+Styleguide 2.4.1
 */
 .navbar {
   border-radius: 0px;
@@ -8946,31 +8920,44 @@ Styleguide 3.1.2
 /*
 Logotyper
 
-KBs Logotyp i SVG-format.
+KB har två olika logotyper, dels en kombinerad logotyp med symbol och text och dels en logotyp enbart i text.
 
-## Filer
+Logotyperna används bland annat i sidhuvudet och bör då länka till tjänstens startsida. Om logotypen används för navigation som i sidhuvudet så bör det framgå i alt-texten (alt="Kungliga bibliotekets webbplats"). Läs mer i avsnittet [Sidhuvud](/frontend-guide/section-2.4.html).
 
-* [KB Logo svart](./assets/kb_logo_black.svg)
-* [KB Logo vit](./assets/kb_logo_white.svg)
-* [KB Text svart](./assets/kb_text_black.svg)
-* [KB Text vit](./assets/kb_text_white.svg)
+Om logotypen används i annat syfte, kan alt-texten ange att det är en logotyp (alt="Kungliga bibliotekets logotyp" eller så kan alt-attributet vara tomt (alt=" "). 
 
-För att indikera att en logo endast är dekorativ ska följande uppfyllas:
+Logotyper bör, precis som andra bilder, alltid ha attributet alt. Detta underlättar för användare som använder skärmläsare. 
+Om man vill att skärmläsare inte ska ta hänsyn till logotypen så behöver alt-attributet finnas men vara tomt (alt=" "). 
+Title-attributet ska då inte finnas eller vara tomt. 
+Mer information om detta finns på [W3C:s webbplats](http://www.w3.org/TR/WCAG20-TECHS/H67.html).  
 
->Check that title attribute is either absent or empty.
->
->Check that alt attribute is present and empty.
 
-* http://www.w3.org/TR/WCAG20-TECHS/H67.html
+
+För tjänster med unikt uttryck, ange logotypen i Cabin (?). (Det här behöver undersökas).
+
+
+Styleguide 5.1
+*/
+/*
+Kombinerad logotyp 
+
+Den kombinerade logotypen består av en symbol och Kungl. biblioteket skrivet i text runt om symbolen. 
+Logotypen finns i svart och vitt. Denna ska alltid användas i sidhuvudet för KB:s tjänster. 
+
+
+#### Ladda ner logotyp
+* [KB Logotyp svart (SVG, 6K)](./assets/kb_logo_black.svg)
+* [KB Logotyp vit (SVG, 6K)](./assets/kb_logo_white.svg)
+
 
 .logo-small - Liten logga (50px)
 .logo-medium - Mellan logga (100px)
 .logo-large - Stor logga (150px)
 
 Markup:
-<img src="./assets/kb_logo_black.svg" class="{{modifier_class}}" alt="" />
+<img src="./assets/kb_logo_black.svg" class="{{modifier_class}}" alt="Kungliga bibliotekets logotyp" />
 
-Styleguide 3.3
+Styleguide 5.1.1
 */
 .logo-small {
   height: 50px;
@@ -8982,7 +8969,24 @@ Styleguide 3.3
   height: 150px;
 }
 /*
+Textlogotyp
+
+Textlogotypen består av Kungl Biblioteket utskrivet i text. Logotypen finns i svart och vitt. 
+
+#### Ladda ner logotyp:
+* [KBs textlogotyp svart (SVG, 5K)](./assets/kb_text_black.svg)
+* [KBs textlogotyp vitt (SVG, 5K)](./assets/kb_text_white.svg)
+
+Markup:
+<img src="./assets/kb_text_black.svg" class="{{modifier_class}}" alt="Kungl. biblioteket" />
+
+Styleguide 5.1.2
+*/
+/*
 Sidfot
+
+Sidfot används tillsammans med sidhuvudet, för att [signalera källa och tjänstens namn](http://webbriktlinjer.se/r/22-ange-vilken-organisation-som-ar-utgivare-till-webbplatsen-pa-samtliga-sidor/).
+
 
 Det finns två varianter av sidfötter, den minimala och den utökade. Det går att kombinera de båda alternativt att endast använda den minimala.
 
@@ -8992,7 +8996,7 @@ Använd .footer-container för att stapla flera footers inuti footer-tagen.
 #### Fästa sidfoten
 För att fästa sidfoten till botten av sidan (sk "sticky") se [detta exemplet](http://getbootstrap.com/examples/sticky-footer/).
 
-Styleguide 3.2
+Styleguide 2.5
 */
 /*
 Minimal sidfot
@@ -9021,7 +9025,7 @@ Markup:
   </footer>
 </div>
 
-Styleguide 3.2.1
+Styleguide 2.5.1
 */
 /*
 Utökad sidfot
@@ -9090,7 +9094,7 @@ Markup:
   </footer>
 </div>
 
-Styleguide 3.2.2
+Styleguide 2.5.2
 */
 .footer {
   overflow: hidden;
@@ -9122,14 +9126,14 @@ Styleguide 3.2.2
 /* 
 Typografi
 
-Styleguide 4.
+Styleguide 3.
 */
 /* 
 Typsnitt
 
 Vi använder oss av Open Sans från Google Fonts. Vid behov av att använda ytterligare typsnitt ska dessa väljas med hänsyn till tillgänglighet och öppenhet. Välj om möjligt licensfria alternativ. 
 
-Styleguide 4.1
+Styleguide 3.1
 */
 /*
 Rubriker
@@ -9151,7 +9155,7 @@ Markup:
 <h3>h3 - Det här är en underrubrik (nivå 3) </h3>
 <h4>h4 - Det här är en underrubrik (nivå 4)</h4>
 
-Styleguide 4.2
+Styleguide 3.2
 */
 body {
   line-height: 1.6;
@@ -9188,7 +9192,7 @@ Implementeras genom att använda &lt;small&gt; eller .small
 <h4>h4 - This is a section subtitle - <small>Secondary text</small></h4>
 <p>p - This is a normal text with <small>secondary text</small> inside of it.</p>
 
-Styleguide 4.2.1
+Styleguide 3.2.1
 */
 h1 .small,
 h2 .small,
@@ -9208,7 +9212,7 @@ Brödtext
 | p 	| 16px | 400
 
 
-Styleguide 4.3
+Styleguide 3.3
 */
 /*
 Markerad
@@ -9216,7 +9220,7 @@ Markerad
 Markup:
 This text contains a <mark>highlighted</mark> word.
 
-Styleguide 4.3.1
+Styleguide 3.3.1
 */
 /*
 Genomstruken / Borttagen
@@ -9225,7 +9229,7 @@ Markup:
 <p>This text contains a <s>strikethrough</s> word.</p>
 <p>This text contains a <del>deleted</del> word.</p>
 
-Styleguide 4.3.2
+Styleguide 3.3.2
 */
 /*
 Understruken
@@ -9234,12 +9238,12 @@ Markup:
 <p>This text contains an <u>underlined</u> word.</p>
 <p>This text contains an <ins>inserted</ins> word.</p>
 
-Styleguide 4.3.3
+Styleguide 3.3.3
 */
 /*
 Visuella modifierare
 
-Styleguide 4.4
+Styleguide 3.4
 */
 /*
 Skugga
@@ -9248,7 +9252,7 @@ Markup:
 <h3 class="has-shadow">Text with shadow</h3>
 <p class="has-shadow">Text with shadow</p>
 
-Styleguide 4.4.1
+Styleguide 3.4.1
 */
 h1.has-shadow,
 h2.has-shadow,
@@ -9266,7 +9270,7 @@ Markup:
 <h3 class="has-shadow text-white">White header with shadow</h3>
 <p class="has-shadow text-white">White text with shadow</p>
 
-Styleguide 4.4.2
+Styleguide 3.4.2
 */
 /*
 Listor
@@ -9279,14 +9283,14 @@ Listor används för att strukturera upp innehåll. Det finns tre varianter av l
 
 Exempel på olika listor:
 
-Styleguide 4.5
+Styleguide 3.5
 */
 /*
 Länkar
 
 Skriv länkarna så att användarna förstår vart länken leder även när den är lyft ur sitt sammanhang. [Läs mer om länkar](http://webbriktlinjer.se/r/5-skriv-tydliga-lankar/).
 
-Styleguide 4.6
+Styleguide 3.6
 */
 /*
 Paginering
@@ -9312,7 +9316,7 @@ Markup:
   </ul>
 </nav>
 
-Styleguide 2.4.1
+Styleguide 2.6.1
 */
 .pagination > li > a {
   border: 1px solid white;
@@ -9342,7 +9346,7 @@ Formulär
 
 Skapa formulär som är så enkla som möjligt för användaren att fylla i.
 
-Styleguide 7.
+Styleguide 6.
 */
 /*
 Valfria och obligatoriska fält
@@ -9362,7 +9366,7 @@ Markup:
   </div>
 </form>
 
-Styleguide 7.1
+Styleguide 6.1
 */
 /*
 Etiketter
@@ -9385,7 +9389,7 @@ Markup:
   </div>
 </form>
 
-Styleguide 7.2
+Styleguide 6.2
 */
 /*
 Formulärfält
@@ -9403,7 +9407,7 @@ Markup:
 	<input class="form-control input-sm" type="text" placeholder="">
 </div>
 
-Styleguide 7.3
+Styleguide 6.3
 */
 /*
 Fältgrupper
@@ -9422,7 +9426,7 @@ Markup:
   </div>
 </div>
 
-Styleguide 7.4
+Styleguide 6.4
 */
 /*
 Fokustillstånd
@@ -9435,7 +9439,7 @@ Markup:
   <input class="form-control" id="focusedInput" type="text" value="">
 </form>
 
-Styleguide 7.5
+Styleguide 6.5
 */
 #focusedInput {
   border: 2px solid transparent;
@@ -9474,7 +9478,7 @@ Markup:
   </div>
 </form>
 
-Styleguide 7.6
+Styleguide 6.6
 */
 .help-block {
   margin-top: 0px;
@@ -9485,7 +9489,7 @@ Styleguide 7.6
 /*
 Formulärelement
 
-Styleguide 7.7.
+Styleguide 6.7.
 */
 .form-control {
   color: #333333;
@@ -9506,7 +9510,7 @@ Exempel på projekt där andra kontroller utforskats som alternativ till rullgar
 
 Exempel:
 
-Styleguide 7.7.1
+Styleguide 6.7.1
 */
 /*
 Kryssrutor
@@ -9527,7 +9531,7 @@ Markup:
   </label>
 </div>
 
-Styleguide 7.7.2
+Styleguide 6.7.2
 */
 /*
 Radioknappar
@@ -9554,7 +9558,7 @@ Markup:
   </label>
 </div>
 
-Styleguide 7.7.3
+Styleguide 6.7.3
 */
 /*
 Fel och validering
@@ -9568,7 +9572,7 @@ Läs mer [vägledning för formulär](http://webbriktlinjer.se/vagledning/taggar
 
 Exempel:
 
-Styleguide 7.8
+Styleguide 6.8
 */
 /*
 Infällda formulärelement
@@ -9577,7 +9581,7 @@ Kan användas för att be användaren lägga till extra kontextuell information.
 
 Exempel:
 
-Styleguide 7.9
+Styleguide 6.9
 */
 .label-warning {
   color: #867e16;
@@ -9587,19 +9591,17 @@ Bilder och ikoner
 
 Använd bilder och ikoner endast om det finns ett tydligt användarbehov.
 
-Styleguide 6.
+Styleguide 5.
 */
 /*
 Bilder
 
-Bilder som visas ska ha ration 3:2.
-
-.image-frame
+För att ge bilder en ram, ange klassen ``.image-frame``
 
 Markup:
   <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Devil_codex_Gigas.jpg" alt="Uppslag ur Codex Gigas där en av sidorna visar djävulen" class="image-frame" />
 
-Styleguide 6.1
+Styleguide 5.3
 */
 .image-frame {
   width: auto;
@@ -9623,7 +9625,7 @@ För fler exempel på hur man kan använda Font Awesome, se [deras egna exempel]
 Markup:
 <i class="fa {{modifier_class}}"></i>
 
-Styleguide 6.2
+Styleguide 5.2
 */
 /*
 Favicon
@@ -9634,16 +9636,20 @@ Använd KBs logotyp?
 
 Exempel: (bild)
 
-Styleguide 6.3
+Styleguide 5.4
 */
 /*
 Beta-flaggor
 
-Flaggor som signalerar att tjänsten är i Beta.
+Visa tjänstens status tydligt i sidhuvudet. Dessa flaggor används för att signalera att tjänsten är i Beta. 
 
-* Variant 1: [PNG](./assets/beta_1.png)
-* Variant 2: [PNG](./assets/beta_2.png)
-* Variant 3: [PNG](./assets/beta_3.png)
+
+Dessa flaggor är enbart tillfälliga och kommer ses över, nya varianter kommer!
+
+Ladda ner:
+* [Variant 1 (PNG, 4 K)](./assets/beta_1.png)
+* [Variant 2 (PNG, 3 K)](./assets/beta_2.png)
+* [Variant 3 (PNG, 8 K)](./assets/beta_3.png)
 
 Markup:
 <div class="logo-box bg-happy-blue">
@@ -9659,7 +9665,7 @@ Markup:
   <img src="./assets/beta_3.png" />
 </div>
 
-Styleguide 6.4
+Styleguide 5.5
 */
 .logo-box {
   vertical-align: top;
@@ -9747,8 +9753,8 @@ Styleguide 6.4
   background-color: rgba(114, 168, 173, 0.6);
 }
 .kss-menu > .kss-menu-item .label {
-  margin: 0.7em 0px;
-  font-size: 0.5em !important;
+  margin: 0.6em 0px;
+  font-size: 0.6em !important;
   font-weight: normal;
 }
 .kss-menu > .kss-menu-item a {
