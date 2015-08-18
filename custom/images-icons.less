@@ -10,7 +10,16 @@ Styleguide 5.
 /*
 Bilder
 
-För att ge bilder en ram, ange klassen ``.image-frame``
+Tänk på att använda passande proportioner för bilder. För att ge bilder en ram, ange klassen ``.image-frame`` 
+
+Använd alltid [alt-attributet](http://webaim.org/techniques/alttext/) för bilder. Denna bör innehålla en beskrivande text om bilden. Texten bör vara kort och innehålla viktiga nyckelord. Om bilden används som länk bör alt-texten beskriva vart länken leder istället för bilden i sig. Alt-texten visas som alternativ istället för bilden om denna av olika anledningar inte kan visas. De är även centrala för sökmotorer. Alt-texter underlättar för användare som använder skärmläsare. 
+
+[Title-attributet](http://www.searchenginejournal.com/image-alt-text-vs-image-title-whats-the-difference/) kan användas för att ge användaren ytterligare information om bilden. Texten kan vara en längre beskrivning eller en uppmaning för att få användaren att agera. Texten visas när man hovrar över bilden.  
+
+Om man vill att [skärmläsare inte ska ta hänsyn till bilden](http://www.w3.org/TR/WCAG20-TECHS/H67.html) så behöver följande gälla:
+* alt-attributet används men är tomt (alt=" "). 
+* title-attributet används inte eller är tomt (alt=" "). 
+
 
 Markup:
   <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Devil_codex_Gigas.jpg" alt="Uppslag ur Codex Gigas där en av sidorna visar djävulen" class="image-frame" />
