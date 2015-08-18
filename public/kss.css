@@ -9123,24 +9123,24 @@ Styleguide 2.5.2
   font-size: 14px;
   font-weight: 700;
 }
-/* 
+/*
 Typografi
 
 Styleguide 3.
 */
-/* 
+/*
 Typsnitt
 
-Vi använder oss av Open Sans från Google Fonts. Vid behov av att använda ytterligare typsnitt ska dessa väljas med hänsyn till tillgänglighet och öppenhet. Välj om möjligt licensfria alternativ. 
+Vi använder oss av Open Sans från Google Fonts. Vid behov av att använda ytterligare typsnitt ska dessa väljas med hänsyn till tillgänglighet och öppenhet. Välj om möjligt licensfria alternativ.
 
 Styleguide 3.1
 */
 /*
 Rubriker
 
-Använd rubriker kontinuerligt för att skapa en tydlig hierarki. 
+Använd rubriker kontinuerligt för att skapa en tydlig hierarki.
 
-Huvudrubriken ska tydligt beskriva sidans innehåll och innefatta de viktigaste nyckelorden och sökorden. Den bör inte vara för lång. Använd bara en huvudrubrik per sida. 
+Huvudrubriken ska tydligt beskriva sidans innehåll och innefatta de viktigaste nyckelorden och sökorden. Den bör inte vara för lång. Använd bara en huvudrubrik per sida.
 
 | Element | Storlek | Vikt
 |---|---|---|
@@ -9241,41 +9241,22 @@ Markup:
 Styleguide 3.3.3
 */
 /*
-Visuella modifierare
+Färga text
+
+Man kan enkelt färga text med prefixet ``.text-`` och valfri färg från de olika paletterna.
+
+Markup:
+<h3 class="text-black">Header with .text-black</h3>
+<p class="text-black">Paragraph with .text-black</p>
+<h3 class="text-happy-magenta">Header with .text-happy-magenta</h3>
+<p class="text-happy-magenta">Paragraph with .text-happy-magenta</p>
 
 Styleguide 3.4
 */
 /*
-Skugga
-
-Markup:
-<h3 class="has-shadow">Text with shadow</h3>
-<p class="has-shadow">Text with shadow</p>
-
-Styleguide 3.4.1
-*/
-h1.has-shadow,
-h2.has-shadow,
-h3.has-shadow,
-h4.has-shadow,
-p.has-shadow {
-  text-shadow: 0px 1px 2px #000;
-}
-/*
-Färg
-
-Markup:
-<h3 class="text-black">Black header without shadow</h3>
-<p class="text-black">Black text without shadow</p>
-<h3 class="has-shadow text-white">White header with shadow</h3>
-<p class="has-shadow text-white">White text with shadow</p>
-
-Styleguide 3.4.2
-*/
-/*
 Listor
 
-Listor används för att strukturera upp innehåll. Det finns tre varianter av listor: oordnade, ordnade och definitionslistor. 
+Listor används för att strukturera upp innehåll. Det finns tre varianter av listor: oordnade, ordnade och definitionslistor.
 [Läs mer om rekommendationer för listor på webbriktlinjer](http://webbriktlinjer.se/r/104-gor-listor-med-de-html-element-som-ar-till-for-att-skapa-listor/#rekommendationer-fr-listor).
 
 
