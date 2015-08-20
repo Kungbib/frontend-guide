@@ -7,7 +7,7 @@ Styleguide 3.
 /*
 Typsnitt
 
-Vi använder oss av Open Sans från Google Fonts. Vid behov av att använda ytterligare typsnitt ska dessa väljas med hänsyn till tillgänglighet och öppenhet. Välj om möjligt licensfria alternativ.
+Vi använder oss av [Open Sans från Google Fonts](https://www.google.com/fonts/specimen/Open+Sans) som standard. Det är ett  öppet Sans serif-typsnitt som ger ett neutralt men vänligt intryck. Vid behov av att använda ytterligare typsnitt ska dessa väljas med hänsyn till tillgänglighet och öppenhet. Välj om möjligt licensfria alternativ.
 
 Styleguide 3.1
 */
@@ -37,6 +37,7 @@ Markup:
 
 Styleguide 3.2
 */
+
 body {
 	line-height: 1.6;
 	font-size: 16px;
@@ -60,16 +61,16 @@ h4 {
 }
 
 /*
-Sekundär text / Liten text
+Sekundär text
 
-Implementeras genom att använda &lt;small&gt; eller .small
+Sekundär rubrik används bland annat i sidhuvudet för vissa tjänster. 
+Implementeras genom att använda &lt;small&gt; eller .small 
 
- Markup:
-<h1>h1 - This is a main title - <small>Secondary text</small></h1>
-<h2>h2 - This is a subtitle - <small>Secondary text</small></h2>
-<h3>h3 - This is a section title - <small>Secondary text</small></h3>
-<h4>h4 - This is a section subtitle - <small>Secondary text</small></h4>
-<p>p - This is a normal text with <small>secondary text</small> inside of it.</p>
+Markup:
+<h1>h1 - Det här är en huvudrubrik <small>med sekundär text</small></h1>
+<h2>h2 - Det här är en underrubrik <small>med sekundär text</small></h2>
+<h3>h3 - Det här är en underrubrik <small>med sekundär text</small></h3>
+<h4>h4 - Det här är en underrubrik <small>med sekundär text</small></h4>
 
 Styleguide 3.2.1
 */
@@ -81,102 +82,102 @@ h1, h2, h3, h4 {
 }
 
 
-
 /*
 Brödtext
+
 
 | Element | Storlek | Vikt
 |---|---|---|
 | p 	| 16px | 400
 
 
+font-size 
+line-height 
+radavstånd
+spaltbredd och radlängd
+paragraf .lead.
+
 Styleguide 3.3
 */
 
-/*
-Markerad
+
+
+/* 
+Markera nyckelord i text
+
+Genom att betona viktiga delar i en text kan man stödja användaren i läsningen och tydligare nå fram med sitt budskap. Det är viktigt att tänka på textens läsbarhet. Detta kan göras genom att ge särskilda nyckelord en <strong>tyngre vikt</strong> eller genom att använda <em>kursiv stil</em>. Om [länkar](https://sv.wikipedia.org/wiki/Hyperl%C3%A4nk) används i löpande text blir dessa även mer framträdande. Undvik alltid att använda <u>understrykna ord</u> eftersom dessa kan blandas ihop med länkar. Detsamma kan även gälla ord med tyngre vikt beroende på vilket visuellt uttryck länkarna har. Att blanda olika sätt att lyfta fram utvalda ord i en text bör göras med försiktighet. Undvik alltså att göra som i det här stycket.  
+
+Förkortningar bör undvikas i den mån det är möjligt. I brödtext finns det sällan skäl att använda förkortningar. Däremot kan ett mer kompakt skrivsätt hjälpa användaren att söka igenom en text till exempel för tabeller eller listor. 
+ 
+Text som inte längre är aktuell kan vid vissa tillfällen ändå vara värda att finnas kvar men markerade som inaktuella. Detta ska bara användas om det finns ett särskilt syfte, om det ger nytta för användaren att ordet är kvar. Många gånger är det bättre att bara ta bort texten.  
 
 Markup:
-This text contains a <mark>highlighted</mark> word.
+<p>Exempel: </p>
+<p>Den här texten innehåller ett <strong>viktigt</strong> ord.</p>
+<p>Den här texten innehåller ett <em>viktigt</em> ord.</p>
+<p><s>Den här texten är inte längre aktuell.</s></p>
+<p class="text-uppercase">Det här står med stora bokstäver</p>
+<p>En förkortning av JavaScript Object Notation for Linked Data är <abbr title="JavaScript Object Notation for Linked Data">JSON-LD</abbr>.</p>
+<p><abbr title="JavaScript Object Notation for Linked Data" class="initialism">JSON-LD</abbr> är ganska coolt.</p>
+
 
 Styleguide 3.3.1
 */
 
 /*
-Genomstruken / Borttagen
+Fotnot och finstilt 
+
+För fotnoter och text i finstilt så kan en mindre textstorlek användas. Standard är att textstorleken då sätts till 85%.
 
 Markup:
-<p>This text contains a <s>strikethrough</s> word.</p>
-<p>This text contains a <del>deleted</del> word.</p>
+<p>Text </p>
+<small>Tex källhänvisning eller särskilt vilkor</small>
 
 Styleguide 3.3.2
 */
 
+
 /*
-Understruken
+Ka­pi­tä­ler
 
-Markup:
-<p>This text contains an <u>underlined</u> word.</p>
-<p>This text contains an <ins>inserted</ins> word.</p>
+Ka­pi­tä­ler, ”små ver­sa­ler” kan användas för att ge en ele­gant ef­fekt på till ex­em­pel sid­fo­ten eller för så kal­la­de ”by­li­nes”.
 
-Styleguide 3.3.3
+
+Markup: 
+
+
+Styleguide 3.4
 */
 
-// Fet text
-//
-// Markup:
-// <p>This text contains an <strong>important</strong> word.</p>
-// <p>This text contains a <b>bold</b> word.</p>
-//
-// Styleguide 3.3.4
 
-// Kursiv / Betonad
-//
-// Markup:
-// <p>This text contains an <em>emphasized</em> word.</p>
-// <p>This text contains an <i>italicized</i> word.</p>
-//
-// Styleguide 3.3.5
-
-// Horisontell justering
-//
-// Markup:
-// <p class="text-left">Left aligned</p>
-// <p class="text-center">Center aligned</p>
-// <p class="text-right">Right aligned</p>
-//
-// Styleguide 3.3.6
-
-// Transformering
-//
-// Markup:
-// <p class="text-lowercase">Lowercased text</p>
-// <p class="text-uppercase">Uppercased text</p>
-// <p class="text-capitalize">capitalized text</p>
-//
-// Styleguide 3.3.7
-
-// Förkortningar / initialism
-//
-// Markup:
-// <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
-// <p><abbr title="JavaScript Object Notation for Linked Data" class="initialism">JSON-LD</abbr> is pretty cool.</p>
-//
-// Styleguide 3.3.8
 
 /*
 Färga text
 
-Man kan enkelt färga text med prefixet ``.text-`` och valfri färg från de olika paletterna.
+Om man vill använda en annan färg på en text kan man enkelt färga text med prefixet ``.text-`` och valfri färg från de olika paletterna.
 
 Markup:
-<h3 class="text-black">Header with .text-black</h3>
-<p class="text-black">Paragraph with .text-black</p>
-<h3 class="text-happy-magenta">Header with .text-happy-magenta</h3>
-<p class="text-happy-magenta">Paragraph with .text-happy-magenta</p>
+<h3 class="text-happy-magenta">Rubrik med färgen happy-magenta</h3>
+<p class="text-happy-magenta">Paragraf med färgen happy-magenta</p>
 
-Styleguide 3.4
+Styleguide 3.5
 */
+
+
+/*
+Flytta text
+
+För att justera text kan man använda särskilda klasser. 
+
+Markup:
+<p class="text-left">Den här texten är vänsterjusterat</p>
+<p class="text-center">Den här texten är centrerad</p>
+<p class="text-right">Den här texten är högerjusterat</p>
+
+Styleguide 3.6
+*/
+
+
 
 /*
 Listor
@@ -190,7 +191,7 @@ Listor används för att strukturera upp innehåll. Det finns tre varianter av l
 
 Exempel på olika listor:
 
-Styleguide 3.5
+Styleguide 3.7
 */
 
 /*
@@ -202,7 +203,7 @@ Att skriva [länkar direkt i texten](http://www.inuse.se/blogg/lankar-direkt-i-t
 
 Texten på en länk bör inte innehålla någon onödig information. Skriv det viktigaste först och undvik att använda formuleringar som: "För mer information om" eller "...klicka här". Du bör inte heller skriva "Länk till...". Gör det uppenbart för användaren att en länk just är en länk, genom att skilja ut den grafiskt från övrigt innehåll. 
 
-Styleguide 3.6
+Styleguide 3.8
 */
 
 /*
@@ -212,7 +213,7 @@ För länkar till externa webbplatser kan det vara bra att skriva ut organisatio
 
 [Riktlinjer för att skriva tydliga länkar på webbriktlinjer.se](http://webbriktlinjer.se/r/5-skriv-tydliga-lankar/)
 
-Styleguide 3.6.1
+Styleguide 3.8.1
 */
 
 /*
@@ -224,6 +225,6 @@ Länkar till filer för nedladdning bör tydligt visa för användaren att det j
 
 [Ladda ner KBs Logotyp svart (SVG, 6K)](./assets/kb_logo_black.svg) 
 
-Styleguide 3.6.2
+Styleguide 3.8.2
 */
 
