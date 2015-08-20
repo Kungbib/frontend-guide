@@ -16,9 +16,24 @@ Styleguide 2.1
 */
 
 /*
-Grid
+Rutnät
 
-Använd kolumner baserat på behovet för innehållet.
+Bootstraps inbyggda rutnätssystem gör det väldigt enkelt att bygga responsiva layouter som fungerar bra på olika enheter.
+
+Rutnätssystemet går ut på att man delar upp sidan i 12 kolumner och genom att ge specifika klasser till olika behållare får man dem att ta upp olika många kolumner beroende på browserns totala bredd. Man kan t ex definera en ``<div>`` att vara 6 kolumner bred på en större upplösning och 12 kolumner på en mindre upplösning.
+
+Man placerar varje behållare i större behållare med klassen ``.row`` och den behållaren måste befinna sig inuti antingen en ``.container`` (låst bredd enligt tabellen nedan, se raden *Behållarbredd*) eller en ``.container-fluid`` (full bredd, 100%).
+
+Läs mer om [Bootstraps rutnätssystem](http://getbootstrap.com/css/#grid) (Grid).
+
+### Rutnäts-inställningar
+
+| Väldigt små | Små | Mellanstora |  Stora
+--- | --- | --- | ---
+Enhet | Telefoner (<768px) |	 Surfplattor (≥768px)	| Desktops (≥992px) |	Desktops (≥1200px)
+Prefix | col-xs- | col-sm- | col-md- | col-lg- |
+Kolumnbredd | Auto | ~62px | ~81px | ~97px |
+Behållarbredd | Auto | 750px | 970px | 1170px |
 
 Styleguide 2.2
 */
