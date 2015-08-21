@@ -17,11 +17,16 @@
 
 // Navbar
 .kss-navbar {
+  background-color: @white;
+  border-bottom: 1px solid @gray-lighter !important;
   .update-text {
     @media screen and (max-width: @screen-sm-max) {
       display: none;
     }
     padding: 14px;
+  }
+  .navbar-brand {
+    color: @black;
   }
   .navbar-header {
     img {
@@ -46,59 +51,48 @@
 // Sidebar
 .sidebar {
   padding: 50px 20px 10px 20px !important;
-  width: 240px;
   margin-top: 30px;
-  .nav-sidebar {
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
-    background-color: #f5f5f5;
-    @media screen and (min-width: @screen-sm-min) {
-      width: 260px;
-    }
-    @media screen and (min-width: @screen-md-min) {
-      width: 260px;
-    }
-    @media screen and (min-width: @screen-lg-min) {
-      width: 300px;
-    }
-  }
 }
 .kss-menu {
-  > .kss-menu-item {
-    &:hover {
-      background-color: fadeout(@happy-muted-magenta, 40%);
+  .kss-menu-item {
+    > a {
+      border: solid transparent;
+      border-width: 0px 0px 0px 3px;
+      &:hover {
+        border-color: lighten(@happy-muted-magenta, 25%);
+      }
     }
+    &.kss-active > a {
+      border: solid @happy-muted-magenta;
+      border-width: 0px 0px 0px 3px;
+    }
+  }
+  > .kss-menu-item {
     .label {
+      display: none;
       margin: 0.6em 0px;
       font-size: 0.6em !important;
       font-weight: normal;
     }
     a {
       color: black;
-      font-size: 14px;
       font-weight: 400;
       padding: 0px 10px;
       display: block;
       text-decoration: none;
     }
-    &.kss-active > a {
-      background-color: @happy-muted-magenta;
-      color: @white;
-    }
     &.kss-active > ul {
       list-style: none;
       padding: 0px;
-      background-color: lighten(@happy-muted-magenta, 25%);
       li {
         font-size: 12px;
-        padding: 0px 0px 0px 20px;
         margin-left: 0px;
-        &:hover {
-          background-color: fadeout(@happy-muted-magenta, 40%);
+        &.kss-depth-2 {
+          padding: 0px 0px 0px 0px;
         }
-      }
-      > .kss-active {
-        background-color: @happy-muted-magenta !important;
-        a { color: @white;}
+        &.kss-depth-3 {
+          padding: 0px 0px 0px 10px;
+        }
       }
     }
   }
@@ -122,8 +116,6 @@
 .kss-menubar {
   @media screen and (min-width: @screen-md-min) {
     .kss-sidebar-inner {
-      // position: fixed;
-      // top: 0px;
       margin-left: -2%;
       width: 230px;
     }
@@ -172,6 +164,9 @@
 .kss-section {
   margin-bottom: 0em;
   padding-top: 3em;
+  .label {
+    display: none;
+  }
   .kss-title {
     border: solid #333333;
     border-width: 0px 0px 0.1em 0px;
