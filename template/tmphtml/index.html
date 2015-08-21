@@ -72,7 +72,7 @@
             {{#eachSection rootName}}
             {{#ifDepth 1}}
             {{else}}
-            <li class="kss-menu-item"><a href="#section-{{reference}}"><span class="kss-name">{{header}}</span><span class="kss-ref pull-right label label-default bg-black">{{reference}}</span></a></li>
+            <li class="kss-menu-item kss-depth-{{depth}}"><a href="#section-{{reference}}"><span class="kss-name">{{header}}</span><span class="kss-ref pull-right label label-default bg-black">{{reference}}</span></a></li>
             {{/ifDepth}}
             {{/eachSection}}
           </ul>
