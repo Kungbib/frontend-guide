@@ -7629,9 +7629,6 @@ a {
 .bg-happy-green .navbar-toggle:focus {
   background-color: transparent;
 }
-.bg-happy-green .navbar-toggle {
-  border-color: #333333;
-}
 .bg-happy-green .navbar-toggle .icon-bar {
   background-color: #333333;
 }
@@ -7651,9 +7648,6 @@ a {
 .bg-happy-desert .navbar-toggle:hover,
 .bg-happy-desert .navbar-toggle:focus {
   background-color: transparent;
-}
-.bg-happy-desert .navbar-toggle {
-  border-color: #333333;
 }
 .bg-happy-desert .navbar-toggle .icon-bar {
   background-color: #333333;
@@ -7715,9 +7709,6 @@ a {
 .bg-happy-muted-desert .navbar-toggle:focus {
   background-color: transparent;
 }
-.bg-happy-muted-desert .navbar-toggle {
-  border-color: #333333;
-}
 .bg-happy-muted-desert .navbar-toggle .icon-bar {
   background-color: #333333;
 }
@@ -7737,9 +7728,6 @@ a {
 .bg-happy-muted-light-blue .navbar-toggle:hover,
 .bg-happy-muted-light-blue .navbar-toggle:focus {
   background-color: transparent;
-}
-.bg-happy-muted-light-blue .navbar-toggle {
-  border-color: #333333;
 }
 .bg-happy-muted-light-blue .navbar-toggle .icon-bar {
   background-color: #333333;
@@ -7821,9 +7809,6 @@ a {
 .bg-pastel-pink .navbar-toggle:focus {
   background-color: transparent;
 }
-.bg-pastel-pink .navbar-toggle {
-  border-color: #333333;
-}
 .bg-pastel-pink .navbar-toggle .icon-bar {
   background-color: #333333;
 }
@@ -7843,9 +7828,6 @@ a {
 .bg-pastel-light-blue .navbar-toggle:hover,
 .bg-pastel-light-blue .navbar-toggle:focus {
   background-color: transparent;
-}
-.bg-pastel-light-blue .navbar-toggle {
-  border-color: #333333;
 }
 .bg-pastel-light-blue .navbar-toggle .icon-bar {
   background-color: #333333;
@@ -7867,9 +7849,6 @@ a {
 .bg-pastel-desert .navbar-toggle:focus {
   background-color: transparent;
 }
-.bg-pastel-desert .navbar-toggle {
-  border-color: #333333;
-}
 .bg-pastel-desert .navbar-toggle .icon-bar {
   background-color: #333333;
 }
@@ -7889,9 +7868,6 @@ a {
 .bg-pastel-desert-darker .navbar-toggle:hover,
 .bg-pastel-desert-darker .navbar-toggle:focus {
   background-color: transparent;
-}
-.bg-pastel-desert-darker .navbar-toggle {
-  border-color: #333333;
 }
 .bg-pastel-desert-darker .navbar-toggle .icon-bar {
   background-color: #333333;
@@ -7932,9 +7908,6 @@ a {
 .bg-pastel-muted-yellow .navbar-toggle:hover,
 .bg-pastel-muted-yellow .navbar-toggle:focus {
   background-color: transparent;
-}
-.bg-pastel-muted-yellow .navbar-toggle {
-  border-color: #333333;
 }
 .bg-pastel-muted-yellow .navbar-toggle .icon-bar {
   background-color: #333333;
@@ -8016,9 +7989,6 @@ a {
 .bg-white .navbar-toggle:focus {
   background-color: transparent;
 }
-.bg-white .navbar-toggle {
-  border-color: #333333;
-}
 .bg-white .navbar-toggle .icon-bar {
   background-color: #333333;
 }
@@ -8039,9 +8009,6 @@ a {
 .bg-gray-lighter .navbar-toggle:focus {
   background-color: transparent;
 }
-.bg-gray-lighter .navbar-toggle {
-  border-color: #333333;
-}
 .bg-gray-lighter .navbar-toggle .icon-bar {
   background-color: #333333;
 }
@@ -8061,9 +8028,6 @@ a {
 .bg-gray-light .navbar-toggle:hover,
 .bg-gray-light .navbar-toggle:focus {
   background-color: transparent;
-}
-.bg-gray-light .navbar-toggle {
-  border-color: #333333;
 }
 .bg-gray-light .navbar-toggle .icon-bar {
   background-color: #333333;
@@ -8204,9 +8168,6 @@ a {
 .bg-brand-warning .navbar-toggle:hover,
 .bg-brand-warning .navbar-toggle:focus {
   background-color: transparent;
-}
-.bg-brand-warning .navbar-toggle {
-  border-color: #333333;
 }
 .bg-brand-warning .navbar-toggle .icon-bar {
   background-color: #333333;
@@ -8924,12 +8885,12 @@ KB har två olika logotyper, dels en kombinerad logotyp med symbol och text och 
 
 Logotyperna används bland annat i sidhuvudet och bör då länka till tjänstens startsida. Om logotypen används för navigation som i sidhuvudet så bör det framgå i alt-texten (alt="Kungliga bibliotekets webbplats"). Läs mer i avsnittet [Sidhuvud](/frontend-guide/section-2.4.html).
 
-Om logotypen används i annat syfte, kan alt-texten ange att det är en logotyp (alt="Kungliga bibliotekets logotyp" eller så kan alt-attributet vara tomt (alt=" "). 
+Om logotypen används i annat syfte, kan alt-texten ange att det är en logotyp (alt="Kungliga bibliotekets logotyp" eller så kan alt-attributet vara tomt (alt=" ").
 
-Logotyper bör, precis som andra bilder, alltid ha attributet alt. Detta underlättar för användare som använder skärmläsare. 
-Om man vill att skärmläsare inte ska ta hänsyn till logotypen så behöver alt-attributet finnas men vara tomt (alt=" "). 
-Title-attributet ska då inte finnas eller vara tomt. 
-Mer information om detta finns på [W3C:s webbplats](http://www.w3.org/TR/WCAG20-TECHS/H67.html).  
+Logotyper bör, precis som andra bilder, alltid ha attributet alt. Detta underlättar för användare som använder skärmläsare.
+Om man vill att skärmläsare inte ska ta hänsyn till logotypen så behöver alt-attributet finnas men vara tomt (alt=" ").
+Title-attributet ska då inte finnas eller vara tomt.
+Mer information om detta finns på [W3C:s webbplats](http://www.w3.org/TR/WCAG20-TECHS/H67.html).
 
 
 
@@ -8939,10 +8900,10 @@ För tjänster med unikt uttryck, ange logotypen i Cabin (?). (Det här behöver
 Styleguide 5.1
 */
 /*
-Kombinerad logotyp 
+Kombinerad logotyp
 
-Den kombinerade logotypen består av en symbol och Kungl. biblioteket skrivet i text runt om symbolen. 
-Logotypen finns i svart och vitt. Denna ska alltid användas i sidhuvudet för KB:s tjänster. 
+Den kombinerade logotypen består av en symbol och Kungl. biblioteket skrivet i text runt om symbolen.
+Logotypen finns i svart och vitt. Denna ska alltid användas i sidhuvudet för KB:s tjänster.
 
 
 #### Ladda ner logotyp
@@ -8956,6 +8917,7 @@ Logotypen finns i svart och vitt. Denna ska alltid användas i sidhuvudet för K
 
 Markup:
 <img src="./assets/kb_logo_black.svg" class="{{modifier_class}}" alt="Kungliga bibliotekets logotyp" />
+<img src="./assets/kb_logo_white.svg" class="bg-black {{modifier_class}}" alt="Kungliga bibliotekets logotyp" />
 
 Styleguide 5.1.1
 */
@@ -8971,7 +8933,7 @@ Styleguide 5.1.1
 /*
 Textlogotyp
 
-Textlogotypen består av Kungl Biblioteket utskrivet i text. Logotypen finns i svart och vitt. 
+Textlogotypen består av Kungl Biblioteket utskrivet i text. Logotypen finns i svart och vitt.
 
 #### Ladda ner logotyp:
 * [KBs textlogotyp svart (SVG, 5K)](./assets/kb_text_black.svg)
@@ -8979,6 +8941,7 @@ Textlogotypen består av Kungl Biblioteket utskrivet i text. Logotypen finns i s
 
 Markup:
 <img src="./assets/kb_text_black.svg" class="{{modifier_class}}" alt="Kungl. biblioteket" />
+<img src="./assets/kb_text_white.svg" class="bg-happy-magenta {{modifier_class}}" alt="Kungl. biblioteket" />
 
 Styleguide 5.1.2
 */
@@ -9131,7 +9094,7 @@ Styleguide 3.
 /*
 Typsnitt
 
-Vi använder oss av Open Sans från Google Fonts. Vid behov av att använda ytterligare typsnitt ska dessa väljas med hänsyn till tillgänglighet och öppenhet. Välj om möjligt licensfria alternativ.
+Vi använder oss av [Open Sans från Google Fonts](https://www.google.com/fonts/specimen/Open+Sans) som standard. Det är ett  öppet Sans serif-typsnitt som ger ett neutralt men vänligt intryck. Vid behov av att använda ytterligare typsnitt ska dessa väljas med hänsyn till tillgänglighet och öppenhet. Välj om möjligt licensfria alternativ.
 
 Styleguide 3.1
 */
@@ -9181,16 +9144,16 @@ h4 {
   font-size: 20px;
 }
 /*
-Sekundär text / Liten text
+Sekundär text
 
+Sekundär rubrik används bland annat i sidhuvudet för vissa tjänster.
 Implementeras genom att använda &lt;small&gt; eller .small
 
- Markup:
-<h1>h1 - This is a main title - <small>Secondary text</small></h1>
-<h2>h2 - This is a subtitle - <small>Secondary text</small></h2>
-<h3>h3 - This is a section title - <small>Secondary text</small></h3>
-<h4>h4 - This is a section subtitle - <small>Secondary text</small></h4>
-<p>p - This is a normal text with <small>secondary text</small> inside of it.</p>
+Markup:
+<h1>h1 - Det här är en huvudrubrik <small>med sekundär text</small></h1>
+<h2>h2 - Det här är en underrubrik <small>med sekundär text</small></h2>
+<h3>h3 - Det här är en underrubrik <small>med sekundär text</small></h3>
+<h4>h4 - Det här är en underrubrik <small>med sekundär text</small></h4>
 
 Styleguide 3.2.1
 */
@@ -9207,71 +9170,138 @@ h4 small {
 /*
 Brödtext
 
+
 | Element | Storlek | Vikt
 |---|---|---|
 | p 	| 16px | 400
 
 
+font-size
+line-height
+radavstånd
+spaltbredd och radlängd
+paragraf .lead.
+
 Styleguide 3.3
 */
 /*
-Markerad
+Markera nyckelord i text
+
+Genom att betona viktiga delar i en text kan man stödja användaren i läsningen och tydligare nå fram med sitt budskap. Det är viktigt att tänka på textens läsbarhet. Detta kan göras genom att ge särskilda nyckelord en <strong>tyngre vikt</strong> eller genom att använda <em>kursiv stil</em>. Om [länkar](https://sv.wikipedia.org/wiki/Hyperl%C3%A4nk) används i löpande text blir dessa även mer framträdande. Undvik alltid att använda <u>understrykna ord</u> eftersom dessa kan blandas ihop med länkar. Detsamma kan även gälla ord med tyngre vikt beroende på vilket visuellt uttryck länkarna har. Att blanda olika sätt att lyfta fram utvalda ord i en text bör göras med försiktighet. Undvik alltså att göra som i det här stycket.
+
+Förkortningar bör undvikas i den mån det är möjligt. I brödtext finns det sällan skäl att använda förkortningar. Däremot kan ett mer kompakt skrivsätt hjälpa användaren att söka igenom en text till exempel för tabeller eller listor.
+
+Text som inte längre är aktuell kan vid vissa tillfällen ändå vara värda att finnas kvar men markerade som inaktuella. Detta ska bara användas om det finns ett särskilt syfte, om det ger nytta för användaren att ordet är kvar. Många gånger är det bättre att bara ta bort texten.
 
 Markup:
-This text contains a <mark>highlighted</mark> word.
+<p>Exempel: </p>
+<p>Den här texten innehåller ett <strong>viktigt</strong> ord.</p>
+<p>Den här texten innehåller ett <em>viktigt</em> ord.</p>
+<p><s>Den här texten är inte längre aktuell.</s></p>
+<p class="text-uppercase">Det här står med stora bokstäver</p>
+<p>En förkortning av JavaScript Object Notation for Linked Data är <abbr title="JavaScript Object Notation for Linked Data">JSON-LD</abbr>.</p>
+<p><abbr title="JavaScript Object Notation for Linked Data" class="initialism">JSON-LD</abbr> är ganska coolt.</p>
+
 
 Styleguide 3.3.1
 */
 /*
-Genomstruken / Borttagen
+Fotnot och finstilt
 
+För fotnoter och text i finstilt så kan en mindre textstorlek användas. Standard är att textstorleken då sätts till 85%.
+
+Exempel:
 Markup:
-<p>This text contains a <s>strikethrough</s> word.</p>
-<p>This text contains a <del>deleted</del> word.</p>
+<p>Lorem ipsum dolor sit amet, liber doming appareat eu vel. Option tritani blandit ne sit. Ea nam etiam forensibus, discere adolescens accommodare mel cu. Qui sumo erant habemus ut, ex vis nisl adipisci percipitur. Unum nibh illud an sit, ad omnis semper moderatius mei, ei vel dicta eruditi intellegebat. Mea graece efficiendi ei, nec eirmod deterruisset id. Et eam nulla instructior, vel cu delenit scaevola complectitur.</p>
+<p class="small">Källhänvisning eller särskilt vilkor</p>
+
 
 Styleguide 3.3.2
 */
 /*
-Understruken
+Ka­pi­tä­ler
+
+Ka­pi­tä­ler, ”små ver­sa­ler” kan användas för att ge en ele­gant ef­fekt på till ex­em­pel sid­fo­ten eller för så kal­la­de ”by­li­nes”.
+
+För detta ändamål kan du använda klassen ``.small-caps``.
+
+Exempel:
 
 Markup:
-<p>This text contains an <u>underlined</u> word.</p>
-<p>This text contains an <ins>inserted</ins> word.</p>
+<p class="small-caps">Foto: Sven Andersson</p>
 
-Styleguide 3.3.3
+Styleguide 3.4
 */
+.small-caps {
+  font-variant: small-caps;
+}
 /*
 Färga text
 
-Man kan enkelt färga text med prefixet ``.text-`` och valfri färg från de olika paletterna.
+Om man vill använda en annan färg på en text kan man enkelt färga text med prefixet ``.text-`` och valfri färg från de olika paletterna.
 
 Markup:
-<h3 class="text-black">Header with .text-black</h3>
-<p class="text-black">Paragraph with .text-black</p>
-<h3 class="text-happy-magenta">Header with .text-happy-magenta</h3>
-<p class="text-happy-magenta">Paragraph with .text-happy-magenta</p>
+<h3 class="text-happy-magenta">Rubrik med färgen happy-magenta</h3>
+<p class="text-happy-magenta">Paragraf med färgen happy-magenta</p>
 
-Styleguide 3.4
+Styleguide 3.5
+*/
+/*
+Flytta text
+
+För att justera text kan man använda särskilda klasser.
+
+Markup:
+<p class="text-left">Den här texten är vänsterjusterat</p>
+<p class="text-center">Den här texten är centrerad</p>
+<p class="text-right">Den här texten är högerjusterat</p>
+
+Styleguide 3.6
 */
 /*
 Listor
 
 Listor används för att strukturera upp innehåll. Det finns tre varianter av listor: oordnade, ordnade och definitionslistor.
-[Läs mer om rekommendationer för listor på webbriktlinjer](http://webbriktlinjer.se/r/104-gor-listor-med-de-html-element-som-ar-till-for-att-skapa-listor/#rekommendationer-fr-listor).
+
+[Rekommendationer för listor på webbriktlinjer.se](http://webbriktlinjer.se/r/104-gor-listor-med-de-html-element-som-ar-till-for-att-skapa-listor/#rekommendationer-fr-listor).
 
 
-[Läs mer om olika sätt att skriva punktlistor](http://www.iklartext.se/skriv-punktlistor/).
+[Tips på hur man skriver punktlistor på Klartext](http://www.iklartext.se/skriv-punktlistor/).
 
 Exempel på olika listor:
 
-Styleguide 3.5
+Styleguide 3.7
 */
 /*
 Länkar
 
-Skriv länkarna så att användarna förstår vart länken leder även när den är lyft ur sitt sammanhang. [Läs mer om länkar](http://webbriktlinjer.se/r/5-skriv-tydliga-lankar/).
+Länkar är centralt för att skapa en bra användarupplevelse. Visa vart en länk leder någonstans även när länken är lyft ur sitt sammanhang. Detta är extra viktigt för personer som använder olika hjälpmedel, som till exempel skärmläsare, eftersom de kan välja att navigera genom att enbart läsa upp länkarna. Länkar gör det även lättare för sökmotorer att analysera innehållet, vilket leder till bättre relevansrankning.
 
-Styleguide 3.6
+Att skriva [länkar direkt i texten](http://www.inuse.se/blogg/lankar-direkt-i-texten-inuseful/) kan försämra texten läsbarheten men även bidra till inspiration och ökad trovärdighet. Använd dem på ett genomtänkt sätt, utifrån tjänstens kontext och målgruppens förutsättningar.
+
+Texten på en länk bör inte innehålla någon onödig information. Skriv det viktigaste först och undvik att använda formuleringar som: "För mer information om" eller "...klicka här". Du bör inte heller skriva "Länk till...". Gör det uppenbart för användaren att en länk just är en länk, genom att skilja ut den grafiskt från övrigt innehåll.
+
+Styleguide 3.8
+*/
+/*
+Länka till externa webbplatser
+
+För länkar till externa webbplatser kan det vara bra att skriva ut organisation eller webbplatsens namn i slutet av länktexten. Länkar till andra webbplatser ska inte öppnas i nytt fönster.
+
+[Riktlinjer för att skriva tydliga länkar på webbriktlinjer.se](http://webbriktlinjer.se/r/5-skriv-tydliga-lankar/)
+
+Styleguide 3.8.1
+*/
+/*
+Länka till filer
+
+Undvik att länka enbart till en fil om det inte behövs eller uppfyller särskild nytta för användaren. Många gånger är det bättre att visa innehållet direkt på webplatsen. Länkar till filer bör öppnas i  samma fönster om det inte är uppenbart att användaren vill ladda ner filen. Välj ett filformat som så många som möjligt kan ta del av, tex pdf för textdokument.
+
+Länkar till filer för nedladdning bör tydligt visa för användaren att det just rör sig om nedladdning. Skriv detta tydligt i texten. Ange filens format och storlek. Denna information gör att det blir tydligt för användaren att länken inte leder till en webbplats. Att veta filens storlek hjälper användaren att avgöra hur lång tid det tar att ladda ner filen. Länkar för nerladdning bör alltid öppnas i ett nytt fönster.
+
+[Ladda ner KBs Logotyp svart (SVG, 6K)](./assets/kb_logo_black.svg)
+
+Styleguide 3.8.2
 */
 /*
 Paginering
@@ -9691,6 +9721,10 @@ Styleguide 5.5
 .container > .row {
   margin-top: -30px;
 }
+.kss-navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e6e9 !important;
+}
 .kss-navbar .update-text {
   padding: 14px;
 }
@@ -9698,6 +9732,9 @@ Styleguide 5.5
   .kss-navbar .update-text {
     display: none;
   }
+}
+.kss-navbar .navbar-brand {
+  color: #333333;
 }
 .kss-navbar .navbar-header img {
   height: 30px;
@@ -9717,66 +9754,45 @@ Styleguide 5.5
 }
 .sidebar {
   padding: 50px 20px 10px 20px !important;
-  width: 240px;
   margin-top: 30px;
 }
-.sidebar .nav-sidebar {
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
-  background-color: #f5f5f5;
+.kss-menu .kss-menu-item > a {
+  border: solid transparent;
+  border-width: 0px 0px 0px 3px;
 }
-@media screen and (min-width: 768px) {
-  .sidebar .nav-sidebar {
-    width: 260px;
-  }
+.kss-menu .kss-menu-item > a:hover {
+  border-color: #c3dadc;
 }
-@media screen and (min-width: 992px) {
-  .sidebar .nav-sidebar {
-    width: 260px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .sidebar .nav-sidebar {
-    width: 300px;
-  }
-}
-.kss-menu > .kss-menu-item:hover {
-  background-color: rgba(114, 168, 173, 0.6);
+.kss-menu .kss-menu-item.kss-active > a {
+  border: solid #72a8ad;
+  border-width: 0px 0px 0px 3px;
 }
 .kss-menu > .kss-menu-item .label {
+  display: none;
   margin: 0.6em 0px;
   font-size: 0.6em !important;
   font-weight: normal;
 }
 .kss-menu > .kss-menu-item a {
   color: black;
-  font-size: 14px;
   font-weight: 400;
   padding: 0px 10px;
   display: block;
   text-decoration: none;
 }
-.kss-menu > .kss-menu-item.kss-active > a {
-  background-color: #72a8ad;
-  color: #ffffff;
-}
 .kss-menu > .kss-menu-item.kss-active > ul {
   list-style: none;
   padding: 0px;
-  background-color: #c3dadc;
 }
 .kss-menu > .kss-menu-item.kss-active > ul li {
   font-size: 12px;
-  padding: 0px 0px 0px 20px;
   margin-left: 0px;
 }
-.kss-menu > .kss-menu-item.kss-active > ul li:hover {
-  background-color: rgba(114, 168, 173, 0.6);
+.kss-menu > .kss-menu-item.kss-active > ul li.kss-depth-2 {
+  padding: 0px 0px 0px 0px;
 }
-.kss-menu > .kss-menu-item.kss-active > ul > .kss-active {
-  background-color: #72a8ad !important;
-}
-.kss-menu > .kss-menu-item.kss-active > ul > .kss-active a {
-  color: #ffffff;
+.kss-menu > .kss-menu-item.kss-active > ul li.kss-depth-3 {
+  padding: 0px 0px 0px 10px;
 }
 .kss-markup.folded-example pre {
   display: none;
@@ -9840,6 +9856,9 @@ Styleguide 5.5
 .kss-section {
   margin-bottom: 0em;
   padding-top: 3em;
+}
+.kss-section .label {
+  display: none;
 }
 .kss-section .kss-title {
   border: solid #333333;
