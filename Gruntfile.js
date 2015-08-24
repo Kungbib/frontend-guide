@@ -62,7 +62,7 @@ module.exports = function(grunt) {
           patterns: [
             {
               match: 'timestamp',
-              replacement: '<%= grunt.template.today("yyyy-mm-dd - HH:MM:ss") %>'
+              replacement: '<%= grunt.template.today("yyyy-mm-dd - HH:MM") %>'
             }
           ]
         },

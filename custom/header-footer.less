@@ -99,6 +99,12 @@ Styleguide 2.4.1
 }
 
 .navbar-brand {
+	padding: 0px;
+
+  margin: 4px 0px !important;
+  @media screen and (max-width: @screen-sm-min) {
+    margin: 4px 0px 4px 10px !important;
+  }
 	color: @gray-dark;
 	font-size: 25px;
 	font-weight: 500;
@@ -108,10 +114,19 @@ Styleguide 2.4.1
 		font-size: 16px;
 	}
 }
+
+.navbar {
+	a {
+		display: inline;
+		text-decoration: none;
+		color: inherit;
+	}
+}
 .navbar-logo {
   padding: 0px;
   img {
-  	margin: 10% 0px 10% 10%;
+		display: inline-block;
+    margin: 0.2em 0 0.2em 0px;
     height: 80%;
   }
   margin: 0px 15px 0px 0px;
@@ -162,6 +177,7 @@ Markup:
 Styleguide 5.1.1
 */
 
+
 .logotype {
 	height: 100px;
 	&.logo-small {
@@ -170,6 +186,9 @@ Styleguide 5.1.1
 	&.logo-large {
 		height: 150px;
 	}
+}
+.navbar .logotype {
+	height: 100%;
 }
 
 /*

@@ -14,11 +14,15 @@
 .container>.row {
   margin-top: -30px;
 }
+.jumbotron h1 {
+  text-shadow: 0px 0.1em 0px rgba(0, 0, 0, 0.15);
+}
 
 // Navbar
 .kss-navbar {
   background-color: @white;
-  border-bottom: 1px solid @gray-lighter !important;
+  // border-bottom: 1px solid @gray-lighter !important;
+  border-bottom: 2px solid @happy-muted-magenta !important;
   .update-text {
     @media screen and (max-width: @screen-sm-max) {
       display: none;
@@ -27,16 +31,6 @@
   }
   .navbar-brand {
     color: @black;
-  }
-  .navbar-header {
-    img {
-      height: 30px;
-      display: inline;
-    }
-    h4 {
-      display: inline;
-      vertical-align: middle;
-    }
   }
 }
 .navbar-collapse {
@@ -54,6 +48,16 @@
   margin-top: 30px;
 }
 .kss-menu {
+  &.affix {
+    margin-top: 0px;
+    &.homepage {
+      margin-top: -250px;
+    }
+  }
+ >.kss-menu-item.kss-active>a {
+  //  background-color: @happy-muted-magenta;
+  //  color: @white;
+ }
   .kss-menu-item {
     > a {
       border: solid transparent;
@@ -161,9 +165,19 @@
     display: none;
   }
   .kss-title {
-    border: solid #333333;
-    border-width: 0px 0px 0.1em 0px;
-    margin-bottom: 1em;
-    padding-top: 1em;
+    .header-docs-styles();
   }
 }
+.kss-overview {
+  h1, h2, h3, h4 {
+    .header-docs-styles();
+  }
+}
+
+.header-docs-styles {
+  border: solid #333333;
+  border-width: 0px 0px 0.1em 0px;
+  margin-bottom: 1em;
+  padding-top: 1em;
+}
+
