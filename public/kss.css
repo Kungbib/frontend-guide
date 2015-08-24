@@ -8945,6 +8945,9 @@ Styleguide 5.1.1
 .navbar .logotype {
   height: 100%;
 }
+.logo-medium {
+  height: 75px;
+}
 /*
 Textlogotyp
 
