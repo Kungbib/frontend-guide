@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/kb-style.css">
 
 
-    <title>Kungl. Bibliotekets Stilguide</title>
+    <title>Stilguide för Kungl. Biblioteket</title>
 
 
     <!-- Custom styles for this template -->
@@ -31,14 +31,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="navbar-brand">
-            <img src="./assets/kb_logo_black.svg" /> <img class="logo-text" src="./assets/kb_text_black.svg" /> <h4 class="inline"> Stilguide</h4>
+          <div class="navbar-brand navbar-logo">
+                <img src="./assets/kb_logo_black.svg" /> <a href="./">Stilguide för Kungl. Biblioteket</a>
           </div>
 
         </div>
 
         <div class="navbar-right update-text">
-          Senast uppdaterad: 2015-08-21 - 17:45:24
+          Senast uppdaterad: 2015-08-24 - 16:31
         </div>
 
 
@@ -60,10 +60,11 @@
       </div>
     </nav>
 
+
     <div class="container">
       <div class="row">
         <div class="col-sm-3 col-md-3 sidebar col-lg-2">
-          <ul class="nav nav-sidebar kss-menu" data-kss-ref="5" data-spy="affix">
+            <ul class="nav nav-sidebar kss-menu" data-kss-ref="5" data-spy="affix" data-offset-top="0">
             <li class="kss-menu-item"><a href="./"><span class="kss-ref pull-right label label-default bg-black">0</span><span class="kss-name">Introduktion</span></a></li>
             <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref pull-right label label-default bg-black">1</span><span class="kss-name">Tillgänglighet</span></a></li>
             <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref pull-right label label-default bg-black">2</span><span class="kss-name">Layout</span></a></li>
@@ -85,7 +86,7 @@
             <li class="kss-menu-item kss-depth-2"><a href="#section-5.5"><span class="kss-name">Beta-flaggor</span><span class="kss-ref pull-right label label-default bg-black">5.5</span></a></li>
           </ul>
         </div>
-        <div class="col-sm-9 col-md-9 col-lg-10 main kss-content">
+        <div class="col-sm-9 col-md-9 col-lg-9 main kss-content">
 
           <article class="kss-article">
             <section id="section-5" class="kss-section kss-depth-1">
@@ -96,11 +97,12 @@
               </div>
             </section>
             <section id="section-5.1" class="kss-section kss-depth-2">
-              <h1 class="kss-title"><span class="kss-ref label label-default bg-black">5.1</span> Logotyper</h1>
+              <h2 class="kss-title"><span class="kss-ref label label-default bg-black">5.1</span> Logotyper</h2>
               <div class="kss-description">
                 <p>KB har två olika logotyper, dels en kombinerad logotyp med symbol och text och dels en logotyp enbart i text.</p>
 <p>Logotyperna används bland annat i sidhuvudet och bör då länka till tjänstens startsida. Om logotypen används för navigation som i sidhuvudet så bör det framgå i alt-texten (alt=&quot;Kungliga bibliotekets webbplats&quot;). Läs mer i avsnittet <a href="/frontend-guide/section-2.4.html">Sidhuvud</a>.</p>
 <p>Om logotypen används i annat syfte, kan alt-texten ange att det är en logotyp (alt=&quot;Kungliga bibliotekets logotyp&quot; eller så kan alt-attributet vara tomt (alt=&quot; &quot;).</p>
+<p>Ge logotypen klassen <code>.logotype</code> så att dimensioner och andra attribut hanteras korrekt. Det finns även hjälpklasser som <code>.logo-small</code> och <code>.logo-large</code> som kan användas i kombination med logotype-klassen.</p>
 <p>Logotyper bör, precis som andra bilder, alltid ha attributet alt. Detta underlättar för användare som använder skärmläsare.
 Om man vill att skärmläsare inte ska ta hänsyn till logotypen så behöver alt-attributet finnas men vara tomt (alt=&quot; &quot;).
 Title-attributet ska då inte finnas eller vara tomt.
@@ -110,7 +112,7 @@ Mer information om detta finns på <a href="http://www.w3.org/TR/WCAG20-TECHS/H6
               </div>
             </section>
             <section id="section-5.1.1" class="kss-section kss-depth-3">
-              <h1 class="kss-title"><span class="kss-ref label label-default bg-black">5.1.1</span> Kombinerad logotyp</h1>
+              <h3 class="kss-title"><span class="kss-ref label label-default bg-black">5.1.1</span> Kombinerad logotyp</h3>
               <div class="kss-description">
                 <p>Den kombinerade logotypen består av en symbol och Kungl. biblioteket skrivet i text runt om symbolen.
 Logotypen finns i svart och vitt. Denna ska alltid användas i sidhuvudet för KB:s tjänster.</p>
@@ -124,8 +126,8 @@ Logotypen finns i svart och vitt. Denna ska alltid användas i sidhuvudet för K
               <div class="kss-modifier-block">
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    <img src="./assets/kb_logo_black.svg" class="[modifier class]" alt="Kungliga bibliotekets logotyp" />
-<img src="./assets/kb_logo_white.svg" class="bg-black [modifier class]" alt="Kungliga bibliotekets logotyp" />
+                    <img src="./assets/kb_logo_black.svg" class="logotype [modifier class]" alt="Kungliga bibliotekets logotyp" />
+<img src="./assets/kb_logo_white.svg" class="bg-black logotype [modifier class]" alt="Kungliga bibliotekets logotyp" />
                   </div>
                 </div>
                 <div class="kss-modifier">
@@ -136,20 +138,8 @@ Logotypen finns i svart och vitt. Denna ska alltid användas i sidhuvudet för K
                     <div class="kss-modifier-name"><pre>.logo-small</pre></div>
                   </div>
                   <div class="kss-modifier-example">
-                    <img src="./assets/kb_logo_black.svg" class="logo-small" alt="Kungliga bibliotekets logotyp" />
-<img src="./assets/kb_logo_white.svg" class="bg-black logo-small" alt="Kungliga bibliotekets logotyp" />
-                  </div>
-                </div>
-                <div class="kss-modifier">
-                  <div class="kss-modifier-head">
-                    <div class="kss-modifier-description">
-                      Mellan logga (100px)
-                    </div>
-                    <div class="kss-modifier-name"><pre>.logo-medium</pre></div>
-                  </div>
-                  <div class="kss-modifier-example">
-                    <img src="./assets/kb_logo_black.svg" class="logo-medium" alt="Kungliga bibliotekets logotyp" />
-<img src="./assets/kb_logo_white.svg" class="bg-black logo-medium" alt="Kungliga bibliotekets logotyp" />
+                    <img src="./assets/kb_logo_black.svg" class="logotype logo-small" alt="Kungliga bibliotekets logotyp" />
+<img src="./assets/kb_logo_white.svg" class="bg-black logotype logo-small" alt="Kungliga bibliotekets logotyp" />
                   </div>
                 </div>
                 <div class="kss-modifier">
@@ -160,18 +150,18 @@ Logotypen finns i svart och vitt. Denna ska alltid användas i sidhuvudet för K
                     <div class="kss-modifier-name"><pre>.logo-large</pre></div>
                   </div>
                   <div class="kss-modifier-example">
-                    <img src="./assets/kb_logo_black.svg" class="logo-large" alt="Kungliga bibliotekets logotyp" />
-<img src="./assets/kb_logo_white.svg" class="bg-black logo-large" alt="Kungliga bibliotekets logotyp" />
+                    <img src="./assets/kb_logo_black.svg" class="logotype logo-large" alt="Kungliga bibliotekets logotyp" />
+<img src="./assets/kb_logo_white.svg" class="bg-black logotype logo-large" alt="Kungliga bibliotekets logotyp" />
                   </div>
                 </div>
                 <div class="kss-markup">
-                  <pre><code data-language="html">&lt;img src=&quot;./assets/kb_logo_black.svg&quot; class=&quot;[modifier class]&quot; alt=&quot;Kungliga bibliotekets logotyp&quot; /&gt;
-&lt;img src=&quot;./assets/kb_logo_white.svg&quot; class=&quot;bg-black [modifier class]&quot; alt=&quot;Kungliga bibliotekets logotyp&quot; /&gt;</code></pre>
+                  <pre><code data-language="html">&lt;img src=&quot;./assets/kb_logo_black.svg&quot; class=&quot;logotype [modifier class]&quot; alt=&quot;Kungliga bibliotekets logotyp&quot; /&gt;
+&lt;img src=&quot;./assets/kb_logo_white.svg&quot; class=&quot;bg-black logotype [modifier class]&quot; alt=&quot;Kungliga bibliotekets logotyp&quot; /&gt;</code></pre>
                 </div>
               </div>
             </section>
             <section id="section-5.1.2" class="kss-section kss-depth-3">
-              <h1 class="kss-title"><span class="kss-ref label label-default bg-black">5.1.2</span> Textlogotyp</h1>
+              <h3 class="kss-title"><span class="kss-ref label label-default bg-black">5.1.2</span> Textlogotyp</h3>
               <div class="kss-description">
                 <p>Textlogotypen består av Kungl Biblioteket utskrivet i text. Logotypen finns i svart och vitt.</p>
 <h4 id="ladda-ner-logotyp-">Ladda ner logotyp:</h4>
@@ -184,18 +174,18 @@ Logotypen finns i svart och vitt. Denna ska alltid användas i sidhuvudet för K
               <div class="kss-modifier-block">
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    <img src="./assets/kb_text_black.svg" class="[modifier class]" alt="Kungl. biblioteket" />
-<img src="./assets/kb_text_white.svg" class="bg-happy-magenta [modifier class]" alt="Kungl. biblioteket" />
+                    <img src="./assets/kb_text_black.svg" class="logotype [modifier class]" alt="Kungl. biblioteket" />
+<img src="./assets/kb_text_white.svg" class="bg-happy-magenta logotype [modifier class]" alt="Kungl. biblioteket" />
                   </div>
                 </div>
                 <div class="kss-markup">
-                  <pre><code data-language="html">&lt;img src=&quot;./assets/kb_text_black.svg&quot; class=&quot;[modifier class]&quot; alt=&quot;Kungl. biblioteket&quot; /&gt;
-&lt;img src=&quot;./assets/kb_text_white.svg&quot; class=&quot;bg-happy-magenta [modifier class]&quot; alt=&quot;Kungl. biblioteket&quot; /&gt;</code></pre>
+                  <pre><code data-language="html">&lt;img src=&quot;./assets/kb_text_black.svg&quot; class=&quot;logotype [modifier class]&quot; alt=&quot;Kungl. biblioteket&quot; /&gt;
+&lt;img src=&quot;./assets/kb_text_white.svg&quot; class=&quot;bg-happy-magenta logotype [modifier class]&quot; alt=&quot;Kungl. biblioteket&quot; /&gt;</code></pre>
                 </div>
               </div>
             </section>
             <section id="section-5.2" class="kss-section kss-depth-2">
-              <h1 class="kss-title"><span class="kss-ref label label-default bg-black">5.2</span> Ikoner</h1>
+              <h2 class="kss-title"><span class="kss-ref label label-default bg-black">5.2</span> Ikoner</h2>
               <div class="kss-description">
                 <p>Ikoner behöver vara enkla, tydliga och bör kompletteras med text.</p>
 <p>Vi använder <a href="http://fontawesome.io/">Font Awesome</a> som är ett open source bibliotek för ikoner.</p>
@@ -258,7 +248,7 @@ Logotypen finns i svart och vitt. Denna ska alltid användas i sidhuvudet för K
               </div>
             </section>
             <section id="section-5.3" class="kss-section kss-depth-2">
-              <h1 class="kss-title"><span class="kss-ref label label-default bg-black">5.3</span> Bilder</h1>
+              <h2 class="kss-title"><span class="kss-ref label label-default bg-black">5.3</span> Bilder</h2>
               <div class="kss-description">
                 <p>Tänk på att använda passande proportioner för bilder. För att ge bilder en ram, ange klassen <code>.image-frame</code></p>
 <p>Använd alltid <a href="http://webaim.org/techniques/alttext/">alt-attributet</a> för bilder. Denna bör innehålla en beskrivande text om bilden. Texten bör vara kort och innehålla viktiga nyckelord. Om bilden används som länk bör alt-texten beskriva vart länken leder istället för bilden i sig. Alt-texten visas som alternativ istället för bilden om denna av olika anledningar inte kan visas. De är även centrala för sökmotorer. Alt-texter underlättar för användare som använder skärmläsare.</p>
@@ -282,7 +272,7 @@ Logotypen finns i svart och vitt. Denna ska alltid användas i sidhuvudet för K
               </div>
             </section>
             <section id="section-5.4" class="kss-section kss-depth-2">
-              <h1 class="kss-title"><span class="kss-ref label label-default bg-black">5.4</span> Favicon</h1>
+              <h2 class="kss-title"><span class="kss-ref label label-default bg-black">5.4</span> Favicon</h2>
               <div class="kss-description">
                 <p>Favicon är en ikon som används för att representera hela webbsidan och visas till vänster i adressfältet, samt i bokmärken.</p>
 <p>Använd KBs logotyp?</p>
@@ -291,7 +281,7 @@ Logotypen finns i svart och vitt. Denna ska alltid användas i sidhuvudet för K
               </div>
             </section>
             <section id="section-5.5" class="kss-section kss-depth-2">
-              <h1 class="kss-title"><span class="kss-ref label label-default bg-black">5.5</span> Beta-flaggor</h1>
+              <h2 class="kss-title"><span class="kss-ref label label-default bg-black">5.5</span> Beta-flaggor</h2>
               <div class="kss-description">
                 <p>Visa tjänstens status tydligt i sidhuvudet. Dessa flaggor används för att signalera att tjänsten är i Beta.</p>
 <p>Dessa flaggor är enbart tillfälliga och kommer ses över, nya varianter kommer!</p>
