@@ -104,15 +104,7 @@
             {{else}}
             {{#eachSection rootName}}
             <section id="section-{{reference}}" class="kss-section kss-depth-{{depth}}">
-              {{#ifDepth 1}}
-              <h1 class="kss-title"><span class="kss-ref label label-default bg-black">{{reference}}</span> {{header}}</h1>
-              {{/ifDepth}}
-              {{#ifDepth 2}}
-              <h2 class="kss-title"><span class="kss-ref label label-default bg-black">{{reference}}</span> {{header}}</h2>
-              {{/ifDepth}}
-              {{#ifDepth 3}}
-              <h3 class="kss-title"><span class="kss-ref label label-default bg-black">{{reference}}</span> {{header}}</h3>
-              {{/ifDepth}}
+              <h{{depth}} class="kss-title"><span class="kss-ref label label-default bg-black">{{reference}}</span> {{header}}</h{{depth}}>
               {{#if markup}}
               {{#if description}}
               <div class="kss-description">
