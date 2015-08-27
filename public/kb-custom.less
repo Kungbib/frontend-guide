@@ -81,7 +81,7 @@
     a {
       color: black;
       font-weight: 400;
-      padding: 0px 10px;
+      padding: 0px 0px 0px 10px;
       display: block;
       text-decoration: none;
     }
@@ -181,3 +181,44 @@
   padding-top: 1em;
 }
 
+.kss-modifier-example {
+  border: 1px solid @gray-darker;
+  border-radius: 5px;
+  padding: 15px;
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+.kss-example-tag {
+  color: @gray-lighter;
+  padding: 2px 5px;
+  background-color: @gray-darker;
+  border: @gray-darker solid;
+  border-width: 0px 1px 1px 0px;
+  border-radius: 5px 0px 5px 0px;
+  font-size: 0.7em;
+  margin: -16px 0px 10px -16px;
+  width: 58px;
+}
+
+// Boxes for documentation purposes
+.color-box {
+  display: inline-block;
+  width: 220px;
+	height: 60px;
+	border-radius: 10px;
+	border: 0px solid @gray-dark;
+  text-align: center;
+  padding: 1em 0px;
+  margin: 0.5em;
+}
+
+.pattern-box {
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  border: 0px solid @gray-dark;
+  background-size: 50%;
+  border-radius: 10px;
+}
