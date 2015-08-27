@@ -38,3 +38,14 @@
     }
   }
 }
+
+.calculate-text(@color) {
+  & when (luma(@color) >= 50%) {
+    color: darken(@color, 40%);
+    // color: @black;
+  }
+  & when (luma(@color) < 50%) {
+    color: lighten(@color, 35%);
+    // color: @white;
+  }
+}
