@@ -30,6 +30,7 @@ Stilmallen är kompatibel med **Bootstrap 3.3.4**.
 ### Tjänster som använder stilmallen
 
 * [Biografblad](https://biografblad.kb.se/)
+* [Musikkatalogen](https://musikkatalogen.kb.se/)
 
 # Relaterade länkar
 
