@@ -6,17 +6,9 @@
   ],
   "description": "Stylesheet accompanying the style guide for web development at the National Library of Sweden.",
   "main": "dist/css/kb-style.css",
-  "ignore": [
-    "!/dist/**/*",
-    "assets",
-    "custom",
-    "examples",
-    "template",
-    "theme",
-    ".gitignore",
-    "Gruntfile.js",
-    "bower.json",
-    "package.json",
-    "README.md"
+  "ignore": 
+    "*",
+    "!dist/**/*",
+    "LICENCE"
   ]
 }
