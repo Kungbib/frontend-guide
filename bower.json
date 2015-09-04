@@ -6,7 +6,7 @@
   ],
   "description": "Stylesheet accompanying the style guide for web development at the National Library of Sweden.",
   "main": "dist/css/kb-style.css",
-  "ignore": 
+  "ignore": [
     "*",
     "!dist/**/*",
     "LICENCE"
