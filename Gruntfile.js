@@ -3,13 +3,13 @@ module.exports = function(grunt) {
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['less', 'replace', 'kss', 'copy']);
+  grunt.registerTask('build', ['less', 'replace', 'kss', 'copy:main', 'copy:dist']);
   grunt.registerTask('serve', ['connect', 'watch']);
   grunt.registerTask('deploy', ['clean', 'build', 'gh-pages']);
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    clean: ['build'],
+    clean: ['build', 'dist'],
     connect: {
       all: {
         options: {port: 8500, hostname: "0.0.0.0"}
@@ -31,13 +31,13 @@ module.exports = function(grunt) {
           optimization: 2
         },
         files: {
-          "build/css/kb-style.css": "custom/custom.less"
+          "build/css/kb-style.css": "theme/theme.less"
         }
       },
       kssdev: {
         options: {
-          compress: false,
-          yucompress: false,
+          compress: true,
+          yucompress: true,
           optimization: 2
         },
         files: {
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
     },
     kss: {
       options: {
-        css: './css/kb-style.css',
+        // css: './css/kb-style.css',
         template: 'template'
       },
       dist: {
@@ -78,6 +78,13 @@ module.exports = function(grunt) {
           {expand: true, src: ['assets/**'], dest: 'build/'},
           {expand: true, flatten: true, src: ['node_modules/bootstrap/dist/js/bootstrap.min.js'], dest: 'build/vendor/'},
           {expand: true, flatten: true, src: ['node_modules/jquery/dist/jquery.min.js'], dest: 'build/vendor/'},
+        ]
+      },
+      dist: {
+        files: [
+          {expand: true, cwd: 'assets/', src: ['*'], dest: 'dist/assets/'},
+          {expand: true, cwd: 'build/css/', src: ['*'], dest: 'dist/css/'},
+          {expand: true, cwd: 'custom/', src: ['**/*.less'], dest: 'dist/less/'}
         ]
       }
     },

@@ -1,0 +1,20 @@
+{
+  "name": "kungbib-styles",
+  "homepage": "https://github.com/Kungbib/frontend-guide",
+  "authors": [
+    "Ola Blissing <ola.blissing@kb.se>"
+  ],
+  "description": "Stylesheet accompanying the style guide for web development at the National Library of Sweden.",
+  "main": "dist/css/kb-style.css",
+  "ignore": [
+    "assets",
+    "custom",
+    "examples",
+    "template",
+    "theme",
+    ".gitignore",
+    "gruntfile.js",
+    "package.json",
+    "README.md"
+  ]
+}
