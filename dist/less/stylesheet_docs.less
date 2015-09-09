@@ -1,0 +1,68 @@
+/*
+Stilmall
+
+Som en del av guiden finns en tillhörande stilmall.
+
+Stilmallen är en anpassad version av [Twitter Bootstrap](http://getbootstrap.com/) och ersätter dess CSS-filer, dock ej dess JavaScript.
+
+Styleguide 10.0
+*/
+
+/*
+Användning
+
+Stilmallen går att använda på ett par olika sätt som förklaras nedan.
+
+Styleguide 10.1
+*/
+
+/*
+Färdig CSS-fil
+
+Om du inte vill anpassa din tjänsts utseende i större grad så kan du [ladda ner CSS-filen](./css/kb-style.css) och använda den rakt av.
+
+Om du vill ha mer kontroll över vilken version du använder så kan du använda dig av Bower.
+
+    $ bower install kungbib/frontend-guide
+    
+Alternativt (specifik version)
+
+    $ bower install kungbib/frontend-guide#1.0.0
+    
+Sedan använder du dig av filen som ligger i mappen ``CSS``.
+
+Styleguide 10.1.1
+*/
+
+/*
+LESS-filer
+
+Om ditt projekt behöver större möjlighet för anpassning rekommenderas att du istället använder dig av våra LESS-filer och kompilerar dessa själv tillsammans med Bootstrap. Då får du tillgång till samtliga variabler från både Bootstrap och vårat tema.
+
+LESS-filerna laddar du ner med hjälp av Bower.
+
+    $ bower install kungbib/frontend-guide
+    
+Alternativt (specifik version)
+
+    $ bower install kungbib/frontend-guide#1.0.0
+    
+Du bör sedan skapa en egen samlingsfil i ditt eget projekt där du importerar Bootstrap och våran samlingsfil ``kb-styles.less`` från mappen ``LESS``.
+
+__Observera att våra LESS-filer inte inkluderar Bootstraps LESS-filer.__
+
+Exempel:
+
+    // Import standard bootstrap
+    @import '../path/to/bootstrap/less/bootstrap.less';
+    // Import KB styles
+    @import '../path/to/kungbib-styles/dist/less/kb-styles.less';
+    
+    // Projekt specific styles
+    h1 {
+      background-color: @happy-magenta;   // variable from kb-styles
+      border-radius: @border-radius-base; // variable from bootstrap
+    ...
+
+Styleguide 10.1.2
+*/
