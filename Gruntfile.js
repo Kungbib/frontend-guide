@@ -3,7 +3,7 @@ module.exports = function(grunt) {
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['less', 'replace', 'kss', 'copy:main', 'copy:dist']);
+  grunt.registerTask('build', ['clean', 'less', 'replace', 'kss', 'copy:main', 'copy:dist']);
   grunt.registerTask('serve', ['connect', 'watch']);
   grunt.registerTask('deploy', ['clean', 'build', 'gh-pages']);
 
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
           optimization: 2
         },
         files: {
-          "build/css/kb-style.css": "theme/theme.less"
+          "build/css/kb-styles.css": "theme/theme.less"
         }
       },
       kssdev: {
