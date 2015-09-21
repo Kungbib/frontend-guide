@@ -26,7 +26,7 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ["custom/**/*", "template/**/*", "examples/**/*"],
+      files: ["custom/**/*", "template/**/*", "examples/**/*", "package.json"],
       tasks: ['default'],
       options: {
         nospawn: true,
