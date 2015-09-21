@@ -31,7 +31,7 @@ module.exports = function(grunt) {
           optimization: 2
         },
         files: {
-          "build/css/kb-styles.css": "theme/theme.less"
+          "build/css/kb-style.css": "theme/theme.less"
         }
       },
       kssdev: {
