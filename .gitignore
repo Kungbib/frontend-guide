@@ -4,3 +4,4 @@
 /template/index.html
 /template/public/kss.css
 .DS_Store
+bower_components

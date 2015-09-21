@@ -3,7 +3,7 @@ module.exports = function(grunt) {
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['less', 'replace', 'kss', 'copy:main', 'copy:dist']);
+  grunt.registerTask('build', ['clean', 'less', 'replace', 'kss', 'copy:main', 'copy:dist', 'usebanner']);
   grunt.registerTask('serve', ['connect', 'watch']);
   grunt.registerTask('deploy', ['clean', 'build', 'gh-pages']);
 
@@ -13,6 +13,16 @@ module.exports = function(grunt) {
     connect: {
       all: {
         options: {port: 8500, hostname: "0.0.0.0"}
+      }
+    },
+    usebanner: {
+      options: {
+        position: 'top',
+        banner: '/*\n  kungbib-styles <%= pkg.version %>\n  Stylesheet accompanying the style guide for web development at the National Library of Sweden.\n  https://kungbib.github.io/frontend-guide\n*/\n',
+        linebreak: true
+      },
+      files: {
+        src: ['dist/css/kb-style.css', 'dist/less/kb-style.less']
       }
     },
     watch: {
@@ -63,6 +73,10 @@ module.exports = function(grunt) {
             {
               match: 'timestamp',
               replacement: '<%= grunt.template.today("yyyy-mm-dd - HH:MM") %>'
+            },
+            {
+              match: 'version',
+              replacement: '<%= pkg.version %>'
             }
           ]
         },

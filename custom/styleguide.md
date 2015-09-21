@@ -10,16 +10,9 @@ Anpassningar av enklare natur bör göras med ett extra stylesheet istället fö
 
 Denna guide är under utveckling och kommer att utökas kontinuerligt. Vi vill gärna ha förslag på förbättringar och vad guiden mer skulle kunna innehålla. Lämna gärna feedback antingen via [Trello](https://trello.com/b/lPYbNyNq/guide-for-ratt-uttryck) eller via [issues på Github](https://github.com/Kungbib/frontend-guide/issues).
 
-# Stilmall
-
-Som en del av guiden finns en tillhörande stilmall, som går att [ladda ner här](./css/kb-style.css).
-Stilmallen är en anpassad version av [Twitter Bootstrap](http://getbootstrap.com/) och ersätter dess CSS-filer, dock ej dess JavaScript.
-
-Stilmallen är kompatibel med **Bootstrap 3.3.4**.
-
 ## Exempel
 
-### Templates som använder stilmallen
+### Templates
 
 * [Jumbotron](./examples/jumbotron.html) (Pastel colors)
 * [Jumbotron](./examples/jumbotron2.html) (Happy colors)
@@ -27,7 +20,7 @@ Stilmallen är kompatibel med **Bootstrap 3.3.4**.
 * [Off-canvas](./examples/offcanvas.html) (feat. [font awesome](http://fontawesome.io/))
 * [Objekt med egenskaper](./examples/objectprop.html)
 
-### Tjänster som använder stilmallen
+### Tjänster som använder stilguiden och stilmallen
 
 * [Biografblad](https://biografblad.kb.se/)
 * [Musikkatalogen](https://musikkatalogen.kb.se/)
