@@ -69,29 +69,6 @@ Detta kommer att generera en vy likt denna:
 
 ![img](https://dl.dropboxusercontent.com/u/2316209/Screenshot%202015-06-03%2016.24.39.png)
 
-#### LESS-variabler
-
-LESS-variabler av mer global karaktär läggs med fördel till i _variables.less_ (såvida den inte redan finns representerad). Är variabeln specifik för en komponent bör den läggas högst upp i samma fil som komponentens övriga regler.
-
-##### Exempel
-
-__Detta exempelavsnitt är inte aktuellt och bör uppdateras.__
-
-Jag vill redigera navbar-klassens border-width. Jag kollar i _variables.less_ om där redan finns en variabel att redigera. Eftersom det inte finns det så skapar jag en fil i custom-mappen som heter _navbar.less_, inkluderar den i _custom.less_
-
-    @import 'navbar.less';
-    
-I _navbar.less_ anger jag
-
-    .navbar {
-        border-width: @navbar-border-width;
-    }
-I _variables.less_ letar jag upp om det finns andra ställen där navbar-klassen regleras och lägger till
-
-    @navbar-border-width: 1px;
->Om klassen inte har några andra variabler över huvud taget bör du skapa en ny sektion längst ner i filen där du kommenterar vilken klass det handlar om och lägger in variabeln.
-
-Du har nu gjort din anpassning och samtidigt sett till att variabeln finns tillgänglig för framtida anpassning.
 
 ## Bygga stilmall och stilguide
 
