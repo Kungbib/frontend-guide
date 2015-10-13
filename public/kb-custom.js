@@ -12,4 +12,23 @@ $(document).ready(function () {
       $(this).html(showHTML);
     }
   });
+  
+  // Add HEX and RGB values to color boxes
+  $('.color-box').each(function() {
+    var rgb = $(this).css('background-color');
+    var hex = rgb2hex(rgb);
+    $(this).append("<br/><code>" + rgb + "</code><br/><code>" + hex + "</code>");
+    $
+  });
+  
+  function rgb2hex(rgb) {
+      if (/^#[0-9A-F]{6}$/i.test(rgb)) return rgb;
+
+      rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+      function hex(x) {
+          return ("0" + parseInt(x).toString(16)).slice(-2);
+      }
+      return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
+  }
+  
 });
