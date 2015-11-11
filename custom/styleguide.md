@@ -24,6 +24,7 @@ Denna guide är under utveckling och kommer att utökas kontinuerligt. Vi vill g
 
 * [Biografblad](https://biografblad.kb.se/)
 * [Musikkatalogen](https://musikkatalogen.kb.se/)
+* [data.kb.se](https://data.kb.se/)
 
 # Relaterade länkar
 
