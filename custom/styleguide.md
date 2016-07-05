@@ -2,13 +2,15 @@
 
 Detta är [Kungliga bibliotekets](http://www.kb.se/) stilguide. Stilguiden består av en samling riktlinjer och exempel som är tänkta att underlätta gränssnittsutveckling i KB:s digitala tjänster.
 
-## Bidra till utvecklingen
-
 Källkoden är öppen och finns tillgänglig på [Github](https://github.com/Kungbib/frontend-guide). Dessa sidor skapas utifrån koden som ligger där.
 
-Anpassningar av enklare natur bör göras med ett extra stylesheet istället för att ändra i grund-stilmallen, mer om detta under avsnittet [Anpassningar](/frontend-guide/section-9.html).
+## Lämna synpunkter
 
 Denna guide är under utveckling och kommer att utökas kontinuerligt. Vi vill gärna ha förslag på förbättringar och vad guiden mer skulle kunna innehålla. Lämna gärna feedback antingen via [Trello](https://trello.com/b/lPYbNyNq/guide-for-ratt-uttryck) eller via [issues på Github](https://github.com/Kungbib/frontend-guide/issues).
+
+## Anpassningar
+
+Anpassningar av enklare natur bör göras med ett extra stylesheet istället för att ändra i grund-stilmallen, mer om detta under avsnittet [Anpassningar](/frontend-guide/section-9.html).
 
 ## Exempel
 
