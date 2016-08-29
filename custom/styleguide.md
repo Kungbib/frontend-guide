@@ -21,6 +21,7 @@ Anpassningar av enklare natur bör göras med ett extra stylesheet istället fö
 * [Elements](./examples/elements.html)
 * [Off-canvas](./examples/offcanvas.html) (feat. [font awesome](http://fontawesome.io/))
 * [Objekt med egenskaper](./examples/objectprop.html)
+* [Sida med fullbredd](./examples/fullwidth.html)
 
 ### Tjänster som använder stilguiden och stilmallen
 
