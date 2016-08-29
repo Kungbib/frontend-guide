@@ -31,7 +31,7 @@
             <span class="icon-bar"></span>
           </button>
           <div class="navbar-brand navbar-logo">
-                <img src="./assets/kb_logo_black.svg" />
+                <img src="./assets/kb_logo_black.svg" /> <a href="./">Stilguide för Kungliga biblioteket</a>
           </div>
 
         </div>
@@ -61,17 +61,12 @@
       </div>
     </nav>
 
-    <div class="jumbotron bg-happy-muted-teal">
-      <div class="container">
-        <h1>Stilguide för Kungliga biblioteket</h1>
-      </div>
-    </div>
 
     <div class="container">
       <div class="row">
         <div class="col-sm-3 col-md-3 sidebar col-lg-2">
-          <ul class="nav nav-sidebar kss-menu homepage" data-kss-ref="styleguide.homepage" data-spy="affix" data-offset-top="250">
-            <li class="kss-menu-item kss-active"><a href="./"><span class="kss-ref pull-right label label-default bg-black">0</span><span class="kss-name">Introduktion</span></a></li>
+            <ul class="nav nav-sidebar kss-menu" data-kss-ref="11" data-spy="affix" data-offset-top="0">
+            <li class="kss-menu-item"><a href="./"><span class="kss-ref pull-right label label-default bg-black">0</span><span class="kss-name">Introduktion</span></a></li>
             <li class="kss-menu-item"><a href="section-1.html"><span class="kss-name">Tillgänglighet</span></a></li>
             <li class="kss-menu-item"><a href="section-2.html"><span class="kss-name">Layout</span></a></li>
             <li class="kss-menu-item"><a href="section-3.html"><span class="kss-name">Typografi</span></a></li>
@@ -84,46 +79,38 @@
             <li class="kss-menu-item"><a href="section-10.html"><span class="kss-name">Stilmall</span></a></li>
             <li class="kss-menu-item"><a href="section-11.html"><span class="kss-name">Metadata</span></a></li>
           </ul>
+          <ul class="kss-menu-child">
+            <li class="kss-menu-item kss-depth-2"><a href="#section-11.1"><span class="kss-name">Titeltaggar</span></a></li>
+            <li class="kss-menu-item kss-depth-2"><a href="#section-11.2"><span class="kss-name">Open graph</span></a></li>
+          </ul>
         </div>
         <div class="col-sm-9 col-md-9 col-lg-9 main kss-content">
 
           <article class="kss-article">
-            <section id="section-0" class="kss-section kss-overview">
-               <h1 id="introduktion">Introduktion</h1>
-<p>Detta är <a href="http://www.kb.se/">Kungliga bibliotekets</a> stilguide. Stilguiden består av en samling riktlinjer och exempel som är tänkta att underlätta gränssnittsutveckling i KB:s digitala tjänster.</p>
-<p>Källkoden är öppen och finns tillgänglig på <a href="https://github.com/Kungbib/frontend-guide">Github</a>. Dessa sidor skapas utifrån koden som ligger där.</p>
-<h2 id="l-mna-synpunkter">Lämna synpunkter</h2>
-<p>Denna guide är under utveckling och kommer att utökas kontinuerligt. Vi vill gärna ha förslag på förbättringar och vad guiden mer skulle kunna innehålla. Lämna gärna feedback antingen via <a href="https://trello.com/b/lPYbNyNq/guide-for-ratt-uttryck">Trello</a> eller via <a href="https://github.com/Kungbib/frontend-guide/issues">issues på Github</a>.</p>
-<h2 id="anpassningar">Anpassningar</h2>
-<p>Anpassningar av enklare natur bör göras med ett extra stylesheet istället för att ändra i grund-stilmallen, mer om detta under avsnittet <a href="/frontend-guide/section-9.html">Anpassningar</a>.</p>
-<h2 id="exempel">Exempel</h2>
-<h3 id="templates">Templates</h3>
-<ul>
-<li><a href="./examples/jumbotron.html">Jumbotron</a> (Pastel colors)</li>
-<li><a href="./examples/jumbotron2.html">Jumbotron</a> (Happy colors)</li>
-<li><a href="./examples/elements.html">Elements</a></li>
-<li><a href="./examples/offcanvas.html">Off-canvas</a> (feat. <a href="http://fontawesome.io/">font awesome</a>)</li>
-<li><a href="./examples/objectprop.html">Objekt med egenskaper</a></li>
-<li><a href="./examples/fullwidth.html">Sida med fullbredd</a></li>
-</ul>
-<h3 id="tj-nster-som-anv-nder-stilguiden-och-stilmallen">Tjänster som använder stilguiden och stilmallen</h3>
-<ul>
-<li><a href="https://biografblad.kb.se/">Biografblad</a></li>
-<li><a href="https://musikkatalogen.kb.se/">Musikkatalogen</a></li>
-<li><a href="https://data.kb.se/">data.kb.se</a></li>
-</ul>
-<h1 id="relaterade-l-nkar">Relaterade länkar</h1>
-<ul>
-<li><a href="http://kb.idmanuals.com">Grafisk profil för trycksaker</a></li>
-<li><a href="https://www.flickr.com/photos/25300312@N08/">KB Bildbank</a></li>
-</ul>
-<h1 id="principer-f-r-utveckling">Principer för utveckling</h1>
-<ul>
-<li><a href="http://www.kb.se/Dokument/Programverksamhet/KB_Programmen_low.pdf">KBs programverksamhet</a></li>
-</ul>
-<h1 id="tj-nster-med-unikt-utryck">Tjänster med unikt utryck</h1>
-<p>Om tjänsten har en specifik målgrupp med ett unikt behov kan man behöva gå utanför stilguiden men den minimala sidfoten och krav för tillgänglighet behöver följas.</p>
+            <section id="section-11" class="kss-section kss-depth-1">
+              <h1 class="kss-title">Metadata</h1>
+            </section>
+            <section id="section-11.1" class="kss-section kss-depth-2">
+              <h2 class="kss-title">Titeltaggar</h2>
+              <div class="kss-description">
+                <p><title>Titeltaggar</title> bör innehålla en kort unik beskrivning av sidan. Användarundersökningar pekar på en maxlängd av 7-8 ord och 64 tecken.
+Längre titlar är svårscannade i olika sammanhang och trunkeras ofta.</p>
+<p>En bra formatering är följande:</p>
 
+              </div>
+            </section>
+            <section id="section-11.2" class="kss-section kss-depth-2">
+              <h2 class="kss-title">Open graph</h2>
+              <div class="kss-description">
+                <p>För att en site ska bli väl indexerad och presenteras korrekt vid länkning i sociala medier etc. rekommenderas ett antal meta-taggar för detta</p>
+<p>Läs mer om <a href="http://ogp.me/">Open graph</a></p>
+<pre><code>&lt;meta property=&quot;og:site_name&quot; content=&quot;...&quot; /&gt;
+&lt;meta property=&quot;og:title&quot; content=&quot;...&quot; /&gt;
+&lt;meta property=&quot;og:description&quot; content=&quot;...&quot; /&gt;
+&lt;meta property=&quot;og:image&quot; content=&quot;...&quot; /&gt;
+&lt;meta property=&quot;og:url&quot; content=&quot;http://...&quot; /&gt;
+</code></pre>
+              </div>
             </section>
           </article>
 
