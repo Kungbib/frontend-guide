@@ -7,12 +7,15 @@ Styleguide 11.
 /*
 Titeltaggar
 
-<title>Titeltaggar</title> bör innehålla en kort unik beskrivning av sidan. Användarundersökningar pekar på en maxlängd av 7-8 ord och 64 tecken.
+Titeltaggar ``<title>`` bör innehålla en kort unik beskrivning av sidan. Användarundersökningar pekar på en maxlängd av 7-8 ord och 64 tecken.
 Längre titlar är svårscannade i olika sammanhang och trunkeras ofta.
 
 En bra formatering är följande:
 
-Primära nyckelord - Sekundära nyckelord | Avsändare (varumärke/tjänst)
+* Primära nyckelord - Sekundära nyckelord | Avsändare (varumärke/tjänst)
+
+T ex:
+* Biblioterapi - Svenska Ämnesord | id.kb.se
 
 Styleguide 11.1
 */
@@ -22,13 +25,19 @@ Open graph
 
 För att en site ska bli väl indexerad och presenteras korrekt vid länkning i sociala medier etc. rekommenderas ett antal meta-taggar för detta
 
-Läs mer om [Open graph](http://ogp.me/)
+Läs mer om Open Graph på (http://ogp.me/)
 
-    <meta property="og:site_name" content="..." />
-    <meta property="og:title" content="..." />
-    <meta property="og:description" content="..." />
-    <meta property="og:image" content="..." />
-    <meta property="og:url" content="http://..." />
+Egenskaperna title, type, image och url är obligatoriska för en sida.
+
+    <html prefix="og: http://ogp.me/ns#">
+    <head>
+      <meta property="og:title" content="Nationalbibliografin | data.kb.se" />
+      <meta property="og:type" content="article" />
+      <meta property="og:description" content="Öppna data från Kungliga Biblioteket" />
+      <meta property="og:image" content="https://data.kb.se/img/kb-logo.png" />
+      <meta property="og:url" content="https://data.kb.se/datasets/Nationalbibliografin" />
+      <meta property="og:site_name" content="data.kb.se" />
+    </head>
 
 Styleguide 11.2
 */
