@@ -45,23 +45,23 @@ Här skapar jag 2 nya modifierare för klassen .card
         color: darken(@brand-success,25%);
       }
     }
-    
+
 Sedan lägger jag följande kommentar ovanför koden
 
     /*
     Skinning of cards
 
     Skins for different purposes
-    
+
     .card-danger    - Card skin to use when we want to convey some kind of danger
     .card-success   - Card skin to use when we want to convey some kind of success
-    
+
     Markup:
     <div class="card {{modifier_class}}">
         <h1>Card</h1>
         <p>Description</p>
     </div>
-    
+
     Styleguide 6.1.4
     */
 
