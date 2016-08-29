@@ -28,7 +28,7 @@ Dessa färger får kombineras med färgerna i **Palett: Glad dämpad** samt **Pa
 
 Markup:
 <div class="color-box auto-color-text bg-happy-blue">happy-blue</div>
-<div class="color-box auto-color-text bg-happy-magenta">happy-magenta</div>
+<div class="color-box auto-color-text bg-happy-teal">happy-teal</div>
 <div class="color-box auto-color-text bg-happy-green">happy-green</div>
 <div class="color-box auto-color-text bg-happy-desert">happy-desert</div>
 <div class="color-box auto-color-text bg-happy-orange">happy-orange</div>
@@ -46,7 +46,7 @@ Markup:
 <div class="color-box auto-color-text bg-happy-muted-brown">happy-muted-brown</div>
 <div class="color-box auto-color-text bg-happy-muted-desert">happy-muted-desert</div>
 <div class="color-box auto-color-text bg-happy-muted-light-blue">happy-muted-light-blue</div>
-<div class="color-box auto-color-text bg-happy-muted-magenta">happy-muted-magenta</div>
+<div class="color-box auto-color-text bg-happy-muted-teal">happy-muted-teal</div>
 <div class="color-box auto-color-text bg-happy-muted-denim">happy-muted-denim</div>
 
 Styleguide 4.1.2
@@ -76,7 +76,7 @@ Markup:
 <div class="color-box auto-color-text bg-pastel-muted-purple">pastel-muted-purple</div>
 <div class="color-box auto-color-text bg-pastel-muted-yellow">pastel-muted-yellow</div>
 <div class="color-box auto-color-text bg-pastel-muted-pink">pastel-muted-pink</div>
-<div class="color-box auto-color-text bg-pastel-muted-blue">pastel-muted-blue</div>
+<div class="color-box auto-color-text bg-pastel-muted-teal">pastel-muted-teal</div>
 <div class="color-box auto-color-text bg-pastel-muted-denim">pastel-muted-denim</div>
 
 Styleguide 4.1.4
@@ -123,7 +123,7 @@ a {	color: #337ab7; }
 
 // Glad
 @happy-blue: #5DC4ED;
-@happy-magenta: #2EB5B6;
+@happy-teal: #2EB5B6;
 @happy-green: #34EAB4;
 @happy-desert: #FED481;
 @happy-orange: #FD8C41;
@@ -131,7 +131,7 @@ a {	color: #337ab7; }
 @happy-muted-brown: #A39789;
 @happy-muted-desert: #EBE5BA;
 @happy-muted-light-blue: #BACAD4;
-@happy-muted-magenta: #72A8AD;
+@happy-muted-teal: #72A8AD;
 @happy-muted-denim: #547E91;
 // Pastell
 @pastel-denim: #88B4C9;
@@ -143,7 +143,7 @@ a {	color: #337ab7; }
 @pastel-muted-purple: #A5929C;
 @pastel-muted-yellow: #F9F0B4;
 @pastel-muted-pink: #F297C8;
-@pastel-muted-blue: #61B5BF;
+@pastel-muted-teal: #61B5BF;
 @pastel-muted-denim: #6C84A5;
 // Gråskala
 @white: #ffffff;
@@ -176,14 +176,14 @@ a {	color: #337ab7; }
 
 // Bg-Colors
 .bg-happy-blue { .forced-bg(@happy-blue); &.auto-color-text { .calculate-text(@happy-blue); } }
-.bg-happy-magenta { .forced-bg(@happy-magenta); &.auto-color-text { .calculate-text(@happy-magenta); } }
+.bg-happy-teal { .forced-bg(@happy-teal); &.auto-color-text { .calculate-text(@happy-teal); } }
 .bg-happy-green { .forced-bg(@happy-green); &.auto-color-text { .calculate-text(@happy-green); } }
 .bg-happy-desert { .forced-bg(@happy-desert); &.auto-color-text { .calculate-text(@happy-desert); } }
 .bg-happy-orange { .forced-bg(@happy-orange); &.auto-color-text { .calculate-text(@happy-orange); } }
 .bg-happy-muted-brown { .forced-bg(@happy-muted-brown); &.auto-color-text { .calculate-text(@happy-muted-brown); } }
 .bg-happy-muted-desert { .forced-bg(@happy-muted-desert); &.auto-color-text { .calculate-text(@happy-muted-desert); } }
 .bg-happy-muted-light-blue { .forced-bg(@happy-muted-light-blue); &.auto-color-text { .calculate-text(@happy-muted-light-blue); } }
-.bg-happy-muted-magenta { .forced-bg(@happy-muted-magenta); &.auto-color-text { .calculate-text(@happy-muted-magenta); } }
+.bg-happy-muted-teal { .forced-bg(@happy-muted-teal); &.auto-color-text { .calculate-text(@happy-muted-teal); } }
 .bg-happy-muted-denim { .forced-bg(@happy-muted-denim); &.auto-color-text { .calculate-text(@happy-muted-denim); } }
 .bg-pastel-denim { .forced-bg(@pastel-denim); &.auto-color-text { .calculate-text(@pastel-denim); } }
 .bg-pastel-pink { .forced-bg(@pastel-pink); &.auto-color-text { .calculate-text(@pastel-pink); } }
@@ -193,7 +193,7 @@ a {	color: #337ab7; }
 .bg-pastel-muted-purple { .forced-bg(@pastel-muted-purple); &.auto-color-text { .calculate-text(@pastel-muted-purple); } }
 .bg-pastel-muted-yellow { .forced-bg(@pastel-muted-yellow); &.auto-color-text { .calculate-text(@pastel-muted-yellow); } }
 .bg-pastel-muted-pink { .forced-bg(@pastel-muted-pink); &.auto-color-text { .calculate-text(@pastel-muted-pink); } }
-.bg-pastel-muted-blue { .forced-bg(@pastel-muted-blue); &.auto-color-text { .calculate-text(@pastel-muted-blue); } }
+.bg-pastel-muted-teal { .forced-bg(@pastel-muted-teal); &.auto-color-text { .calculate-text(@pastel-muted-teal); } }
 .bg-pastel-muted-denim { .forced-bg(@pastel-muted-denim); &.auto-color-text { .calculate-text(@pastel-muted-denim); } }
 .bg-white { .forced-bg(@white); &.auto-color-text { .calculate-text(@white); } }
 .bg-gray-lighter { .forced-bg(@gray-lighter); &.auto-color-text { .calculate-text(@gray-lighter); } }
@@ -209,14 +209,14 @@ a {	color: #337ab7; }
 .bg-brand-danger { .forced-bg(@brand-danger); &.auto-color-text { .calculate-text(@brand-danger); } }
 
 .text-happy-blue { .forced-text-color(@happy-blue); }
-.text-happy-magenta { .forced-text-color(@happy-magenta); }
+.text-happy-teal { .forced-text-color(@happy-teal); }
 .text-happy-green { .forced-text-color(@happy-green); }
 .text-happy-desert { .forced-text-color(@happy-desert); }
 .text-happy-orange { .forced-text-color(@happy-orange); }
 .text-happy-muted-brown { .forced-text-color(@happy-muted-brown); }
 .text-happy-muted-desert { .forced-text-color(@happy-muted-desert); }
 .text-happy-muted-light-blue { .forced-text-color(@happy-muted-light-blue); }
-.text-happy-muted-magenta { .forced-text-color(@happy-muted-magenta); }
+.text-happy-muted-teal { .forced-text-color(@happy-muted-teal); }
 .text-happy-muted-denim { .forced-text-color(@happy-muted-denim); }
 .text-pastel-denim { .forced-text-color(@pastel-denim); }
 .text-pastel-pink { .forced-text-color(@pastel-pink); }
@@ -226,7 +226,7 @@ a {	color: #337ab7; }
 .text-pastel-muted-purple { .forced-text-color(@pastel-muted-purple); }
 .text-pastel-muted-yellow { .forced-text-color(@pastel-muted-yellow); }
 .text-pastel-muted-pink { .forced-text-color(@pastel-muted-pink); }
-.text-pastel-muted-blue { .forced-text-color(@pastel-muted-blue); }
+.text-pastel-muted-teal { .forced-text-color(@pastel-muted-teal); }
 .text-pastel-muted-denim { .forced-text-color(@pastel-muted-denim); }
 .text-white { .forced-text-color(@white); }
 .text-gray-lighter { .forced-text-color(@gray-lighter); }

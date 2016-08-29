@@ -7,14 +7,30 @@
 @grey-dark: @gray-dark;
 @grey-darker: @gray-darker;
 
+
 .bg-grey-lighter { background-color: @grey-lighter; }
 .bg-grey-light { background-color: @grey-light; }
 .bg-grey { background-color: @grey; }
 .bg-grey-dark { background-color: @grey-dark; }
 .bg-grey-darker { background-color: @grey-darker; }
 
+
 .text-grey-lighter { .forced-text-color(@grey-lighter); }
 .text-grey-light { .forced-text-color(@grey-light); }
 .text-grey { .forced-text-color(@grey); }
 .text-grey-dark { .forced-text-color(@grey-dark); }
 .text-grey-darker { .forced-text-color(@grey-darker); }
+.text-grey-darker { .forced-text-color(@grey-darker); }
+
+
+// Renamed
+@happy-magenta: @happy-teal;
+@happy-muted-magenta: @happy-muted-teal;
+@pastel-muted-blue: @pastel-muted-teal;
+
+.bg-happy-magenta { .forced-bg(@happy-magenta); &.auto-color-text { .calculate-text(@happy-magenta); } }
+.bg-happy-muted-magenta { .forced-bg(@happy-muted-magenta); &.auto-color-text { .calculate-text(@happy-muted-magenta); } }
+.bg-pastel-muted-blue { .forced-bg(@pastel-muted-blue); &.auto-color-text { .calculate-text(@pastel-muted-blue); } }
+.text-happy-magenta { .forced-text-color(@happy-magenta); }
+.text-happy-muted-magenta { .forced-text-color(@happy-muted-magenta); }
+.text-pastel-muted-blue { .forced-text-color(@pastel-muted-blue); }

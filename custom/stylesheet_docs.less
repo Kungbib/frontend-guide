@@ -26,11 +26,11 @@ Om du inte vill anpassa din tjänsts utseende i större grad så kan du [ladda n
 Om du vill ha mer kontroll över vilken version du använder så kan du använda dig av Bower.
 
     $ bower install kungbib/frontend-guide
-    
+
 Alternativt (specifik version)
 
     $ bower install kungbib/frontend-guide#1.0.0
-    
+
 Sedan använder du dig av filen som ligger i mappen ``CSS``.
 
 Styleguide 10.1.1
@@ -44,11 +44,11 @@ Om ditt projekt behöver större möjlighet för anpassning rekommenderas att du
 LESS-filerna laddar du ner med hjälp av Bower.
 
     $ bower install kungbib/frontend-guide
-    
+
 Alternativt (specifik version)
 
     $ bower install kungbib/frontend-guide#1.0.0
-    
+
 Du bör sedan skapa en egen samlingsfil i ditt eget projekt där du importerar Bootstrap och våran samlingsfil ``kb-styles.less`` från mappen ``LESS``.
 
 __Observera att våra LESS-filer inte inkluderar Bootstraps LESS-filer.__
@@ -59,7 +59,7 @@ Exempel:
     @import '../path/to/bootstrap/less/bootstrap.less';
     // Import KB styles
     @import '../path/to/kungbib-styles/dist/less/kb-styles.less';
-    
+
     // Projekt specific styles
     h1 {
       background-color: @happy-magenta;   // variable from kb-styles
