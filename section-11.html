@@ -37,7 +37,7 @@
         </div>
 
         <div class="navbar-right update-text">
-          <span title="2016-08-29 - 11:25">v 1.1.5</span>
+          <span title="2016-10-25 - 15:19">v 1.1.6</span>
         </div>
 
 
@@ -93,9 +93,16 @@
             <section id="section-11.1" class="kss-section kss-depth-2">
               <h2 class="kss-title">Titeltaggar</h2>
               <div class="kss-description">
-                <p><title>Titeltaggar</title> bör innehålla en kort unik beskrivning av sidan. Användarundersökningar pekar på en maxlängd av 7-8 ord och 64 tecken.
+                <p>Titeltaggar <code>&lt;title&gt;</code> bör innehålla en kort unik beskrivning av sidan. Användarundersökningar pekar på en maxlängd av 7-8 ord och 64 tecken.
 Längre titlar är svårscannade i olika sammanhang och trunkeras ofta.</p>
 <p>En bra formatering är följande:</p>
+<ul>
+<li>Primära nyckelord - Sekundära nyckelord | Avsändare (varumärke/tjänst)</li>
+</ul>
+<p>T ex:</p>
+<ul>
+<li>Biblioterapi - Svenska Ämnesord | id.kb.se</li>
+</ul>
 
               </div>
             </section>
@@ -103,12 +110,17 @@ Längre titlar är svårscannade i olika sammanhang och trunkeras ofta.</p>
               <h2 class="kss-title">Open graph</h2>
               <div class="kss-description">
                 <p>För att en site ska bli väl indexerad och presenteras korrekt vid länkning i sociala medier etc. rekommenderas ett antal meta-taggar för detta</p>
-<p>Läs mer om <a href="http://ogp.me/">Open graph</a></p>
-<pre><code>&lt;meta property=&quot;og:site_name&quot; content=&quot;...&quot; /&gt;
-&lt;meta property=&quot;og:title&quot; content=&quot;...&quot; /&gt;
-&lt;meta property=&quot;og:description&quot; content=&quot;...&quot; /&gt;
-&lt;meta property=&quot;og:image&quot; content=&quot;...&quot; /&gt;
-&lt;meta property=&quot;og:url&quot; content=&quot;http://...&quot; /&gt;
+<p>Läs mer om Open Graph på (<a href="http://ogp.me/">http://ogp.me/</a>)</p>
+<p>Egenskaperna title, type, image och url är obligatoriska för en sida.</p>
+<pre><code>&lt;html prefix=&quot;og: http://ogp.me/ns#&quot;&gt;
+&lt;head&gt;
+  &lt;meta property=&quot;og:title&quot; content=&quot;Nationalbibliografin | data.kb.se&quot; /&gt;
+  &lt;meta property=&quot;og:type&quot; content=&quot;article&quot; /&gt;
+  &lt;meta property=&quot;og:description&quot; content=&quot;Öppna data från Kungliga Biblioteket&quot; /&gt;
+  &lt;meta property=&quot;og:image&quot; content=&quot;https://data.kb.se/img/kb-logo.png&quot; /&gt;
+  &lt;meta property=&quot;og:url&quot; content=&quot;https://data.kb.se/datasets/Nationalbibliografin&quot; /&gt;
+  &lt;meta property=&quot;og:site_name&quot; content=&quot;data.kb.se&quot; /&gt;
+&lt;/head&gt;
 </code></pre>
               </div>
             </section>
