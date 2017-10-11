@@ -1,13 +1,31 @@
 {
   "name": "kungbib-styles",
-  "version": "1.1.6",
-  "description": "",
+  "version": "1.1.7",
+  "description": "Stylesheets and assets for use in development at the National Library of Sweden",
+  "keywords": [
+    "kungbib",
+    "kb",
+    "library",
+    "kungliga biblioteket",
+    "national library of sweden"
+  ],
+  "bugs": {
+    "url": "https://github.com/kungbib/frontend-guide/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kungbib/frontend-guide.git"
+  },
+  "homepage": "https://github.com/kungbib/frontend-guide/",
   "main": "\"\"",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "dist"
+  ],
   "author": "Ola Blissing <ola.blissing@kb.se>",
-  "license": "\"\"",
+  "license": "CC0-1.0",
   "devDependencies": {
     "bootstrap": "^3.3.7",
     "grunt": "^0.4.5",
@@ -19,7 +37,7 @@
     "grunt-contrib-uglify": "^0.9.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-gh-pages": "^0.10.0",
-    "grunt-kss": "^2.0.0",
+    "grunt-kss": "^4.0.0",
     "grunt-replace": "^0.9.2",
     "jquery": "^3.1.0",
     "less-plugin-autoprefix": "^1.4.1",

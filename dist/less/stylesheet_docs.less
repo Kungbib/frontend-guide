@@ -23,13 +23,13 @@ Färdig CSS-fil
 
 Om du inte vill anpassa din tjänsts utseende i större grad så kan du [ladda ner CSS-filen](https://raw.githubusercontent.com/Kungbib/frontend-guide/master/dist/css/kb-style.css) och använda den rakt av. **Observera** att direkt länkning till denna fil inte bör göras, eftersom uppdateringar av stilmallen kan bryta din tjänsts layout.
 
-Om du vill ha mer kontroll över vilken version du använder så kan du använda dig av Bower.
+Om du vill ha mer kontroll över vilken version du använder så kan du använda dig av NPM.
 
-    $ bower install kungbib/frontend-guide
+    $ npm install kungbib-styles
 
 Alternativt (specifik version)
 
-    $ bower install kungbib/frontend-guide#1.0.0
+    $ $ npm install kungbib-styles#1.1.7
 
 Sedan använder du dig av filen som ligger i mappen ``CSS``.
 
@@ -41,13 +41,13 @@ LESS-filer
 
 Om ditt projekt behöver större möjlighet för anpassning rekommenderas att du istället använder dig av våra LESS-filer och kompilerar dessa själv tillsammans med Bootstrap. Då får du tillgång till samtliga variabler från både Bootstrap och vårat tema.
 
-LESS-filerna laddar du ner med hjälp av Bower.
+LESS-filerna laddar du ner med hjälp av NPM.
 
-    $ bower install kungbib/frontend-guide
+    $ npm install kungbib-styles
 
 Alternativt (specifik version)
 
-    $ bower install kungbib/frontend-guide#1.0.0
+    $ $ npm install kungbib-styles#1.1.7
 
 Du bör sedan skapa en egen samlingsfil i ditt eget projekt där du importerar Bootstrap och våran samlingsfil ``kb-styles.less`` från mappen ``LESS``.
 
