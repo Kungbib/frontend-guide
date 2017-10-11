@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     usebanner: {
       options: {
         position: 'top',
-        banner: '/*\n  kungbib-styles <%= pkg.version %>\n  Stylesheet accompanying the style guide for web development at the National Library of Sweden.\n  https://kungbib.github.io/frontend-guide\n*/\n',
+        banner: '/*\n  kungbib-styles <%= pkg.version %>\n  <%= pkg.description %>\n  <%= pkg.homepage %>\n*/\n',
         linebreak: true
       },
       files: {
