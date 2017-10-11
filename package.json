@@ -16,11 +16,14 @@
     "type": "git",
     "url": "git+https://github.com/Kungbib/frontend-guide.git"
   },
+  "homepage": "https://github.com/kungbib/frontend-guide/",
   "main": "\"\"",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "author": "Ola Blissing <ola.blissing@kb.se>",
   "license": "CC0-1.0",
   "devDependencies": {
