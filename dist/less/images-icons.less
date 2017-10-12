@@ -40,7 +40,6 @@ Logotypen finns i svart och vitt. Denna ska alltid användas i sidhuvudet för K
 * [KB Logotyp svart (SVG, 6K)](./assets/kb_logo_black.svg)
 * [KB Logotyp vit (SVG, 6K)](./assets/kb_logo_white.svg)
 
-
 .logo-small - Liten logga (50px)
 .logo-large - Stor logga (150px)
 
@@ -51,9 +50,7 @@ Markup:
 Styleguide 5.1.1
 */
 
-
 .logotype {
-	height: 100px;
 	&.logo-small {
 		height: 50px;
 	}
@@ -80,12 +77,62 @@ Textlogotypen består av Kungliga biblioteket utskrivet i text. Logotypen finns 
 * [KBs textlogotyp svart (SVG, 5K)](./assets/kb_text_black.svg)
 * [KBs textlogotyp vitt (SVG, 5K)](./assets/kb_text_white.svg)
 
+.logotype-text-white
+.logotype-text-black
+
 Markup:
 <img src="./assets/kb_text_black.svg" class="logotype {{modifier_class}}" alt="Kungliga biblioteket" />
 <img src="./assets/kb_text_white.svg" class="bg-happy-magenta logotype {{modifier_class}}" alt="Kungliga biblioteket" />
 
 Styleguide 5.1.2
 */
+
+/*
+Logotyp som klass
+
+I vissa fall kan man vilja sätta bilden som bakgrund på ett element. Då kan du använda dessa klasser.
+För att positionera bakrunden kan man använda sig av `background-position`.
+
+.logotype-black - Svart
+.logotype-white - Vit
+.logotype-grey - Grå
+.logotype-text-black - Svart text
+.logotype-text-white - Vit text
+
+
+Markup:
+<div class="pattern-box bg-gray-dark logotype {{modifier_class}}" alt="Kungliga bibliotekets logotyp"></div>
+
+Styleguide 5.1.3
+*/
+
+.logo-include-mixin() {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logotype {
+  &.logotype-white {
+    .logo-include-mixin();
+    background-image: url('../assets/kb_logo_white.svg');
+  }
+  &.logotype-black {
+    .logo-include-mixin();
+    background-image: url('../assets/kb_logo_black.svg');
+  }
+  &.logotype-grey {
+    .logo-include-mixin();
+    background-image: url('../assets/kb_logo_grey.svg');
+  }
+  &.logotype-text-white {
+    .logo-include-mixin();
+    background-image: url('../assets/kb_text_white.svg');
+  }
+  &.logotype-text-black {
+    .logo-include-mixin();
+    background-image: url('../assets/kb_text_black.svg');
+  }
+}
 
 /*
 Bilder
