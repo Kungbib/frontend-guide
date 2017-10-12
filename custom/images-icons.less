@@ -8,6 +8,133 @@ Styleguide 5.
 
 
 /*
+Logotyper
+
+KB har två olika logotyper, dels en kombinerad logotyp med symbol och text och dels en logotyp enbart i text.
+
+Logotyperna används bland annat i sidhuvudet och bör då länka till tjänstens startsida. Om logotypen används för navigation som i sidhuvudet så bör det framgå i alt-texten (alt="Kungliga bibliotekets webbplats"). Läs mer i avsnittet [Sidhuvud](/frontend-guide/section-2.4.html).
+
+Om logotypen används i annat syfte, kan alt-texten ange att det är en logotyp (alt="Kungliga bibliotekets logotyp" eller så kan alt-attributet vara tomt (alt=" ").
+
+Ge logotypen klassen ``.logotype`` så att dimensioner och andra attribut hanteras korrekt. Det finns även hjälpklasser som ``.logo-small`` och ``.logo-large`` som kan användas i kombination med logotype-klassen.
+
+Logotyper bör, precis som andra bilder, alltid ha attributet alt. Detta underlättar för användare som använder skärmläsare.
+Om man vill att skärmläsare inte ska ta hänsyn till logotypen så behöver alt-attributet finnas men vara tomt (alt=" ").
+Title-attributet ska då inte finnas eller vara tomt.
+Mer information om detta finns på [W3C:s webbplats](http://www.w3.org/TR/WCAG20-TECHS/H67.html).
+
+För tjänster med unikt uttryck, ange logotypen i Cabin (?). (Det här behöver undersökas).
+
+
+Styleguide 5.1
+*/
+
+/*
+Kombinerad logotyp
+
+Den kombinerade logotypen består av en symbol och Kungliga biblioteket skrivet i text runt om symbolen.
+Logotypen finns i svart och vitt. Denna ska alltid användas i sidhuvudet för KB:s tjänster.
+
+
+#### Ladda ner logotyp
+* [KB Logotyp svart (SVG, 6K)](./assets/kb_logo_black.svg)
+* [KB Logotyp vit (SVG, 6K)](./assets/kb_logo_white.svg)
+
+.logo-small - Liten logga (50px)
+.logo-large - Stor logga (150px)
+
+Markup:
+<img src="./assets/kb_logo_black.svg" class="logotype {{modifier_class}}" alt="Kungliga bibliotekets logotyp" />
+<img src="./assets/kb_logo_white.svg" class="bg-black logotype {{modifier_class}}" alt="Kungliga bibliotekets logotyp" />
+
+Styleguide 5.1.1
+*/
+
+.logotype {
+	&.logo-small {
+		height: 50px;
+	}
+	&.logo-large {
+		height: 150px;
+	}
+}
+.navbar .logotype {
+	height: 100%;
+}
+
+// DEPRECATED CLASS .logo-medium
+.logo-medium {
+	height: 75px;
+}
+
+
+/*
+Textlogotyp
+
+Textlogotypen består av Kungliga biblioteket utskrivet i text. Logotypen finns i svart och vitt.
+
+#### Ladda ner logotyp:
+* [KBs textlogotyp svart (SVG, 5K)](./assets/kb_text_black.svg)
+* [KBs textlogotyp vitt (SVG, 5K)](./assets/kb_text_white.svg)
+
+.logotype-text-white
+.logotype-text-black
+
+Markup:
+<img src="./assets/kb_text_black.svg" class="logotype {{modifier_class}}" alt="Kungliga biblioteket" />
+<img src="./assets/kb_text_white.svg" class="bg-happy-magenta logotype {{modifier_class}}" alt="Kungliga biblioteket" />
+
+Styleguide 5.1.2
+*/
+
+/*
+Logotyp som klass
+
+I vissa fall kan man vilja sätta bilden som bakgrund på ett element. Då kan du använda dessa klasser.
+För att positionera bakrunden kan man använda sig av `background-position`.
+
+.logotype-black - Svart
+.logotype-white - Vit
+.logotype-grey - Grå
+.logotype-text-black - Svart text
+.logotype-text-white - Vit text
+
+
+Markup:
+<div class="pattern-box bg-gray-dark logotype {{modifier_class}}" alt="Kungliga bibliotekets logotyp"></div>
+
+Styleguide 5.1.3
+*/
+
+.logo-include-mixin() {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logotype {
+  &.logotype-white {
+    .logo-include-mixin();
+    background-image: url('../assets/kb_logo_white.svg');
+  }
+  &.logotype-black {
+    .logo-include-mixin();
+    background-image: url('../assets/kb_logo_black.svg');
+  }
+  &.logotype-grey {
+    .logo-include-mixin();
+    background-image: url('../assets/kb_logo_grey.svg');
+  }
+  &.logotype-text-white {
+    .logo-include-mixin();
+    background-image: url('../assets/kb_text_white.svg');
+  }
+  &.logotype-text-black {
+    .logo-include-mixin();
+    background-image: url('../assets/kb_text_black.svg');
+  }
+}
+
+/*
 Bilder
 
 Tänk på att använda passande proportioner för bilder. För att ge bilder en ram, ange klassen ``.image-frame``
