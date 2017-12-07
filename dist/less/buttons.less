@@ -9,7 +9,7 @@ Knappar
 
 Knappar används för att verkställa en handling. Knappen måste ha någon typ av fokus-state för att följa tillgänglighetsstandarder.
 
-Beroende på vilken funktion knappen har så har knappen olika färger. Färgerna på knapparna är konstanta, oberoende av vilken färgpalett som används. Val av knapp ska vara konsekvent. Använd enbart dessa varianter. 
+Beroende på vilken funktion knappen har så har knappen olika färger. Färgerna på knapparna är konstanta, oberoende av vilken färgpalett som används. Val av knapp ska vara konsekvent. Använd enbart dessa varianter.
 
 Texten på en knapp ska vara kort och beskriva handlingen som knappen utför.
 
@@ -17,27 +17,18 @@ Styleguide 7.1
 */
 
 .btn {
-	position: relative;
-	top: -1px;
+  box-shadow: inset 0 0 2em 0em rgba(0, 0, 0, 0);
 	font-weight: 400;
-	box-shadow: 0px 2px 0px 0px darken(#fff, 20%);
+  color: inherit;
 	transition: 0.5s ease;
-	transition-property: color, background-color, border-color, position;
+	transition-property: color, box-shadow;
 }
 .btn.btn-link {
 	box-shadow: none;
+  border-color: transparent;
 	position: initial;
-	&:active {
-		position: initial;
-	}
-}
-.btn:active {
-	position: relative;
-	top: 1px;
 }
 button[disabled=disabled], button:disabled {
-	position: relative;
-	top: 1px;
 }
 
 // Remember to use some other type of focus indicator when outline is removed.
@@ -60,7 +51,7 @@ Styleguide 7.1.1
 */
 
 .btn {
-	border-radius: 5px;
+	border-radius: 3px;
 	font-size: 16px;
 	padding: 4px 10px;
 }
@@ -72,12 +63,12 @@ Styleguide 7.1.1
 .btn-sm {
 	padding: 5px 10px;
   font-size: 12px;
-	border-radius: 5px;
+	border-radius: 2px;
 }
 .btn-xs {
 	padding: 1px 5px;
   font-size: 12px;
-	border-radius: 5px;
+	border-radius: 2px;
 }
 .btn-block {
 	//
@@ -86,8 +77,8 @@ Styleguide 7.1.1
 /*
 Skal
 
- .btn-default    - Default
- .btn-primary    - Primary
+.btn-default    - Default
+.btn-primary    - Primary
 .btn-info       - Info
 .btn-success    - Success
 .btn-warning    - Warning
@@ -97,49 +88,53 @@ Skal
 Markup:
 <button class="btn {{modifier_class}}">Button Element</button>
 <button disabled class="btn {{modifier_class}}">Disabled</button>
- 
+
 Styleguide 7.1.2
 */
 
-.button-colors(@color) {
+.button-colors(@color, @textcolor) {
+  box-shadow: inset 0 0 2em 0em rgba(0, 0, 0, 0);
 	background-color: @color;
-	box-shadow: 0px 2px 0px 0px darken(@color, 20%);
-	& when (luma(@color) >= 60%) {
-	  color: darken(@color, 35%);
-	  &:hover, &:focus {
-	  	background-color: darken(@color, 10%);
-	  	color: darken(@color, 35%);
-	  }
-		&:active {
-			background-color: @color;
-			color: darken(@color, 35%);
-		}
-	}
-	& when (luma(@color) < 60%) {
-	  color: lighten(@color, 50%);
-	  &:hover, &:focus {
-	  	background-color: darken(@color, 10%);
-	  	color: lighten(@color, 50%);
-	  }
-		&:active {
-			background-color: @color;
-	  	color: lighten(@color, 50%);
-		}
-	}
+  border-color: darken(@color, 15%);
+  color: @textcolor;
+  &:focus {
+    border-color: darken(@color, 15%);
+  }
+  &:focus:active {
+    color: @textcolor;
+    background-color: @color;
+  }
+  &:hover {
+    background-color: @color;
+    color: @textcolor;
+    border-color: darken(@color, 50%);
+  }
+  &:focus, &:focus:active {
+    color: @textcolor;
+    background-color: @color;
+  }
+  &:active, .active {
+    background-color: @color;
+    color: @textcolor;
+    box-shadow: inset 0 0 2em 0em rgba(0, 0, 0, 0.3);
+  }
 }
 
+.btn-default {
+  .button-colors(#e6e6e6, #444);
+}
 .btn-primary {
-	.button-colors(@brand-primary);
+	.button-colors(@brand-primary, #444);
 }
 .btn-info {
-	.button-colors(@brand-info);
+	.button-colors(@brand-info, #444);
 }
 .btn-success {
-	.button-colors(@brand-success);
+	.button-colors(@brand-success, #444);
 }
 .btn-warning {
-	.button-colors(@brand-warning);
+	.button-colors(@brand-warning, #444);
 }
 .btn-danger {
-	.button-colors(@brand-danger);
+	.button-colors(@brand-danger, #fff);
 }
