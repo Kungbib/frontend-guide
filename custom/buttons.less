@@ -16,19 +16,31 @@ Texten på en knapp ska vara kort och beskriva handlingen som knappen utför.
 Styleguide 7.1
 */
 
+.btn, button, .btn-default, .btn-success, .btn-danger, .btn-warning, .btn-info {
+  all: unset;
+}
+
 .btn {
   box-shadow: inset 0 0 2em 0em rgba(0, 0, 0, 0);
 	font-weight: 400;
   color: inherit;
 	transition: 0.5s ease;
 	transition-property: color, box-shadow;
+  border-style: solid;
+  border-width: 1px;
+  &:active, .active, .open {
+    box-shadow: inset 0 0 2em 0em rgba(0, 0, 0, 0.3);
+    color: inherit;
+  }
 }
 .btn.btn-link {
 	box-shadow: none;
   border-color: transparent;
 	position: initial;
 }
+
 button[disabled=disabled], button:disabled {
+
 }
 
 // Remember to use some other type of focus indicator when outline is removed.
@@ -96,27 +108,25 @@ Styleguide 7.1.2
   box-shadow: inset 0 0 2em 0em rgba(0, 0, 0, 0);
 	background-color: @color;
   border-color: darken(@color, 15%);
-  color: @textcolor;
   &:focus {
     border-color: darken(@color, 15%);
+    color: inherit;
   }
   &:focus:active {
-    color: @textcolor;
     background-color: @color;
+    color: inherit;
   }
   &:hover {
     background-color: @color;
-    color: @textcolor;
     border-color: darken(@color, 50%);
+    color: inherit;
   }
   &:focus, &:focus:active {
-    color: @textcolor;
     background-color: @color;
+    color: inherit;
   }
   &:active, .active {
     background-color: @color;
-    color: @textcolor;
-    box-shadow: inset 0 0 2em 0em rgba(0, 0, 0, 0.3);
   }
 }
 
