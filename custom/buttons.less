@@ -16,74 +16,6 @@ Texten på en knapp ska vara kort och beskriva handlingen som knappen utför.
 Styleguide 7.1
 */
 
-.btn-mixin() {
-  box-shadow: inset 0 0 2em 0em rgba(0, 0, 0, 0);
-  border-radius: 3px;
-	font-size: 16px;
-  font-weight: 400;
-	padding: 4px 10px;
-  border-style: solid;
-  border-width: 1px;
-  transition: 0.5s ease;
-  transition-property: color, box-shadow;
-  &:active, .active, .open {
-    box-shadow: inset 0 0 2em 0em rgba(0, 0, 0, 0.3);
-  }
-  &.btn-lg {
-  	padding: 10px 16px;
-    font-size: 18px;
-  	border-radius: 5px;
-  }
-  &.btn-sm {
-  	padding: 5px 10px;
-    font-size: 12px;
-  	border-radius: 2px;
-  }
-  &.btn-xs {
-  	padding: 1px 5px;
-    font-size: 12px;
-  	border-radius: 2px;
-  }
-}
-
-.btn, button {
-  &:hover,
-  &:focus,
-  &:active:focus,
-  &:active,
-  &.active {
-    all: unset;
-    .btn-mixin();
-  }
-  all: unset;
-  .btn-mixin();
-  &.disabled, &:disabled, &[disabled=disabled] {
-    opacity: 0.6;
-    cursor: not-allowed;
-  }
-}
-.btn.btn-link {
-  color: @brand-primary;
-	box-shadow: none;
-  border-color: transparent;
-	position: initial;
-  cursor: pointer;
-  &:hover, &:active, .active, &:focus, &:focus:active {
-    text-decoration: underline;
-    border-color: transparent;
-    box-shadow: none;
-    color: @brand-primary;
-    &.disabled, &:disabled, &[disabled=disabled] {
-      text-decoration: none;
-      cursor: not-allowed;
-    }
-  }
-}
-
-// Remember to use some other type of focus indicator when outline is removed.
-// Without a focus indicator it will not comply with accessability standards.
-button:focus {outline:0 !important;}
-
 /*
 Storlekar
 
@@ -117,55 +49,6 @@ Markup:
 Styleguide 7.1.2
 */
 
-.button-colors(@color, @textColor) {
-  box-shadow: inset 0 0 2em 0em rgba(0, 0, 0, 0);
-	background-color: @color;
-  color: @textColor;
-  border-color: darken(@color, 15%);
-  &.disabled, &:disabled, &[disabled=disabled] {
-    background-color: @color;
-    border-color: darken(@color, 15%);
-    &:hover {
-      background-color: @color;
-    }
-  }
-  &:active:hover {
-    background-color: @color;
-    color: @textColor;
-  }
-  &:focus {
-    border-color: darken(@color, 15%);
-    color: @textColor;
-  }
-  &:hover {
-    background-color: @color;
-    color: @textColor;
-    border-color: darken(@color, 50%);
-  }
-  &:focus, &:focus:active, &:active, .active, .open {
-    background-color: @color;
-    color: @textColor;
-  }
-}
-
-.btn-default {
-  .button-colors(#e6e6e6, #000);
-}
-.btn-primary {
-	.button-colors(@brand-primary, #000);
-}
-.btn-info {
-	.button-colors(@brand-info, #000);
-}
-.btn-success {
-	.button-colors(@brand-success, #000);
-}
-.btn-warning {
-	.button-colors(@brand-warning, #000);
-}
-.btn-danger {
-	.button-colors(@brand-danger, #000);
-}
 
 /*
 Dropdown-menyer
