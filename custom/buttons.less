@@ -16,31 +16,68 @@ Texten på en knapp ska vara kort och beskriva handlingen som knappen utför.
 Styleguide 7.1
 */
 
-.btn, button, .btn-default, .btn-success, .btn-danger, .btn-warning, .btn-info {
-  all: unset;
-}
-
-.btn {
+.btn-mixin() {
   box-shadow: inset 0 0 2em 0em rgba(0, 0, 0, 0);
-	font-weight: 400;
-  color: inherit;
-	transition: 0.5s ease;
-	transition-property: color, box-shadow;
+  border-radius: 3px;
+	font-size: 16px;
+  font-weight: 400;
+	padding: 4px 10px;
   border-style: solid;
   border-width: 1px;
+  transition: 0.5s ease;
+  transition-property: color, box-shadow;
   &:active, .active, .open {
     box-shadow: inset 0 0 2em 0em rgba(0, 0, 0, 0.3);
-    color: inherit;
+  }
+  &.btn-lg {
+  	padding: 10px 16px;
+    font-size: 18px;
+  	border-radius: 5px;
+  }
+  &.btn-sm {
+  	padding: 5px 10px;
+    font-size: 12px;
+  	border-radius: 2px;
+  }
+  &.btn-xs {
+  	padding: 1px 5px;
+    font-size: 12px;
+  	border-radius: 2px;
+  }
+}
+
+.btn, button {
+  &:hover,
+  &:focus,
+  &:active:focus,
+  &:active,
+  &.active {
+    all: unset;
+    .btn-mixin();
+  }
+  all: unset;
+  .btn-mixin();
+  &.disabled, &:disabled, &[disabled=disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
   }
 }
 .btn.btn-link {
+  color: @brand-primary;
 	box-shadow: none;
   border-color: transparent;
 	position: initial;
-}
-
-button[disabled=disabled], button:disabled {
-
+  cursor: pointer;
+  &:hover, &:active, .active, &:focus, &:focus:active {
+    text-decoration: underline;
+    border-color: transparent;
+    box-shadow: none;
+    color: @brand-primary;
+    &.disabled, &:disabled, &[disabled=disabled] {
+      text-decoration: none;
+      cursor: not-allowed;
+    }
+  }
 }
 
 // Remember to use some other type of focus indicator when outline is removed.
@@ -53,7 +90,6 @@ Storlekar
 .btn-lg    - Large
 .btn-sm    - Small
 .btn-xs    - Extra small
-.btn-block    - Block
 
 Markup:
 <button class="btn btn-default {{modifier_class}}">Button</button>
@@ -62,29 +98,6 @@ Markup:
 Styleguide 7.1.1
 */
 
-.btn {
-	border-radius: 3px;
-	font-size: 16px;
-	padding: 4px 10px;
-}
-.btn-lg {
-	padding: 10px 16px;
-  font-size: 18px;
-	border-radius: 5px;
-}
-.btn-sm {
-	padding: 5px 10px;
-  font-size: 12px;
-	border-radius: 2px;
-}
-.btn-xs {
-	padding: 1px 5px;
-  font-size: 12px;
-	border-radius: 2px;
-}
-.btn-block {
-	//
-}
 
 /*
 Skal
@@ -104,47 +117,77 @@ Markup:
 Styleguide 7.1.2
 */
 
-.button-colors(@color, @textcolor) {
+.button-colors(@color, @textColor) {
   box-shadow: inset 0 0 2em 0em rgba(0, 0, 0, 0);
 	background-color: @color;
+  color: @textColor;
   border-color: darken(@color, 15%);
+  &.disabled, &:disabled, &[disabled=disabled] {
+    background-color: @color;
+    border-color: darken(@color, 15%);
+    &:hover {
+      background-color: @color;
+    }
+  }
+  &:active:hover {
+    background-color: @color;
+    color: @textColor;
+  }
   &:focus {
     border-color: darken(@color, 15%);
-    color: inherit;
-  }
-  &:focus:active {
-    background-color: @color;
-    color: inherit;
+    color: @textColor;
   }
   &:hover {
     background-color: @color;
+    color: @textColor;
     border-color: darken(@color, 50%);
-    color: inherit;
   }
-  &:focus, &:focus:active {
+  &:focus, &:focus:active, &:active, .active, .open {
     background-color: @color;
-    color: inherit;
-  }
-  &:active, .active {
-    background-color: @color;
+    color: @textColor;
   }
 }
 
 .btn-default {
-  .button-colors(#e6e6e6, #444);
+  .button-colors(#e6e6e6, #000);
 }
 .btn-primary {
-	.button-colors(@brand-primary, #444);
+	.button-colors(@brand-primary, #000);
 }
 .btn-info {
-	.button-colors(@brand-info, #444);
+	.button-colors(@brand-info, #000);
 }
 .btn-success {
-	.button-colors(@brand-success, #444);
+	.button-colors(@brand-success, #000);
 }
 .btn-warning {
-	.button-colors(@brand-warning, #444);
+	.button-colors(@brand-warning, #000);
 }
 .btn-danger {
-	.button-colors(@brand-danger, #fff);
+	.button-colors(@brand-danger, #000);
 }
+
+/*
+Dropdown-menyer
+
+.btn-default  - Default
+.btn-success  - Success
+.btn-danger   - Danger
+
+Markup:
+<div class="dropdown">
+  <button class="btn {{modifier_class}} dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Meny
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Något</a></li>
+    <li><a href="#">Något annat</a></li>
+    <li><a href="#">Ännu en sak</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separerad sak</a></li>
+  </ul>
+</div>
+
+Styleguide 7.1.3
+*/
