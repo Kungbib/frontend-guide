@@ -37,7 +37,7 @@
         </div>
 
         <div class="navbar-right update-text">
-          <span title="2017-12-11 - 10:39">v 1.2.2</span>
+          <span title="2017-12-18 - 12:31">v 1.2.3</span>
         </div>
 
 
@@ -83,6 +83,7 @@
             <li class="kss-menu-item kss-depth-2"><a href="#section-7.1"><span class="kss-name">Knappar</span></a></li>
             <li class="kss-menu-item kss-depth-3"><a href="#section-7.1.1"><span class="kss-name">Storlekar</span></a></li>
             <li class="kss-menu-item kss-depth-3"><a href="#section-7.1.2"><span class="kss-name">Skal</span></a></li>
+            <li class="kss-menu-item kss-depth-3"><a href="#section-7.1.3"><span class="kss-name">Dropdown-menyer</span></a></li>
             <li class="kss-menu-item kss-depth-2"><a href="#section-7.2"><span class="kss-name">Labels</span></a></li>
           </ul>
         </div>
@@ -148,19 +149,6 @@
                     <div class="kss-example-tag">Exempel</div>
                     <button class="btn btn-default btn-xs">Button</button>
 <button class="btn btn-primary btn-xs">Button</button>
-                  </div>
-                </div>
-                <div class="kss-modifier">
-                  <div class="kss-modifier-head">
-                    <div class="kss-modifier-description">
-                      Block
-                    </div>
-                    <div class="kss-modifier-name"><pre>.btn-block</pre></div>
-                  </div>
-                  <div class="kss-modifier-example">
-                    <div class="kss-example-tag">Exempel</div>
-                    <button class="btn btn-default btn-block">Button</button>
-<button class="btn btn-primary btn-block">Button</button>
                   </div>
                 </div>
                 <div class="kss-markup">
@@ -273,6 +261,116 @@
                 <div class="kss-markup">
                   <pre><code data-language="html">&lt;button class=&quot;btn [modifier class]&quot;&gt;Button Element&lt;/button&gt;
 &lt;button disabled class=&quot;btn [modifier class]&quot;&gt;Disabled&lt;/button&gt;</code></pre>
+                </div>
+              </div>
+            </section>
+            <section id="section-7.1.3" class="kss-section kss-depth-3">
+              <h3 class="kss-title">Dropdown-menyer</h3>
+              <div class="kss-modifier-block">
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                      <div class="kss-example-tag">Exempel</div>
+                    <div class="dropdown">
+  <button class="btn [modifier class] dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Meny
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Något</a></li>
+    <li><a href="#">Något annat</a></li>
+    <li><a href="#">Ännu en sak</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separerad sak</a></li>
+  </ul>
+</div>
+                  </div>
+                </div>
+                <div class="kss-modifier">
+                  <div class="kss-modifier-head">
+                    <div class="kss-modifier-description">
+                      Default
+                    </div>
+                    <div class="kss-modifier-name"><pre>.btn-default</pre></div>
+                  </div>
+                  <div class="kss-modifier-example">
+                    <div class="kss-example-tag">Exempel</div>
+                    <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Meny
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Något</a></li>
+    <li><a href="#">Något annat</a></li>
+    <li><a href="#">Ännu en sak</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separerad sak</a></li>
+  </ul>
+</div>
+                  </div>
+                </div>
+                <div class="kss-modifier">
+                  <div class="kss-modifier-head">
+                    <div class="kss-modifier-description">
+                      Success
+                    </div>
+                    <div class="kss-modifier-name"><pre>.btn-success</pre></div>
+                  </div>
+                  <div class="kss-modifier-example">
+                    <div class="kss-example-tag">Exempel</div>
+                    <div class="dropdown">
+  <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Meny
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Något</a></li>
+    <li><a href="#">Något annat</a></li>
+    <li><a href="#">Ännu en sak</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separerad sak</a></li>
+  </ul>
+</div>
+                  </div>
+                </div>
+                <div class="kss-modifier">
+                  <div class="kss-modifier-head">
+                    <div class="kss-modifier-description">
+                      Danger
+                    </div>
+                    <div class="kss-modifier-name"><pre>.btn-danger</pre></div>
+                  </div>
+                  <div class="kss-modifier-example">
+                    <div class="kss-example-tag">Exempel</div>
+                    <div class="dropdown">
+  <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Meny
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Något</a></li>
+    <li><a href="#">Något annat</a></li>
+    <li><a href="#">Ännu en sak</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separerad sak</a></li>
+  </ul>
+</div>
+                  </div>
+                </div>
+                <div class="kss-markup">
+                  <pre><code data-language="html">&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;button class=&quot;btn [modifier class] dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenu1&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;true&quot;&gt;
+    Meny
+    &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;dropdownMenu1&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Något&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Något annat&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Ännu en sak&lt;/a&gt;&lt;/li&gt;
+    &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separerad sak&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
                 </div>
               </div>
             </section>
