@@ -1,6 +1,6 @@
 # Frontend guide 
 
-Guide in [Swedish]().
+Guide in [Swedish](https://github.com/Kungbib/frontend-guide/blob/master/README-sv.md).
 
 This document contains guidelines for developing UI in apps and services at the National Library of Sweden. The purpose of these guidelines are to:
 
