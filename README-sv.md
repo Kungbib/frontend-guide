@@ -1,11 +1,6 @@
 # Frontend-guide 
 
-Det här är en samling riktlinger för gränssnittsutveckling i digitala tjänster hos Kungliga Biblioteket. Syftet med dokumentet är att:
-
-- tydliggöra koden för flera utvecklare och göra den lättare att underhålla.
-- stödja och underlätta utveckling av återanvändbara komponenter.
-- stödja och underlätta utveckling av tillgänglighetsanpassat gränssnitt.
-- reducera risken för att gränsnittet "går sönder" vid ändringar.
+Det här är en samling stilmallar och lite riktlinjer för att sätta upp  gränssnitt i digitala tjänster hos Kungliga Biblioteket. 
 
 
 Repot innehåller beskrivningar av metoder för namngivning med [SUIT CSS](https://suitcss.github.io), setup för anpassning av [Twitter Bootstrap](https://github.com/twbs/bootstrap) samt generering av en stilguide enligt [KSS](https://github.com/kneath/kss) genom [KSS-node](https://github.com/kss-node/kss-node).

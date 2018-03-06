@@ -2,13 +2,7 @@
 
 Guide in [Swedish](https://github.com/Kungbib/frontend-guide/blob/master/README-sv.md).
 
-This document contains guidelines for developing UI in apps and services at the National Library of Sweden. The purpose of these guidelines are to:
-
-- keep code _maintainable_ and help developers understand each other's code 
-- support the development of _reusable_ UI components.
-- support the development of UI that is _accessible_.
-- reduce the risk of UI "breaking" when changes are made.
-
+This repo contains guidelines and stylesheets for quickly setting up UI in apps and services at the National Library of Sweden. 
 
 ## Conventions, tech and tools
 **Tech**
@@ -42,7 +36,7 @@ This document contains guidelines for developing UI in apps and services at the 
 
 ## Creating custom css
 
-Create your own rules in de folder `custom/`. Open `variables.less` and try out editing. To add a custom file to the build, import it by editing `custom.less` and adding:
+Create your own rules in the folder `custom/`. Open `variables.less` and try out editing. To add a custom file to the build, import it by editing `custom.less` and adding:
 
     @import 'filename.less';
 
