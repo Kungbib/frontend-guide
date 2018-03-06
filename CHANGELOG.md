@@ -5,7 +5,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 
 
-## [1.3.0] - 2018-03-06
+## [1.3.0](https://github.com/Kungbib/frontend-guide/tree/1.3.0) - 2018-03-06
 ### Added
 - This CHANGELOG file to hopefully serve as an evolving example of a
   standardized open source project CHANGELOG.
