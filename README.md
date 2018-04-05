@@ -42,7 +42,17 @@ Create your own rules in the folder `custom/`. Open `variables.less` and try out
 
 ### Coding standards
 
-#### Naming classes witth SUIT CSS
+#### Accessibility
+See guidlines presented in 
+Try to follow the guidelines and checklists recommended and provided by [The Swedish Post and Telecom Authority (PTS)](https://webbriktlinjer.se/checklistor/) (page in Swedish). 
+
+Prevent accessibility violations by writing with correct HTML5 semantics and ARIA-attributes. Manual testing tools:
+
+- [aXe Browser Extension](https://axe-core.org/)
+- [W3C Validator](https://validator.w3.org/)
+
+
+#### Naming classes with SUIT CSS
 
 Use the [SUIT CSS naming convention](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md):
 
