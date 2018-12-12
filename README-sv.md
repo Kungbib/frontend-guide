@@ -44,6 +44,15 @@ För att lägga till en fil i genereringen öppnar du filen `custom.less` och l�
 
 ### Riktlinjer för kod
 
+#### Tillgänglighet
+Följ riktlinjer och ta hjälp av checklistan från [PTS](https://webbriktlinjer.se/checklistor/). 
+
+För att skriva mer tillgänglighetsanpassad kod från början, var noga med att använda semantisk HTML5 och att använda ARIA- och ROLE-attribut där de hör hemma.
+Följande tjänster finns t ex för att testa HTML5 och gränssnittets tillgänglighet manuellt:
+
+- [aXe Browser Extension](https://axe-core.org/)
+- [W3C Validator](https://validator.w3.org/)
+
 #### Namngivning med SUIT CSS
 
 Namnge komponenter/element med [namnkonventionen SUIT CSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) som bas, exempel:
