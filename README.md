@@ -1,3 +1,5 @@
+# ⚠️ This repository is no longer active, go to [Kungbib/styleguide](https://github.com/Kungbib/styleguide) instead.
+
 # Frontend guide 
 
 Guide in [Swedish](https://github.com/Kungbib/frontend-guide/blob/master/README-sv.md).
